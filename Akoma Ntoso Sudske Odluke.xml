@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Baru
+					</FRBRauthor>
+					<FRBRdate date="2021-05-07">
+						2021
+					</FRBRdate>
+					<FRBRtitle>
+						K 36/2021
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="osb" href="/ontology/organization/OsnovniSud.Bar" showAs="Osnovni sud u Baru" />
+				<TLCOrganization eId="odtb" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Bar" showAs="Osnovnom državnom tužilaštvu u Baru" />
+				<TLCPerson eId="tspasojevic" href="/ontology/person/tspasojevic" showAs="Tamara Spasojevic" />
+				<TLCPerson eId="astanisic" href="/ontology/person/astanisic" showAs="Ana Stanisic" />
+				<TLCPerson eId="si" href="/ontology/person/si" showAs="S.I." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization refersTo="#osb">
+					OSNOVNI SUD U BARU
+				</organization>
+				sudija:
+				<party refersTo="#tspasojevic" as="#judge">
+					Tamara Spasojević
+				</party>
+				, sa zapisničarom Anom Stanišić, u krivičnom predmetu okrivljenog
+				<party refersto="#si" as="#defendant">
+					S. I.
+				</party>
+				zbog krivičnog djela nedozvoljena trgovina iz čl. 284 st.3 u vezi st.1 Krivičnog zakonika CrneGore, po optužnom predlogu
+				<organization refersto="#odtb">
+					Osnovnog državnog tužilaštva u Baru
+				</organization>
+				Kt.br. 527/20 od 12.02.2021.godine, nakonodržanog glavnog javnog pretresa u prisustvu zastupnika optužbe savjetnice u
+				<organization refersto="#odtb">
+					Osnovnom državnom tužilaštvu u Baru
+				</organization>
+				Šćepanović Darinke i
+				<party refersto="#si" as="#defendant">
+					okrivljenog
+				</party>
+				, dana 07.05.2021.godine donio je i javno objavio presudu.
+			</p>
+			<p>
+				<party refersto="#si" as="#defendant">
+					Okrivljeni S. I.
+				</party>
+				kriv je sto je dana 29.10.2020.godine u Baru, svjestan svog djela, čije je izvršenje htio i znajući da
+				je njegovo djelozabranjeno, nemajući ovlašćenje za trgovinu u svrhu prodaje na teritoriji Opštine Bar,
+				nabavio robu čiji jepromet ograničen u ukupnoj vrijednosti od 3.060,00 eura i to 9 paketa u kojima se
+				nalazilo 300 šteka cigaretamarke "Ashima" na načn što je cigarete kupio u Tuzima od nepoznatog lica, bez
+				dokaza o porijeklu i akciznimmarkicama Crne Gore, a koja roba je zatečena u putničkom motornom vozilu marke "Jetta" registarskih
+				oznaka PG .... , kojim je upravljao okrivljeni i koja roba je otkrivena i oduzeta prililkom kontrole
+				okrivljenog u ul. Bulevar Dinastije Petrovića u Baru, od strane službenika Centra bezbjednosti Bar,
+				čime je izvršio krivično djelo nedozvoljena trgovina iz čl.284 st.3 u vezi st.1 i 2 Krivičnog zakonika Crne Gore.
+			</p>
+			<conclusions>
+				<p>
+					Pa
+					<organization refersTo="#osb">
+						sud
+					</organization>
+					<party refersto="#si" as="#defendant">
+						okrivljenog
+					</party>
+					primjenom citiranih zakonskih propisa, te čl. 4, 5, 13, 15, 32, 41 i 42 KZ CG i čl.226, 229 i 374ZKP-a,
+					osudjuje Na kaznu rada u javnom interesu u trajanju od 80 (osamdeset) časova, a koja se ima izvršiti za
+					vrijeme od 6mjeseci, s tim što kazna ne može biti duža od 60 časova u toku jednog mjeseca.
+					Prema
+					<party refersto="#si" as="#defendant">
+						okrivljenom
+					</party>
+					se na osnovu čl.75 st.1 Krivičnog zakonika i čl.284 st.6 Krivičnog zakonika Crne Gore izriče
+					mjera bezbednosti Kojom se od
+					<party refersto="#si" as="#defendant">
+						okrivljenog
+					</party>
+					oduzima 9 paketa u kojima se nalazilo 300 šteka cigareta marke "Ashima",
+					kao predmet nedozvoljene trgovine.
+					<party refersto="#si" as="#defendant">
+						Okrivljeni
+					</party>
+					je dužan da plati troškove krivičnog postupka u iznosu od 71,50 €, kao i na ime sudskog paušala
+					iznos od 30,00 eura, a sve u roku od 15 dana od dana pravosnažnosti pod prijetnjom izvršenja.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Pljevljima
+					</FRBRauthor>
+					<FRBRdate date="2021-05-13">
+						2021
+					</FRBRdate>
+					<FRBRtitle>
+						K 38/2021
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="osp" href="/ontology/organization/OsnovniSud.Pljevlji" showAs="Osnovni sud u Pljevljima" />
+				<TLCOrganization eId="odtb" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Bar" showAs="Osnovnom državnom tužilaštvu u Baru" />
+				<TLCPerson eId="ljpopovic" href="/ontology/person/ljpopovic" showAs="Ljiljana Popović" />
+				<TLCPerson eId="ms" href="/ontology/person/ms" showAs="M.S." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization refersTo="#osb">
+					Osnovni sud u Pljevljima
+				</organization>
+				po sudiji
+				<party refersTo="#ljpopovic" as="#judge">
+					Ljiljani Popović,
+				</party>
+				uz sudjelovanje zapisničara Krvavac Mirjane, u krivičnompredmetu protiv optuženog
+				<party refersto="#ms" as="#defendant">
+					M. S.
+				</party>
+				iz Pljevalja, zbog krivičnog djela nedozvoljena trgovina iz čl.284 st.3 u vezist.2 Krivičnog zakonika Crne Gore,
+				a po optužnom predlogu ODT Pljevlja Kt.br 69/21 od 23.04.2021. godine,nakon održanog glavnog i javnog pretresa
+				u prisustvu državnog tužioca u ODT Pljevlja Tomčić Milivoja I uodsustvu uredno pozvanog optuženog
+				<party refersto="#ms" as="#defendant">
+					M. S.
+				</party>
+				, dana 13.05.2021. godine, donio je i javno objavio presudu
+			</p>
+			<p>
+				<party refersto="#ms" as="#defendant">
+					Optuženi M.S.
+				</party>
+				Početkom marta mjeseca 2021. godine, u Podgorici, svjestan svog djela čije je izvršenje htio, znajući da jenjegovo djelo
+				zabranjeno, suprotno čl.6 Zakona o duvanu (,,Sl.list CG br.48/08 od 11.08.2008. godine, 40/11od 08.08.2011. godine, 42/15
+				od 29.07.2015. godine) neovlašćeno kupio robu čije je stavljanje u prometzabranjeno, na način što je sa dva NN lica iz Podgorice,
+				dogovorio i kupio 40 kg. rezanog duvana, upakovanogu 80 pakovanja od po pola kilograma, ukupne vrijednosti od 800 eura, koju robu
+				su ta lica iz Podgoriceotpremili dana 24.03.2021. godine za Pljevlja, autobusom ,,R.P.", kojim je upravljao Č.M.
+				iz Pljevalja, a kojaroba je pronađena u mjestu Đ.Tara, Opština Pljevlja, prilikom kontrole putnika I prtljaga,
+				izvršene od straneslužbenika UP CB Pljevlja i privremeno oduzeta od vozača autobusa,
+				čime je izvršio krivično djelo nedozvoljena trgovina iz čl.284 st.3 u vezi st. 2 Krivičnog Zakonika Crne Gore,
+			</p>
+			<conclusions>
+				<p>
+					<organization refersTo="#osp">
+						Sud
+					</organization>
+					na osnovu već citiranog zakonskog propisa te primjenom članova 4,13,15,32,36,42,52,53 i 54
+					Krivičnog zakonika Crne Gore, te čl.226,229 i 374 ZKP-a izrice USLOVNU OSUDU Sa kojom mu utvrđuje kaznu
+					zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ista nećeizvršiti ako optuženi u roku
+					od jedne godine dana od pravosnažnosti ove presude ne izvrši novo krivičnodjelo.
+					<party refersto="#ms" as="#defendant">
+						Optuženi
+					</party>
+					je dužan platiti Budžetu Crne Gore na ime troškova iznos od 38,50 €, kao i na ime paušala iznos od 27,50 €,
+					a sve ovo u roku od 15 dana po pravosnažnosti presude a pod prijetnjom prinudnog izvršenja.
+					Na osnovu čl.75 i 284 st.6 Krivičnog zakonika Crne Gore prema
+					<party refersto="#ms" as="#defendant">
+						optuženom
+					</party>
+					se izriče i MJERA BEZBJEDNOSTI Trajno oduzimanje 40 kg rezanog duvana, upakovanog u 80 pakovanja od po pola kilograma,
+					kao predmetizvršenja krivičnog djela.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>
