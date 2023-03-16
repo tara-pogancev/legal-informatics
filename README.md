@@ -15,3 +15,5 @@ Legal informatics Masters' project
 6. Kakav pregled zakona i sudskih odluka? Da li korisnik treba da u interfejsu ima spisak svih zakona i presuda sa kojim radimo u projektu pa da mu se samo ispise summary na zahtev broja? Da li ovo ima bilo kakve veze sa Akoma Ntoso? Nisam nasla nista na internetu sto bi radilo vizuelizaciju Akoma Ntoso zapisa (iako ChatGPT kaze da to postoji).
 
 7. Za tacku 8 - Da li je ovo sve iz onog java projekta na 2. vezbama? Razumem slicnost slucajeva ali da li je to zapravo rasudjivanje na osnovu slucajeva?
+
+8. Kako se brani projekat? Je l imamo neku prezentaciju?
