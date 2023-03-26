@@ -106,10 +106,6 @@ public class CbrApplication implements StandardCBRApplication {
 			CaseDescription caseDescription = new CaseDescription();
 			
 			caseDescription.setKrivicnoDelo("cl.239st.1 KZ");
-			List<String> primenjeniPropisi = new ArrayList();
-			primenjeniPropisi.add("cl.226 ZOKP");
-			primenjeniPropisi.add("cl.229 ZOKP");
-			caseDescription.setPrimenjeniPropisi(primenjeniPropisi);
 			caseDescription.setVrednostDuvana(5000);
 			
 			query.setDescription( caseDescription );

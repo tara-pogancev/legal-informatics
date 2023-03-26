@@ -43,7 +43,7 @@
 				<party refersto="#si" as="#defendant">
 					S. I.
 				</party>
-				zbog krivičnog djela nedozvoljena trgovina iz čl. 284 st.3 u vezi st.1 Krivičnog zakonika CrneGore, po optužnom predlogu
+				zbog krivičnog djela nedozvoljena trgovina iz <act refersto="#cl284st3"> čl. 284 st.3 </act> u vezi st.1 Krivičnog zakonika CrneGore, po optužnom predlogu
 				<organization refersto="#odtb">
 					Osnovnog državnog tužilaštva u Baru
 				</organization>
