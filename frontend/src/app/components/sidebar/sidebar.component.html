@@ -1,0 +1,35 @@
+<div class="sidebar-container p-5 is-flex is-flex-direction-column">
+  <h2>PRAVNA INFORMATIKA</h2>
+  <hr />
+  <mat-list>
+    <div mat-subheader>PDF Dokumenti</div>
+    <a [routerLink]="['/pdf']">
+      <mat-list-item [ngClass]="{ selected: tab == 0 }">
+        <mat-icon matListItemIcon>book</mat-icon>
+        <div matListItemTitle>Presude i zakoni</div>
+      </mat-list-item>
+    </a>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Akoma Ntoso</div>
+    <a [routerLink]="['/akoma-ntoso-judgement']">
+      <mat-list-item [ngClass]="{ selected: tab == 1 }">
+        <mat-icon matListItemIcon>build</mat-icon>
+        <div matListItemTitle>Presude</div>
+      </mat-list-item>
+    </a>
+    <a [routerLink]="['akoma-ntoso-law']">
+      <mat-list-item [ngClass]="{ selected: tab == 2 }">
+        <mat-icon matListItemIcon>bookmark_border</mat-icon>
+        <div matListItemTitle>Zakoni</div>
+      </mat-list-item>
+    </a>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Akcije</div>
+    <a [routerLink]="['new']">
+      <mat-list-item [ngClass]="{ selected: tab == 3 }">
+        <mat-icon matListItemIcon>edit</mat-icon>
+        <div matListItemTitle>Nova presuda</div>
+      </mat-list-item>
+    </a>
+  </mat-list>
+</div>

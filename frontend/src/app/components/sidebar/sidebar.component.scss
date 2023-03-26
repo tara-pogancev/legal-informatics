@@ -1,0 +1,43 @@
+@import "../../custom-theme.scss";
+
+.sidebar-container {
+  background-color: white;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.055);
+  width: 300px;
+  height: 100%;
+}
+
+h2 {
+  align-self: center;
+  font-family: "Montserrat", sans-serif !important;
+  margin-bottom: -10px;
+  font-weight: 700;
+}
+
+mat-list-item {
+  cursor: pointer;
+  border-radius: 20px !important;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: #e78d723f;
+  }
+}
+
+mat-divider {
+  margin-top: 10px;
+}
+
+.selected {
+  background-color: $primary;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.137);
+
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+::ng-deep .selected .mdc-list-item__primary-text,
+.selected mat-icon {
+  color: $light !important;
+}
