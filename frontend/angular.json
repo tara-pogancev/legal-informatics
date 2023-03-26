@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eestecns": {
+    "legalinfo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -33,7 +33,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/eestecns",
+            "outputPath": "dist/legalinfo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -83,10 +83,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "eestecns:build:production"
+              "browserTarget": "legalinfo:build:production"
             },
             "development": {
-              "browserTarget": "eestecns:build:development"
+              "browserTarget": "legalinfo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +94,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "eestecns:build"
+            "browserTarget": "legalinfo:build"
           }
         },
         "test": {
@@ -116,7 +116,7 @@
       }
     }
   },
-  "defaultProject": "eestecns",
+  "defaultProject": "legalinfo",
   "cli": {
     "analytics": false
   }
