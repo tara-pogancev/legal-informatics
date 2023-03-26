@@ -1,1 +1,33 @@
-<p>documents-list-page works!</p>
+<div class="page-container">
+  <div class="columns stretch-height">
+    <div class="is-5 column documents-section">
+      <h1>PDF Dokumenti</h1>
+      <mat-list>
+        <div mat-subheader>Presude</div>
+        <mat-list-item>
+          <mat-icon matListItemIcon>folder</mat-icon>
+          <div matListItemTitle>Presuda 1</div>
+          <div matListItemLine>K 36/2021</div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <div mat-subheader>Zakoni</div>
+        <mat-list-item>
+          <mat-icon matListItemIcon>note</mat-icon>
+          <div matListItemTitle>Zakon 1</div>
+          <div matListItemLine>e23132e</div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="column">
+      <ngx-extended-pdf-viewer
+        [src]="'assets/K 36 2021.pdf'"
+        [useBrowserLocale]="true"
+        [textLayer]="true"
+        [showHandToolButton]="true"
+        [showPresentationModeButton]="true"
+        [showDownloadButton]="true"
+        theme="dark"
+      ></ngx-extended-pdf-viewer>
+    </div>
+  </div>
+</div>

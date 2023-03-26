@@ -12,6 +12,7 @@ import { DocumentPageComponent } from './components/pages/document-page/document
 import { NewCaseComponent } from './components/pages/new-case/new-case.component';
 import { AkomaNtosoCasesComponent } from './components/pages/akoma-ntoso-cases/akoma-ntoso-cases.component';
 import { AkomaNtosoLawComponent } from './components/pages/akoma-ntoso-law/akoma-ntoso-law.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -22,15 +23,16 @@ import { AkomaNtosoLawComponent } from './components/pages/akoma-ntoso-law/akoma
     DocumentPageComponent,
     NewCaseComponent,
     AkomaNtosoCasesComponent,
-    AkomaNtosoLawComponent
+    AkomaNtosoLawComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, 
-    MaterialModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    NgxExtendedPdfViewerModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

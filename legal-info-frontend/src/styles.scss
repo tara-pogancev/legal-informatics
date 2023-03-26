@@ -69,3 +69,18 @@ body {
 .auto-margin {
   margin: auto;
 }
+
+.page-container {
+  width: 100%;
+  padding: 30px;
+  height: calc(100vh - 35.5px);
+}
+
+html {
+  --scrollbarBG: #81c4e0;
+  --thumbBG: #165e81;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
