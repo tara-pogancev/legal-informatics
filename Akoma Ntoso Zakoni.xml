@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Akoma_Ntoso document -->
-<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd">
 	<act id="duvan" name="Zakon o duvanu Crne Gore">
 		<meta>
 			<identification source="#palmirani">
 				<FRBRWork>
-					<FRBRdate date="2015-07-29" name="Generation" />
+					<FRBRthis value="/akn/duvan/!main" />
+					<FRBRuri value="/duvan" />
+					<FRBRdate date="2015-07-29" />
 					<FRBRauthor href="#congress" as="#author" />
 					<FRBRcountry value="cg" />
 					<FRBRnumber value="42/15" />
@@ -14,358 +15,681 @@
 					<FRBRauthoritative value="true" />
 				</FRBRWork>
 				<FRBRExpression>
-					<FRBRdate date="2015-07-29" name="Generation" />
+					<FRBRdate date="2015-07-29" />
 					<FRBRauthor href="#palmirani" as="#editor" />
 					<FRBRlanguage language="cg" />
 				</FRBRExpression>
 				<FRBRManifestation>
-					<FRBRdate date="2015-07-15" name="Generation" />
+					<FRBRdate date="2015-07-15" />
 					<FRBRauthor href="#palmirani" as="#editor" />
 					<FRBRformat value="xml" />
 				</FRBRManifestation>
 			</identification>
+			<publication name="sl" date="2008-08-11" showAs="Službeni list Crne Gore" number="76/2008" />
+			<classification source="#palmirani">
+				<keyword value="duvan" showAs="Duvan" dictionary="CG" />
+			</classification>
 			<references>
+				<TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg" showAs="Službeni list Crne Gore" />
 			</references>
 		</meta>
 		<body>
 			<heading>
 				Zakon o duvanu
 			</heading>
-			<section id="cl2">
+			<chapter eId="chp_1">
+				<num>
+					I.
+				</num>
 				<heading>
-					Clan 2
+					OSNOVNE ODREDBE
 				</heading>
-				<content>
-					<p>
-						Pojedini izrazi upotrijebljeni u ovom zakonu imaju sljedece znacenje:
-					</p>
-					<p>
-						1) duvan je list kultivisane biljne vrste Nicotiana tabacum L u svim oblicima i fazama proizvodnje i
-						primarne prerade (sušenje, sortiranje, pakovanje i cuvanje) koji ne služi krajnjoj potrošnji;
-					</p>
-					<p>
-						2) obradeni duvan je proizvod koji se dobija sredivanjem, tehnološkim postupkom sezonske i
-						vansezonske fermentacije i termickom obradom, kao i drugim radnjama u tehnološkom postupku
-						obrade i pakovanja duvana;
-					</p>
-					<p>
-						3) duvanski proizvodi su cigarete i ostali duvanski proizvodi (cigare, cigarilosi, rezani duvan, duvan
-						za lulu, duvan za žvakanje, duvan za šmrkanje-burmut i dr.) , koji se dobijaju industrijskim
-						postupkom u pripremi, proizvodnji i pakovanju obradenog duvana, namijenjenog pušenju,
-						žvakanju i šmrkanju i koji zadovoljava propisane norme kvaliteta;
-					</p>
-					<p>
-						3a) cigarete su gotov duvanski proizvod spreman za upotrebu koji sadrži rezani duvan sa ili bez
-						dodatka, zamotan u papir za cigarete, sa ili bez filtera;
-					</p>
-					<p>
-						3b) rezani duvan je duvan koji je izrezan ili drugacije sijecen, savijen ili stisnut u komade i koji se
-						može pušiti bez dalje industrijske prerade;
-					</p>
-					<p>
-						4) robna marka duvanskog proizvoda je znak duvanskog proizvoda koji u prometu služi za
-						razlikovanje duvanskih proizvoda.
-					</p>
-				</content>
-			</section>
-			<section id="cl6">
+				<section eId="chp_1_sec_1">
+					<article eId="art_2">
+						<num>
+							Član 2
+						</num>
+						<paragraph eId="art_2_para_1">
+							<intro eId="art_2_para_1_intro">
+								<p>
+									Pojedini izrazi upotrijebljeni u ovom zakonu imaju sljedece znacenje:
+								</p>
+							</intro>
+							<point eId="art_2_para_1_point_1">
+								<num>
+									1)
+								</num>
+								<content eId="art_2_para_1_point_1_content">
+									<p>
+										duvan je list kultivisane biljne vrste Nicotiana tabacum L u svim oblicima i fazama proizvodnje i
+										primarne prerade (sušenje, sortiranje, pakovanje i cuvanje) koji ne služi krajnjoj potrošnji;
+									</p>
+								</content>
+							</point>
+							<point eId="art_2_para_1_point_2">
+								<num>
+									2)
+								</num>
+								<content eId="art_2_para_1_point_2_content">
+									<p>
+										obradeni duvan je proizvod koji se dobija sredivanjem, tehnološkim postupkom sezonske i
+										vansezonske fermentacije i termickom obradom, kao i drugim radnjama u tehnološkom postupku
+										obrade i pakovanja duvana;
+									</p>
+								</content>
+							</point>
+							<point eId="art_2_para_1_point_3">
+								<num>
+									3)
+								</num>
+								<content eId="art_2_para_1_point_3_content">
+									<p>
+										duvanski proizvodi su cigarete i ostali duvanski proizvodi (cigare, cigarilosi, rezani duvan, duvan
+										za lulu, duvan za žvakanje, duvan za šmrkanje-burmut i dr.) , koji se dobijaju industrijskim
+										postupkom u pripremi, proizvodnji i pakovanju obradenog duvana, namijenjenog pušenju,
+										žvakanju i šmrkanju i koji zadovoljava propisane norme kvaliteta;
+									</p>
+								</content>
+							</point>
+							<point eId="art_2_para_1_point_3a">
+								<num>
+									3a)
+								</num>
+								<content eId="art_2_para_1_point_3a_content">
+									<p>
+										cigarete su gotov duvanski proizvod spreman za upotrebu koji sadrži rezani duvan sa ili bez
+										dodatka, zamotan u papir za cigarete, sa ili bez filtera;
+									</p>
+								</content>
+							</point>
+							<point eId="art_2_para_1_point_3b">
+								<num>
+									3b)
+								</num>
+								<content eId="art_2_para_1_point_3b_content">
+									<p>
+										rezani duvan je duvan koji je izrezan ili drugacije sijecen, savijen ili stisnut u komade i koji se
+										može pušiti bez dalje industrijske prerade;
+									</p>
+								</content>
+							</point>
+							<point eId="art_2_para_1_point_4">
+								<num>
+									4)
+								</num>
+								<content eId="art_2_para_1_point_4_content">
+									<p>
+										robna marka duvanskog proizvoda je znak duvanskog proizvoda koji u prometu služi za
+										razlikovanje duvanskih proizvoda.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter eId="chp_4">
+				<num>
+					IV.
+				</num>
 				<heading>
-					Clan 6
+					PROIZVODNJA I OBRADA DUVANA
 				</heading>
-				<content>
-					<p>
-						Zabranjeno je stavljanje u promet rezanog ili na drugi nacin usitnjenog duvana (neobradeni duvan).
-					</p>
-				</content>
-			</section>
-			<section id="cl12">
+				<section eId="chp_4_sec_1">
+					<article eId="art_6">
+						<num>
+							Član 6
+						</num>
+						<paragraph eId="art_6_para_1">
+							<content eId="art_6_para_1_content">
+								<p>
+									Zabranjeno je stavljanje u promet rezanog ili na drugi nacin usitnjenog duvana (neobradeni duvan).
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter eId="chp_6">
+				<num>
+					VI.
+				</num>
 				<heading>
-					Clan 12
+					PROMET DUVANSKIH PROIZVODA I OBRAĐENOG DUVANA
 				</heading>
-				<content>
-					<p>
-						Privredno društvo, odnosno preduzetnik može se baviti prometom na veliko duvanskim proizvodima,
-						ako ispunjava narocito sljedece uslove:
-					</p>
-					<p>
-						1) upisan je u CRPS za obavljanje djelatnosti prometa na veliko duvanskim proizvodima;
-					</p>
-					<p>
-						2) ispunjava propisane minimalne tehnicke uslove za promet robe na veliko;
-					</p>
-					<p>
-						3) ima odgovarajuci prostor i opremu za skladištenje duvanskih proizvoda, a za promet na veliko
-						cigaretama, prostor i opremu za skladištenje najmanje 30 tona cigareta;
-					</p>
-					<p>
-						4) ima prevozna sredstva za nesmetano snabdijevanje duvanskim proizvodima trgovaca na malo na
-						teritoriji Crne Gore, obilježena posebnom oznakom;
-					</p>
-					<p>
-						5) ima zakljucen ugovor, odnosno predugovor o snabdijevanju duvanskim proizvodima sa
-						registrovanim proizvodacem, odnosno uvoznikom duvanskih proizvoda;
-					</p>
-					<p>
-						6) privredno društvo, preduzetnik, odnosno odgovorno lice u privrednom društvu, u posljednje tri
-						godine koje prethode podnošenju zahtjeva za izdavanje odobrenja, nije osudeno za krivicno djelo
-						nedozvoljene trgovine, odnosno za krivicno djelo nedozvoljene proizvodnje duvana, obradenog
-						duvana i duvanskih proizvoda;
-					</p>
-					<p>
-						7) uplati naknadu iz cl. 13 stav 3 i 22 stav 3 ovog zakona.
-					</p>
-					<p>
-						Bliže uslove iz
-						<p refersto="cl12">
-							stava 1 ovog clana
-						</p>
-						i postupak utvrdivanja ispunjenosti uslova propisuje ministarstvo
-						nadležno za poslove trgovine.
-					</p>
-				</content>
-			</section>
-			<section id="cl14">
+				<section eId="chp_6_sec_1">
+					<article eId="art_12">
+						<num>
+							Član 12
+						</num>
+						<paragraph eId="art_12_para_1">
+							<intro eId="art_12_para_1_intro">
+								<p>
+									Privredno društvo, odnosno preduzetnik može se baviti prometom na veliko duvanskim proizvodima,
+									ako ispunjava narocito sljedece uslove:
+								</p>
+							</intro>
+							<point eId="art_12_para_1_point_1">
+								<num>
+									1)
+								</num>
+								<content eId="art_12_para_1_point_1_content">
+									<p>
+										upisan je u CRPS za obavljanje djelatnosti prometa na veliko duvanskim proizvodima;
+									</p>
+								</content>
+							</point>
+							<point eId="art_12_para_1_point_2">
+								<num>
+									2)
+								</num>
+								<content eId="art_12_para_1_point_2_content">
+									<p>
+										ispunjava propisane minimalne tehnicke uslove za promet robe na veliko;
+									</p>
+								</content>
+							</point>
+							<point eId="art_12_para_1_point_3">
+								<num>
+									3)
+								</num>
+								<content eId="art_12_para_1_point_3_content">
+									<p>
+										ima odgovarajuci prostor i opremu za skladištenje duvanskih proizvoda, a za promet na veliko
+										cigaretama, prostor i opremu za skladištenje najmanje 30 tona cigareta;
+									</p>
+								</content>
+							</point>
+							<point eId="art_12_para_1_point_4">
+								<num>
+									4)
+								</num>
+								<content eId="art_12_para_1_point_4_content">
+									<p>
+										ima prevozna sredstva za nesmetano snabdijevanje duvanskim proizvodima trgovaca na malo na
+										teritoriji Crne Gore, obilježena posebnom oznakom;
+									</p>
+								</content>
+							</point>
+							<point eId="art_12_para_1_point_5">
+								<num>
+									5)
+								</num>
+								<content eId="art_12_para_1_point_5_content">
+									<p>
+										ima zakljucen ugovor, odnosno predugovor o snabdijevanju duvanskim proizvodima sa
+										registrovanim proizvodacem, odnosno uvoznikom duvanskih proizvoda;
+									</p>
+								</content>
+							</point>
+							<point eId="art_12_para_1_point_6">
+								<num>
+									6)
+								</num>
+								<content eId="art_12_para_1_point_6_content">
+									<p>
+										privredno društvo, preduzetnik, odnosno odgovorno lice u privrednom društvu, u posljednje tri
+										godine koje prethode podnošenju zahtjeva za izdavanje odobrenja, nije osudeno za krivicno djelo
+										nedozvoljene trgovine, odnosno za krivicno djelo nedozvoljene proizvodnje duvana, obradenog
+										duvana i duvanskih proizvoda;
+									</p>
+								</content>
+							</point>
+							<point eId="art_12_para_1_point_7">
+								<num>
+									7)
+								</num>
+								<content eId="art_12_para_1_point_7_content">
+									<p>
+										uplati naknadu iz cl. 13 stav 3 i 22 stav 3 ovog zakona.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+					<article eId="art_14">
+						<num>
+							Član 14
+						</num>
+						<paragraph eId="art_14_para_1">
+							<intro eId="art_14_para_1_intro">
+								<p>
+									Privredno društvo, odnosno preduzetnik može se baviti prometom na malo duvanskim proizvodima ako
+									ispunjava narocito sljedece uslove:
+								</p>
+							</intro>
+							<point eId="art_14_para_1_point_1">
+								<num>
+									1)
+								</num>
+								<content eId="art_14_para_1_point_1_content">
+									<p>
+										upisan je u CRPS za obavljanje djelatnosti prometa na malo duvanskim proizvodima;
+									</p>
+								</content>
+							</point>
+							<point eId="art_14_para_1_point_2">
+								<num>
+									2)
+								</num>
+								<content eId="art_14_para_1_point_2_content">
+									<p>
+										ispunjava propisane minimalne tehnicke uslove za promet robe na malo;
+									</p>
+								</content>
+							</point>
+							<point eId="art_14_para_1_point_3">
+								<num>
+									3)
+								</num>
+								<content eId="art_14_para_1_point_3_content">
+									<p>
+										ima zakljucene ugovore, odnosno predugovore sa trgovcima na veliko duvanskim proizvodima;
+									</p>
+								</content>
+							</point>
+							<point eId="art_14_para_1_point_4">
+								<num>
+									4)
+								</num>
+								<content eId="art_14_para_1_point_4_content">
+									<p>
+										privredno društvo, preduzetnik, odnosno odgovorno lice u privrednom društvu, u posljednje tri
+										godine koje prethode podnošenju zahtjeva za izdavanje odobrenja, nije osudeno za krivicno djelo
+										nedozvoljene trgovine, odnosno za krivicno djelo nedozvoljene proizvodnje duvana, obradenog
+										duvana i duvanskih proizvoda;
+									</p>
+								</content>
+							</point>
+							<point eId="art_14_para_1_point_5">
+								<num>
+									5)
+								</num>
+								<content eId="art_14_para_1_point_5_content">
+									<p>
+										uplatio je naknadu u visini od 100 eura po prodajnom objektu.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+					<article eId="art_15">
+						<num>
+							Član 15
+						</num>
+						<paragraph eId="art_15_para_1">
+							<content eId="art_15_para_1_content">
+								<p>
+									Privredno društvo, odnosno preduzetnik, uz zahtjev za izdavanje odobrenja za promet na malo
+									duvanskim proizvodima, podnosi dokaze o ispunjenosti uslova iz
+									<ref href="/duvan#art_14">
+										clana 14 ovog zakona
+									</ref>
+									.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_15_para_2">
+							<content eId="art_15_para_2_content">
+								<p>
+									Privrednom društvu, odnosno preduzetniku iz
+									<ref href="/duvan#art_15_para_1">
+										1 ovog clana
+									</ref>
+									, organ uprave izdaje odobrenje za
+									promet na malo duvanskim proizvodima, za period od dvije godine i vrši upis u Evidenciju trgovaca na
+									malo duvanskim proizvodima.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter eId="chp_6">
+				<num>
+					XI.
+				</num>
 				<heading>
-					Clan 14
+					KAZNENE ODREDBE
 				</heading>
-				<content>
-					<p>
-						Privredno društvo, odnosno preduzetnik može se baviti prometom na malo duvanskim proizvodima ako
-						ispunjava narocito sljedece uslove:
-					</p>
-					<p>
-						1) upisan je u CRPS za obavljanje djelatnosti prometa na malo duvanskim proizvodima;
-					</p>
-					<p>
-						2) ispunjava propisane minimalne tehnicke uslove za promet robe na malo;
-					</p>
-					<p>
-						3) ima zakljucene ugovore, odnosno predugovore sa trgovcima na veliko duvanskim proizvodima;
-					</p>
-					<p>
-						4) privredno društvo, preduzetnik, odnosno odgovorno lice u privrednom društvu, u posljednje tri
-						godine koje prethode podnošenju zahtjeva za izdavanje odobrenja, nije osudeno za krivicno djelo
-						nedozvoljene trgovine, odnosno za krivicno djelo nedozvoljene proizvodnje duvana, obradenog
-						duvana i duvanskih proizvoda;
-					</p>
-					<p>
-						5) uplatio je naknadu u visini od 100 eura po prodajnom objektu.
-					</p>
-				</content>
-			</section>
-			<section id="cl15">
-				<heading>
-					Clan 15
-				</heading>
-				<content>
-					<p>
-						Privredno društvo, odnosno preduzetnik, uz zahtjev za izdavanje odobrenja za promet na malo
-						duvanskim proizvodima, podnosi dokaze o ispunjenosti uslova iz
-						<p refersto="cl14">
-							clana 14 ovog zakona
-						</p>
-						.
-					</p>
-					<p>
-						Privrednom društvu, odnosno preduzetniku iz
-						<p refersto="cl15">
-							1 ovog clana
-						</p>
-						, organ uprave izdaje odobrenje za
-						promet na malo duvanskim proizvodima, za period od dvije godine i vrši upis u Evidenciju trgovaca na
-						malo duvanskim proizvodima.
-					</p>
-				</content>
-			</section>
-			<section id="cl43">
-				<heading>
-					Clan 43
-				</heading>
-				<content>
-					<p>
-						Novcanom kaznom u iznosu od 10.000 eura do 20.000 eura kaznice se za prekršaj pravno lice, ako:
-					</p>
-					<p>
-						2) stavlja u promet rezani ili na drugi nacin usitnjeni duvan (neobradeni duvan) (clan 6);
-					</p>
-					<p>
-						8) vrši promet na malo duvanskim proizvodima suprotno clanu 15 ovog zakona;
-					</p>
-					<p>
-						Za prekršaj iz
-						<p refersto="cl43">
-							1 ovog clana
-						</p>
-						kaznice se i odgovorno lice u pravnom licu novcanom kaznom u
-						iznosu od 1.000 eura do 2.000 eura.
-					</p>
-					<p>
-						Za prekršaj iz
-						<p refersto="cl43">
-							1 ovog clana
-						</p>
-						kaznice se preduzetnik novcanom kaznom u iznosu od 2.000 eura do
-						6.000 eura.
-					</p>
-					<p>
-						Za prekršaj iz
-						<p refersto="cl43">
-							1 ovog clana
-						</p>
-						novcanom kaznom u iznosu od 50 eura do 500 eura kaznice se za
-						prekršaj fizicko lice.
-					</p>
-					<p>
-						Uz kaznu za prekršaj iz stava
-						<p refersto="cl43">
-							1 ovog clana
-						</p>
-						može se izreci zaštitna mjera zabrane obavljanja djelatnosti
-						od jednog mjeseca do jedne godine i zaštitna mjera oduzimanja obradenog duvana, odnosno duvanskih
-						proizvoda.
-					</p>
-				</content>
-			</section>
-			<section id="cl45">
-				<heading>
-					Clan 45
-				</heading>
-				<content>
-					<p>
-						Novcanom kaznom u iznosu od 100 eura do 1.000 eura kaznice se za prekršaj fizicko lice, ako:
-					</p>
-					<p>
-						2) stavlja u promet rezani ili na drugi nacin usitnjeni duvan (neobradeni duvan) (
-						<p refersto="cl6">
-							clan 6
-						</p>
-						).
-					</p>
-					<p>
-						Uz kaznu za prekršaj iz
-						<p refersto="cl45">
-							stava 1 ovog clana
-						</p>
-						izreci ce se i zaštitna mjera oduzimanja duvana i brisanje iz
-						evidencije proizvodaca duvana.
-					</p>
-				</content>
-			</section>
-		</body>
-	</act>
-	<act id="krivicni" name="Krivicni zakonik Crne Gore">
-		<meta>
-			<identification source="#palmirani">
-				<FRBRWork>
-					<FRBRdate date="2021-03-31" name="Generation" />
-					<FRBRauthor href="#congress" as="#author" />
-					<FRBRcountry value="cg" />
-					<FRBRnumber value="3/20" />
-					<FRBRname value="krivicniZakonikCrneGore" />
-					<FRBRprescriptive value="true" />
-					<FRBRauthoritative value="true" />
-				</FRBRWork>
-				<FRBRExpression>
-					<FRBRdate date="2021-03-31" name="Generation" />
-					<FRBRauthor href="#palmirani" as="#editor" />
-					<FRBRlanguage language="cg" />
-				</FRBRExpression>
-				<FRBRManifestation>
-					<FRBRdate date="2021-03-31" name="Generation" />
-					<FRBRauthor href="#palmirani" as="#editor" />
-					<FRBRformat value="xml" />
-				</FRBRManifestation>
-			</identification>
-			<references>
-			</references>
-		</meta>
-		<body>
-			<heading>
-				Krivicni zakonik Crne Gore
-			</heading>
-			<section id="cl265">
-				<heading>
-					Clan 265
-				</heading>
-				<content>
-					<p id="cl265st1">
-						(1) Ko se bavi prenošenjem robe preko carinske linije izbjegavajući mjere carinskog nadzora ili ko izbjegavajući mjere carinskog nadzora prenese robu preko carinske linije naoružan, u grupi ili uz upotrebu sile ili prijetnje, kazniće se zatvorom od šest mjeseci do pet godina i novčanom kaznom.
-					</p>
-					<p id="cl265st2">
-						(2) Ko prenese preko carinske linije, izbjegavajući mjere carinskog nadzora, veću količinu oružja ili municije ili oružje čije držanje je građanima zabranjeno ili drugu robu čija je proizvodnja ili promet ograničen ili zabranjen, kazniće se zatvorom od jedne do osam godina i novčanom kaznom.
-					</p>
-					<p id="cl265st3">
-						(3) Ko se bavi prodajom, rasturanjem ili prikrivanjem neocarinjene robe ili organizuje mrežu preprodavaca ili posrednika za rasturanje takve robe, kazniće se zatvorom od jedne do osam godina i novčanom kaznom.
-					</p>
-					<p id="cl265st4">
-						(4) Roba koja je predmet djela iz st.
-						<p refersto="cl265st1">
-							1
-						</p>
-						,
-						<p refersto="cl265st2">
-							2
-						</p>
-						i
-						<p refersto="cl265st3">
-							3
-						</p>
-						ovog člana oduzeće se.
-					</p>
-					<p id="cl265st5">
-						(5) Prevozno sredstvo čija su tajna ili skrovita mjesta iskorišćena za prenos robe koja je predmet djela iz
-						<p refersto="cl265st1">
-							stava 1 ovog člana
-						</p>
-						ili koje je namijenjeno za izvršenje tih krivičnih djela može se oduzeti ako je vlasnik ili korisnik vozila to znao ili je mogao i bio dužan da zna i ako vrijednost robe koja je predmet krivičnog djela prelazi jednu trećinu vrijednosti prevoznog sredstva u vrijeme izvršenja krivičnog djela.
-					</p>
-				</content>
-			</section>
-			<section id="cl284">
-				<heading>
-					Clan 284
-				</heading>
-				<content>
-					<p id="cl284st1">
-						(1) Ko nemajući ovlašćenje za trgovinu, u svrhu prodaje nabavi robu ili druge predmete opšte upotrebe u vrijednosti koja prelazi iznos od tri hiljade eura ili ko se neovlašćeno i u većem obimu bavi trgovinom ili posredovanjem u trgovini ili zastupanjem organizacija u unutrašnjem ili spoljnotrgovinskom prometu roba i usluga, kazniće se novčanom kaznom ili zatvorom do dvije godine.
-					</p>
-					<p id="cl284st2">
-						(2) Ko se bavi prodajom robe čiju je proizvodnju neovlašćeno organizovao, kazniće se zatvorom od tri mjeseca do tri godine.
-					</p>
-					<p id="cl284st3">
-						(3) Kaznom iz
-						<p refersto="cl284st2">
-							stava 2 ovog člana
-						</p>
-						kazniće se i ko neovlašćeno prodaje, kupuje ili vrši razmjenu robe ili predmeta čiji je promet zabranjem ili ograničen.
-					</p>
-					<p id="cl284st4">
-						(4) Ako je učinilac djela iz
-						<p refersto="cl284st1">
-							st. 1
-						</p>
-						do
-						<p refersto="cl284st3">
-							3
-						</p>
-						ovog člana organizovao mrežu preprodavaca ili posrednika ili je postigao imovinsku korist koja prelazi iznos od tri hiljade eura, kazniće se zatvorom od šest mjeseci do pet godina.
-					</p>
-					<p id="cl284st5">
-						(5) Ako je učinilac djela iz
-						<p refersto="cl284st1">
-							st. 1
-						</p>
-						i
-						<p refersto="cl284st3">
-							3 ovog člana
-						</p>
-						postigao imovinsku korist koja prelazi iznos od trideset hiljada eura, kazniće se zatvorom od jedne do šest godina.
-					</p>
-					<p id="cl284st6">
-						(6) Roba i predmeti nedozvljene trgovine oduzeće se.
-					</p>
-				</content>
-			</section>
+				<section eId="chp_11_sec_1">
+					<article eId="art_43">
+						<num>
+							Član 43
+						</num>
+						<paragraph eId="art_43_para_1">
+							<intro eId="art_43_para_1_intro">
+								<p>
+									Novcanom kaznom u iznosu od 10.000 eura do 20.000 eura kaznice se za prekršaj pravno lice, ako:
+								</p>
+							</intro>
+							<point eId="art_43_para_1_point_2">
+								<num>
+									2)
+								</num>
+								<content eId="art_43_para_1_point_2_content">
+									<p>
+										stavlja u promet rezani ili na drugi nacin usitnjeni duvan (neobradeni duvan)
+										<ref href="/duvan#art_6">
+											(clan 6)
+										</ref>
+										;
+									</p>
+								</content>
+							</point>
+							<point eId="art_43_para_1_point_8">
+								<num>
+									8)
+								</num>
+								<content eId="art_43_para_1_point_8_content">
+									<p>
+										vrši promet na malo duvanskim proizvodima suprotno
+										<ref href="/duvan#art_15">
+											clanu 15 ovog zakona
+										</ref>
+										;
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_43_para_2">
+							<content eId="art_43_para_2_content">
+								<p>
+									Za prekršaj iz
+									<ref href="/duvan#art_43">
+										stava 1 ovog clana
+									</ref>
+									kaznice se i odgovorno lice u pravnom licu novcanom kaznom u
+									iznosu od 1.000 eura do 2.000 eura.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_43_para_3">
+							<content eId="art_43_para_3_content">
+								<p>
+									Za prekršaj iz
+									<ref href="/duvan#art_43">
+										stava 1 ovog clana
+									</ref>
+									kaznice se preduzetnik novcanom kaznom u iznosu od 2.000 eura do
+									6.000 eura.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_43_para_4">
+							<content eId="art_43_para_4_content">
+								<p>
+									Za prekršaj iz
+									<ref href="/duvan#art_43">
+										stava 1 ovog clana
+									</ref>
+									novcanom kaznom u iznosu od 50 eura do 500 eura kaznice se za
+									prekršaj fizicko lice.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_43_para_5">
+							<content eId="art_43_para_5_content">
+								<p>
+									Uz kaznu za prekršaj iz
+									<ref href="/duvan#art_43">
+										stava 1 ovog clana
+									</ref>
+									može se izreci zaštitna mjera zabrane obavljanja djelatnosti
+									od jednog mjeseca do jedne godine i zaštitna mjera oduzimanja obradenog duvana, odnosno duvanskih
+									proizvoda.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_45">
+						<num>
+							Član 45
+						</num>
+						<paragraph eId="art_45_para_1">
+							<intro eId="art_45_para_1_intro">
+								<p>
+									Novcanom kaznom u iznosu od 100 eura do 1.000 eura kaznice se za prekršaj fizicko lice, ako:
+								</p>
+							</intro>
+							<point eId="art_45_para_1_point_2">
+								<num>
+									2)
+								</num>
+								<content eId="art_45_para_1_point_2_content">
+									<p>
+										stavlja u promet rezani ili na drugi nacin usitnjeni duvan (neobradeni duvan)
+										<ref href="/duvan#art_6">
+											(clan 6).
+										</ref>
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_45_para_2">
+							<content>
+								<p>
+									Uz kaznu za prekršaj iz
+									<ref href="/duvan#art_45">
+										stava 1 ovog clana
+									</ref>
+									izreci ce se i zaštitna mjera oduzimanja duvana i brisanje iz
+									evidencije proizvodaca duvana.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<act id="krivicni" name="Krivicni zakonik Crne Gore">
+					<meta>
+						<identification source="#palmirani">
+							<FRBRWork>
+								<FRBRthis value="/akn/krivicni/!main" />
+								<FRBRuri value="/krivicni" />
+								<FRBRdate date="2021-03-31" name="Generation" />
+								<FRBRauthor href="#congress" as="#author" />
+								<FRBRcountry value="cg" />
+								<FRBRnumber value="3/20" />
+								<FRBRname value="krivicniZakonikCrneGore" />
+								<FRBRprescriptive value="true" />
+								<FRBRauthoritative value="true" />
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRdate date="2021-03-31" name="Generation" />
+								<FRBRauthor href="#palmirani" as="#editor" />
+								<FRBRlanguage language="cg" />
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRdate date="2021-03-31" name="Generation" />
+								<FRBRauthor href="#palmirani" as="#editor" />
+								<FRBRformat value="xml" />
+							</FRBRManifestation>
+						</identification>
+						<publication name="sl" date="2008-08-11" showAs="Službeni list Crne Gore" number="76/2008" />
+						<classification source="#palmirani">
+							<keyword value="krivicni" showAs="Krivicni" dictionary="CG" />
+						</classification>
+						<references>
+							<TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg" showAs="Službeni list Crne Gore" />
+						</references>
+					</meta>
+					<body>
+						<heading>
+							Krivični zakonik Crne Gore
+						</heading>
+						<chapter eId="chp_1">
+							<num>
+								XXIII.
+							</num>
+							<heading>
+								KRIVIČNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANJA
+							</heading>
+							<section eId="chp_1_sec_1">
+								<article eId="art_265">
+									<num>
+										Član 265
+									</num>
+									<paragraph eId="art_265_para_1">
+										<point eId="art_265_para_1_point_1">
+											<num>
+												1)
+											</num>
+											<content eId="art_265_para_1_point_1_content">
+												<p>
+													Ko se bavi prenošenjem robe preko carinske linije izbjegavajući mjere carinskog nadzora ili ko izbjegavajući mjere carinskog nadzora prenese robu preko carinske linije naoružan, u grupi ili uz upotrebu sile ili prijetnje, kazniće se zatvorom od šest mjeseci do pet godina i novčanom kaznom.
+												</p>
+											</content>
+										</point>
+										<point eId="art_265_para_1_point_2">
+											<num>
+												2)
+											</num>
+											<content eId="art_265_para_1_point_2_content">
+												<p>
+													Ko prenese preko carinske linije, izbjegavajući mjere carinskog nadzora, veću količinu oružja ili municije ili oružje čije držanje je građanima zabranjeno ili drugu robu čija je proizvodnja ili promet ograničen ili zabranjen, kazniće se zatvorom od jedne do osam godina i novčanom kaznom.
+												</p>
+											</content>
+										</point>
+										<point eId="art_265_para_1_point_3">
+											<num>
+												3)
+											</num>
+											<content eId="art_265_para_1_point_3_content">
+												<p>
+													Ko se bavi prodajom, rasturanjem ili prikrivanjem neocarinjene robe ili organizuje mrežu preprodavaca ili posrednika za rasturanje takve robe, kazniće se zatvorom od jedne do osam godina i novčanom kaznom.
+												</p>
+											</content>
+										</point>
+										<point eId="art_265_para_1_point_4">
+											<num>
+												4)
+											</num>
+											<content eId="art_265_para_1_point_4_content">
+												<p>
+													Roba koja je predmet djela iz st.
+													<ref href="/krivicni#art_265_para_1_point_1">
+														1
+													</ref>
+													,
+													<ref href="/krivicni#art_265_para_1_point_2">
+														2
+													</ref>
+													i
+													<ref href="/krivicni#art_265_para_1_point_3">
+														3
+													</ref>
+													ovog člana oduzeće se.
+												</p>
+											</content>
+										</point>
+										<point eId="art_265_para_1_point_5">
+											<num>
+												5)
+											</num>
+											<content eId="art_265_para_1_point_5_content">
+												<p>
+													Prevozno sredstvo čija su tajna ili skrovita mjesta iskorišćena za prenos robe koja je predmet djela iz
+													<ref href="/krivicni#art_265_para_1_point_1">
+														stava 1 ovog člana
+													</ref>
+													ili koje je namijenjeno za izvršenje tih krivičnih djela može se oduzeti ako je vlasnik ili korisnik vozila to znao ili je mogao i bio dužan da zna i ako vrijednost robe koja je predmet krivičnog djela prelazi jednu trećinu vrijednosti prevoznog sredstva u vrijeme izvršenja krivičnog djela.
+												</p>
+											</content>
+										</point>
+									</paragraph>
+								</article>
+								<article eId="art_2284">
+									<num>
+										Član 284
+									</num>
+									<paragraph eId="art_284_para_1">
+										<point eId="art_284_para_1_point_1">
+											<num>
+												1)
+											</num>
+											<content eId="art_284_para_1_point_1_content">
+												<p>
+													Ko nemajući ovlašćenje za trgovinu, u svrhu prodaje nabavi robu ili druge predmete opšte upotrebe u vrijednosti koja prelazi iznos od tri hiljade eura ili ko se neovlašćeno i u većem obimu bavi trgovinom ili posredovanjem u trgovini ili zastupanjem organizacija u unutrašnjem ili spoljnotrgovinskom prometu roba i usluga, kazniće se novčanom kaznom ili zatvorom do dvije godine.
+												</p>
+											</content>
+										</point>
+										<point eId="art_284_para_1_point_2">
+											<num>
+												2)
+											</num>
+											<content eId="art_284_para_1_point_2_content">
+												<p>
+													Ko se bavi prodajom robe čiju je proizvodnju neovlašćeno organizovao, kazniće se zatvorom od tri mjeseca do tri godine.
+												</p>
+											</content>
+										</point>
+										<point eId="art_284_para_1_point_3">
+											<num>
+												3)
+											</num>
+											<content eId="art_284_para_1_point_3_content">
+												<p>
+													Kaznom iz
+													<ref href="/krivicni#art_284_para_1_point_2">
+														stava 2 ovog člana
+													</ref>
+													kazniće se i ko neovlašćeno prodaje, kupuje ili vrši razmjenu robe ili predmeta čiji je promet zabranjem ili ograničen.
+												</p>
+											</content>
+										</point>
+										<point eId="art_284_para_1_point_4">
+											<num>
+												4)
+											</num>
+											<content eId="art_284_para_1_point_4_content">
+												<p>
+													Ako je učinilac djela iz
+													<ref href="/krivicni#art_284_para_1_point_1">
+														st. 1
+													</ref>
+													do
+													<ref href="/krivicni#art_284_para_1_point_3">
+														3
+													</ref>
+													ovog člana organizovao mrežu preprodavaca ili posrednika ili je postigao imovinsku korist koja prelazi iznos od tri hiljade eura, kazniće se zatvorom od šest mjeseci do pet godina.
+												</p>
+											</content>
+										</point>
+										<point eId="art_284_para_1_point_5">
+											<num>
+												5)
+											</num>
+											<content eId="art_284_para_1_point_5_content">
+												<p>
+													Ako je učinilac djela iz
+													<ref href="/krivicni#art_284_para_1_point_1">
+														st. 1
+													</ref>
+													i
+													<ref href="/krivicni#art_284_para_1_point_3">
+														3 ovog člana
+													</ref>
+													postigao imovinsku korist koja prelazi iznos od trideset hiljada eura, kazniće se zatvorom od jedne do šest godina.
+												</p>
+											</content>
+										</point>
+										<point eId="art_284_para_1_point_6">
+											<num>
+												6)
+											</num>
+											<content eId="art_284_para_1_point_6_content">
+												<p>
+													Roba i predmeti nedozvljene trgovine oduzeće se.
+												</p>
+											</content>
+										</point>
+									</paragraph>
+								</article>
+							</section>
+						</chapter>
+					</body>
+				</act>
+			</chapter>
 		</body>
 	</act>
 </akomaNtoso>
