@@ -22,7 +22,7 @@ export class SidebarComponent implements OnInit {
   }
 
   toggleSelectedMenuItem() {
-    switch (this.router.url) {
+    switch (this.router.url.split('#')[0]) {
       case '/pdf':
         this.tab = 0;
         break;

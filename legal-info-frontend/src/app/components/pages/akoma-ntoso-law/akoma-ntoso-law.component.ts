@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CdrService } from 'src/app/services/cdr.service';
 
 @Component({
@@ -13,7 +14,9 @@ export class AkomaNtosoLawComponent {
 
   constructor(
     private cdrService: CdrService,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -22,6 +25,16 @@ export class AkomaNtosoLawComponent {
       this.xmlHtml = this.sanitizer.bypassSecurityTrustHtml(
         new XMLSerializer().serializeToString(this.xmlDocument)
       );
+
+      window.onload = () => {
+        let scrollTo = this.router.url.split('#')[1];
+        if (scrollTo != undefined) {
+          const myElement = document.getElementById(scrollTo);
+          if (myElement != null) {
+            myElement.scrollIntoView();
+          }
+        }
+      };
     });
   }
 }

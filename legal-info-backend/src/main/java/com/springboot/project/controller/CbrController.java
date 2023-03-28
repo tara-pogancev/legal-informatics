@@ -116,11 +116,11 @@ public class CbrController  {
 
     @GetMapping("/laws-akoma-ntoso")
     public ResponseEntity<?> getLawsAkomaNtoso() throws IOException {
-        Resource resource = resourceLoader.getResource("classpath:akoma-ntoso/Akoma Ntoso Zakoni.xml");
+        Resource resource = resourceLoader.getResource("classpath:akoma-ntoso/Akoma Ntoso Zakoni.html");
         Path path = Paths.get(resource.getURI());
 
         return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_XML)
+                .contentType(MediaType.APPLICATION_XHTML_XML)
                 .body(Files.readAllBytes(path));
     }
 
