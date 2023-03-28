@@ -4,10 +4,10 @@
       <h1>PDF Dokumenti</h1>
       <mat-list>
         <div mat-subheader>Presude</div>
-        <mat-list-item>
+        <mat-list-item *ngFor="let judgement of judgements" (click)="openCasePdf(judgement)" [ngClass]="{ selected: currentPdf == judgement }">
           <mat-icon matListItemIcon>folder</mat-icon>
-          <div matListItemTitle>Presuda 1</div>
-          <div matListItemLine>K 36/2021</div>
+          <div matListItemTitle>{{ judgement }}</div>
+          <div matListItemLine>PDF dokument</div>
         </mat-list-item>
         <mat-divider></mat-divider>
         <div mat-subheader>Zakoni</div>
@@ -20,7 +20,7 @@
     </div>
     <div class="column">
       <ngx-extended-pdf-viewer
-        [src]="'assets/K 36 2021.pdf'"
+        [src]="selectedPdfFile"
         [useBrowserLocale]="true"
         [textLayer]="true"
         [showHandToolButton]="true"

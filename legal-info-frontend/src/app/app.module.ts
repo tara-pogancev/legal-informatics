@@ -13,6 +13,7 @@ import { NewCaseComponent } from './components/pages/new-case/new-case.component
 import { AkomaNtosoCasesComponent } from './components/pages/akoma-ntoso-cases/akoma-ntoso-cases.component';
 import { AkomaNtosoLawComponent } from './components/pages/akoma-ntoso-law/akoma-ntoso-law.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     BrowserAnimationsModule,
     MaterialModule,
     NgxExtendedPdfViewerModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
