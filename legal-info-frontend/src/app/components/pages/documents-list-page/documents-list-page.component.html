@@ -3,19 +3,27 @@
     <div class="is-5 column documents-section">
       <h1>PDF Dokumenti</h1>
       <mat-list>
+        <div mat-subheader>Zakoni</div>
+        <mat-list-item
+          *ngFor="let law of laws"
+          (click)="openLawPdf(law)"
+          [ngClass]="{ selected: currentPdf == law }"
+        >
+          <mat-icon matListItemIcon>note</mat-icon>
+          <div matListItemTitle>{{ law }}</div>
+          <div matListItemLine>PDF dokument</div>
+        </mat-list-item>
         <div mat-subheader>Presude</div>
-        <mat-list-item *ngFor="let judgement of judgements" (click)="openCasePdf(judgement)" [ngClass]="{ selected: currentPdf == judgement }">
+        <mat-list-item
+          *ngFor="let judgement of judgements"
+          (click)="openCasePdf(judgement)"
+          [ngClass]="{ selected: currentPdf == judgement }"
+        >
           <mat-icon matListItemIcon>folder</mat-icon>
           <div matListItemTitle>{{ judgement }}</div>
           <div matListItemLine>PDF dokument</div>
         </mat-list-item>
         <mat-divider></mat-divider>
-        <div mat-subheader>Zakoni</div>
-        <mat-list-item>
-          <mat-icon matListItemIcon>note</mat-icon>
-          <div matListItemTitle>Zakon 1</div>
-          <div matListItemLine>e23132e</div>
-        </mat-list-item>
       </mat-list>
     </div>
     <div class="column">

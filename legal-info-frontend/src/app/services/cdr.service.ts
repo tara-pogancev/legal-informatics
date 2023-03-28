@@ -35,4 +35,17 @@ export class CdrService {
       responseType: 'blob' as 'json'
     });
   }
+
+  
+  getAllLawPdf() {
+    const url = this.url + '/laws-pdf';
+    return this._http.get<any>(url);
+  }
+
+  getLawPdf(name: String) {
+    const url = this.url + '/laws-pdf/' + name;
+    return this._http.get<any>(url, {
+      responseType: 'blob' as 'json'
+    });
+  }
 }
