@@ -86,7 +86,6 @@ public class CbrController  {
     @GetMapping("/cases-pdf/{caseName}")
     public ResponseEntity<?> getCasePdf(@PathVariable String caseName) throws IOException {
         Resource resource = resourceLoader.getResource("classpath:cases/" + caseName);
-//        ClassPathResource resourceFile = new ClassPathResource("cases/" + caseName);
         Path path = Paths.get(resource.getURI());
 
         return ResponseEntity.ok()
@@ -108,11 +107,20 @@ public class CbrController  {
     @GetMapping("/laws-pdf/{lawName}")
     public ResponseEntity<?> getLawPdf(@PathVariable String lawName) throws IOException {
         Resource resource = resourceLoader.getResource("classpath:law/" + lawName);
-//        ClassPathResource resourceFile = new ClassPathResource("cases/" + caseName);
         Path path = Paths.get(resource.getURI());
 
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_PDF)
+                .body(Files.readAllBytes(path));
+    }
+
+    @GetMapping("/laws-akoma-ntoso")
+    public ResponseEntity<?> getLawsAkomaNtoso() throws IOException {
+        Resource resource = resourceLoader.getResource("classpath:akoma-ntoso/Akoma Ntoso Zakoni.xml");
+        Path path = Paths.get(resource.getURI());
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_XML)
                 .body(Files.readAllBytes(path));
     }
 

@@ -32,11 +32,10 @@ export class CdrService {
   getCasePdf(name: String) {
     const url = this.url + '/cases-pdf/' + name;
     return this._http.get<any>(url, {
-      responseType: 'blob' as 'json'
+      responseType: 'blob' as 'json',
     });
   }
 
-  
   getAllLawPdf() {
     const url = this.url + '/laws-pdf';
     return this._http.get<any>(url);
@@ -45,7 +44,14 @@ export class CdrService {
   getLawPdf(name: String) {
     const url = this.url + '/laws-pdf/' + name;
     return this._http.get<any>(url, {
-      responseType: 'blob' as 'json'
+      responseType: 'blob' as 'json',
+    });
+  }
+
+  getLawAkomaNtoso() {
+    const url = this.url + '/laws-akoma-ntoso';
+    return this._http.get<any>(url, {
+      responseType: 'text' as 'json',
     });
   }
 }
