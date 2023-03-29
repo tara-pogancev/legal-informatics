@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Podgorici
+					</FRBRauthor>
+					<FRBRdate date="2017-08-12">
+						2017-08-12
+					</FRBRdate>
+					<FRBRtitle>
+						K 504/2017
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+				<TLCOrganization eId="ost" href="/ontology/organization/OkruzniSud.Titograd" showAs="Okruzni sud u Titogradu" />
+				<TLCPerson eId="rcetkovic" href="/ontology/person/rcetkovic" showAs="Rade Cetkovic" />
+				<TLCPerson eId="ekraja" href="/ontology/person/ekraja" showAs="Edina Kraja" />
+				<TLCPerson eId="dj" href="/ontology/person/dj" showAs="D.J." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+			</p>
+			<conclusions>
+				<p>
+					Pa sud okrivljenog zbog navedenog krivičnog djela primjenom
+					<ref href="/krivicni#art_4">
+						čl. 4
+					</ref>
+					,
+					<ref href="/krivicni#art_13">
+						čl. 13
+					</ref>
+					,
+					<ref href="/krivicni#art_15">
+						čl. 15
+					</ref>
+					,
+					<ref href="/krivicni#art_23">
+						čl.23
+					</ref>
+					,
+					<ref href="/krivicni#art_32">
+						čl. 32
+					</ref>
+					,
+					<ref href="/krivicni#art_36">
+						čl. 36
+					</ref>
+					,
+					<ref href="/krivicni#art_39">
+						čl. 39
+					</ref>
+					,
+					<ref href="/krivicni#art_42">
+						čl. 42
+					</ref>
+					,
+					<ref href="/krivicni#art_45">
+						čl. 45
+					</ref>
+					,
+					<ref href="/krivicni#art_52">
+						čl. 52
+					</ref>
+					,
+					<ref href="/krivicni#art_53">
+						čl. 53
+					</ref>
+					,
+					<ref href="/krivicni#art_54">
+						čl. 54
+					</ref>
+					,
+					I
+					<ref href="/krivicni#art_248">
+						čl. 248
+					</ref>
+					Krivičnog zakonika Crne Gore i
+					<ref href="/postupak#art_226">
+						čl. 226
+					</ref>
+					,
+					<ref href="/postupak#art_229">
+						čl. 229
+					</ref>
+					<ref href="/postupak#art_303">
+						čl. 303
+					</ref>
+					,
+					i
+					<ref href="/postupak#art_374">
+						čl. 374
+					</ref>
+					Zakonika o krivičnom postupku
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

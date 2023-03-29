@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Podgorici
+					</FRBRauthor>
+					<FRBRdate date="2017-07-20">
+						2017-07-20
+					</FRBRdate>
+					<FRBRtitle>
+						K 490/2017
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+				<TLCOrganization eId="ost" href="/ontology/organization/OkruzniSud.Titograd" showAs="Okruzni sud u Titogradu" />
+				<TLCPerson eId="zjovovic" href="/ontology/person/zjovovic" showAs="Zeljka Jovovic" />
+				<TLCPerson eId="dj" href="/ontology/person/dj" showAs="D.J." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				OSNOVNI SUD U PODGORICI, po sutkinji Željki Jovović, uz učešće namještenice suda Danijele Rajković kaozapisničarke, u krivičnom predmetu protiv okrivljenog D . J . , zbog krivičnog djela nedozvoljena trgovina iz
+				<ref href="/krivicni#art_284">
+					čl.284 st. 3 Krivičnog zakonika Crne Gore
+				</ref>
+				, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanjukrivice, dana 20. 07. 2017. godine donio je P R E S U D U Okrivljeni: J . D . , JMB xxxxxxxxxxxxxx , od oca N . i majke I ., rođene V. , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u mjestu Tuzi selo Drume bb, državljanin Crne Gore, završio Osnovnu školu, penzioner,oženjen, otac jednog djeteta, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K. br.1553/07 od 24. 10. 2008. godine, zbog krivičnog djela iz
+				<ref href="/krivicni#art_284">
+					čl. 284 st. 1 Krivičnog zakonika
+				</ref>
+				- uslovnom osudom 3(tri) mjeseca na 1 (jednu) godinu i Okružnog suda u Titogradu K. br. 134/79 od 15. 12. 1980. godine, zbogkrivičnog djela iz
+				<ref href="/krivicni#art_190">
+					čl. 190
+				</ref>
+				u vezi
+				<ref href="/krivicni#art_185">
+					čl. 185 Krivičnog zakonika
+				</ref>
+				- 2 (dvije) godine zatvora, u pritvoru od 19. 06. 2017.godine od 14:15 časova po rješenju Osnovnog suda u Podgorici Kri. br. 334/17. Kriv je Što je: Dana 19. 06. 2017. godine, u mjestu Drume - GO Tuzi, u Podgorici, svjestan svog djela, čije je izvršenje htio iznajući da je njegovo djelo zabranjeno, neovlašćeno kupio robu, čiji je promet ograničen, na način što je,neispunjavajući uslove pod kojima se može baviti prometom duvanskim proizvodima na veliko i malo iz
+				<ref href="/duvan#art_12">
+					čl. 12
+				</ref>
+				i
+				<ref href="/duvan#art_14">
+					14 Zakon o duvanu
+				</ref>
+				(Sl. list CG br. 48/08 od 11. 08. 2008. godine, Sl. list CG br. 76/08c od 12. 12. 2008. godine,Sl. list CG br. 40/11 od 08. 08. 2011. godine i Sl. list CG br. 42/15 od 29. 07. 2015. godine) kupio od NN lica oko Osnovni Sud u Podgorici K 490/2017 20. Jul 2017 170 kg rezanog duvana upakovanog u crne plastične kese, bez dokaza o porijeklu i akciznih markica CrneGore, a koji rezani duvan je bio namijenjen daljoj prodaji, koji duvan je pronađen istog dana prilikom pretresapm/v marke "Passat" reg. oznaka PG TE xxx , vlasništvo okrivljenog, izvršenog od strane službenikaRegionalnog centra granične policije OGB Tuzi, - čime je izvršio krivično djelo nedozvoljena trgovina iz čl. 284 st. 3 Krivičnog zakonika Crne Gore.
+			</p>
+			<conclusions>
+				<p>
+					Pa ga sud na osnovu
+					<ref href="/krivicni#art_4">
+						čl. 4
+					</ref>
+					,
+					<ref href="/krivicni#art_32">
+						čl. 32
+					</ref>
+					,
+					<ref href="/krivicni#art_36">
+						čl. 36
+					</ref>
+					,
+					<ref href="/krivicni#art_42">
+						čl. 42
+					</ref>
+					,
+					<ref href="/krivicni#art_45">
+						čl. 45
+					</ref>
+					,
+					<ref href="/krivicni#art_46">
+						čl. 46
+					</ref>
+					,
+					<ref href="/krivicni#art_51">
+						čl. 51
+					</ref>
+					Krivičnog zakonika Crne Gore i
+					<ref href="/postupak#art_226">
+						čl. 226
+					</ref>
+					,
+					<ref href="/postupak#art_229">
+						čl. 229
+					</ref>
+					i
+					<ref href="/postupak#art_374">
+						čl. 374
+					</ref>
+					Zakonika o krivičnom postupku
+				</p>
+				O S U Đ U J E Na kaznu zatvora u trajanju od 2 (dva) mjeseca, u koju kaznu se uračunava vrijeme provedeno u pritvoru od19. 06. 2017. godine od 14:15 časova , pa nadalje dok pritvor bude trajao. Obavezuje se okrivljeni da plati po osnovu troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, dok će sud o troškovima koji seodnose na nagradu angažovanog branioca po službenoj dužnosti odlučiti posebnim rješenjem. Na osnovu
+				<ref href="/krivicni#art_75">
+					čl. 75
+				</ref>
+				i
+				<ref href="/krivicni#art_284">
+					284 st. 6 Krivičnog zakonika Crne Gore
+				</ref>
+				, prema okrivljenom se izriče MJERA BEZBJEDNOSTI Oduzima se od okrivljenog J . D . 340 pakovanja rezanog duvana od po 0,5 kg, kao predmeti upotrijebljeni uizvršenju krivičnog djela.
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>
