@@ -1,19 +1,25 @@
-# legal-informatics
-Legal informatics Masters' project
+# Pravna informatika
+Projekat za master iz predmeta Pravna informatika na FTN-u.
 
-## Pitanja
-1. Modelovanje baze slucajeva i funkcija slicnosti - Zasto je primenjena presuda u funkciji slicnosti u primeru sa vezbama? Zar to nije nesto sto pokusavamo da dobijemo kao povratnu informaciju, tj. ne znamo unapred?
+## Zakon o duvanu (/duvan)
+- Član 2: art_2
+- Član 6: art_6
+- Član 12: art_12
+- Član 14: art_14
+- Član 15: art_15
 
-2. Sta treba da koristimo kao krivicno delo, ovo koje je navedeno po krivicnom zakoniku ili prekrsaj iz zakonika o duvanu, ili oba?
+## Krivični zakonik Crne gore (/krivicni)
+- Član 265: art_265
+- Član 284: art_284
 
-3. Da li valja nacin na koji su Akoma Ntoso zakoni i presude odradjeni? Da li mozemo da nastavimo sa takvim radom?
+23, 4, 32, 39, 42, 52, 53, 54
 
-4. Ko je tuzilac ovde? Nigde nema osobe nego samo tuzilastvo.
+## Zakonik o krivičnom postupku
+226 229 303 374
 
-5. Iz cega se tacno radi ova NLP analiza? Prepodstavljam da nije iz PDF fajlova, tako da sta mi radimo?
+### Presude
+- K 187/2022
 
-6. Kakav pregled zakona i sudskih odluka? Da li korisnik treba da u interfejsu ima spisak svih zakona i presuda sa kojim radimo u projektu pa da mu se samo ispise summary na zahtev broja? Da li ovo ima bilo kakve veze sa Akoma Ntoso? Nisam nasla nista na internetu sto bi radilo vizuelizaciju Akoma Ntoso zapisa (iako ChatGPT kaze da to postoji).
+<ref href="/krivicni#art_265_point_2"></ref>
 
-7. Za tacku 8 - Da li je ovo sve iz onog java projekta na 2. vezbama? Razumem slicnost slucajeva ali da li je to zapravo rasudjivanje na osnovu slucajeva?
-
-8. Kako se brani projekat? Je l imamo neku prezentaciju?
+<ref href="/krivicni#art_"></ref>

@@ -15,7 +15,6 @@ export class AkomaNtosoLawComponent {
   constructor(
     private cdrService: CdrService,
     private sanitizer: DomSanitizer,
-    private activatedRoute: ActivatedRoute,
     private router: Router
   ) {}
 

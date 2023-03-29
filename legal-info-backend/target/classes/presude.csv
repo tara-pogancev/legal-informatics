@@ -1,9 +1,3 @@
-#id;Sud;Poslovni broj;Sudija;Tuzilac;Okrivljeni;Krivicno delo;#Vrednost duvana;Vrsta presude;Primenjeni propisi
-0;Osnovni sud u Baru;K36/2021;Tamara Spasojevic;Osnovno drzavno tuzilastvo u Barul;S.I.;cl.284st.3 KZ;3060;osudjujuca;cl.229 ZOKP;
-1;Osnovni sud u Podgorici;K717/2018;Djukovic Goran;Osnovno drzavno tuzilastvo;G.G.;cl.284.st.3 KZ;5250;KZ;19680;osudjujuca;cl.226 ZOKP, cl.229 ZOKP, cl.374 ZOKP
-2;Osnovni sud u Podgorici;K620/2021;Nada Rabrenovic;Osnovno drzavno tuzilastvo u Podgorici;D.D.;cl.284st.3 KZ;1020;KZ;19680;osudjujuca;;cl.229 ZOKP, cl.374 ZOKP
-3;Osnovi sud u Podgorici;K538/2019;Rade Cetkovic;Drzavna Tuziteljka I.P.V.;N.J.;cl.284st.3 KZ;6600;KZ;19680;osudjujuca;;cl.226 ZOKP, cl.229 ZOKP, cl.374 ZOKP
-4;Osnovni sud u Podgorici;K515/2019;Larisa Mijuskovic-Stamatovic;Osnovno drzavno tuzilastvo u Podgorici;V.M.;cl.239st.1 KZ;160;KZ;19680;osudjujuca;;cl.226 ZOKP, cl.227 ZOKP, cl.229 ZOKP, cl.239 ZOKP, cl.374 ZOKP
-5;Osnovni sud u Podgorici;K447/2018;Djukovic Goran;Osnovno drzavno tuzilastvo; Z.Dj.;cl.284st.3 KZ;1660;KZ;19680;osudjujuca;;cl.226 ZOKP, cl.229 ZOKP, cl.374 ZOKP
-6;Osnovni sud u Podgorici;K187/2022;IvanaBecic;Osnovno drzavno tuzilastvo;A.G.;cl.265.st.2 KZ;19680;osudjujuca;cl.226 ZOKP, cl.229 ZOKP, cl. 303 ZOKP, cl. 374 ZOKP
-7;Osnovi sud u Pljevljima;K38/2021;Ljiljana Popovic;Drzavni tuzioc u ODT Pljevlja Tomicic Milivoje;M.S.;cl.284st.3 KZ;800;osudjujuca;cl.226 ZOKP, cl.229 ZOKP, cl.374 ZOKP
+#id;Sud;Poslovni broj;Sudija;Tuzilac;Okrivljeni;Krivicno delo;#Vrednost duvana u e;#Pakovanja;#Masa u kg;Vrsta duvana;Vrsta presude;Primenjeni propisi
+0;Osnovni sud u Podgorici;K187/2022;Ivana Becic;Osnovno drzavno tuzilastvo;A.G.;cl.265.st.2 KZ;19680;656;328;rezani duvan;osudjujuca;cl.4 KZ, cl.32 KZ, cl.39 KZ, cl.42 KZ, cl.52 KZ, cl.53 KZ, cl.54 KZ, cl.226 ZOKP, cl.229 ZOKP, cl. 303 ZOKP, cl. 374 ZOKP
+0;Osnovni sud u Podgorici;K187/2022;Ivana Becic;Osnovno drzavno tuzilastvo;A.G.;cl.265.st.2 KZ;19680;656;328;rezani duvan;osudjujuca;cl.4 KZ, cl.32 KZ, cl.39 KZ, cl.42 KZ, cl.52 KZ, cl.53 KZ, cl.54 KZ, cl.226 ZOKP, cl.229 ZOKP, cl. 303 ZOKP, cl. 374 ZOKP

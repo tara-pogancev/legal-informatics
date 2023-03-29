@@ -1,1 +1,22 @@
-<p>akoma-ntoso-cases works!</p>
+<div class="page-container">
+  <div class="columns stretch-height">
+    <div class="is-5 column documents-section">
+      <h1>Akoma Ntoso presude</h1>
+      <mat-list>
+        <div mat-subheader>Presude</div>
+        <mat-list-item
+          *ngFor="let judgement of judgements"
+          (click)="openCaseFile(judgement)"
+          [ngClass]="{ selected: currentFile == judgement }"
+        >
+          <mat-icon matListItemIcon>folder</mat-icon>
+          <div matListItemTitle>{{ judgement }}</div>
+          <div matListItemLine>Akoma Ntoso dokument</div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="column">
+      <div [innerHtml]="xmlHtml"></div>
+    </div>
+  </div>
+</div>

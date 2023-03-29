@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Podgorici
+					</FRBRauthor>
+					<FRBRdate date="2022-09-12">
+						2022-09-12
+					</FRBRdate>
+					<FRBRtitle>
+						K 187/2022
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="osp" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+				<TLCOrganization eId="odtp" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno drzavno tuzilastvo u Podgorici" />
+				<TLCPerson eId="ibecic" href="/ontology/person/ibecic" showAs="Ivana Becic" />
+				<TLCPerson eId="amitrovic" href="/ontology/person/amitrovic" showAs="Andjela Mitrovic" />
+				<TLCPerson eId="ag" href="/ontology/person/ag" showAs="A.G." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization refersTo="#osp">
+					Osnovni sud u Podgorici
+				</organization>
+				sudija Ivana Becić, uz učešće zapisničarke Anđele Mitrović, u krivičnom postupku protiv
+				optuženog A. G., zbog krivičnog djela krijumčarenje iz
+				<ref href="/krivicni#art_265">
+					čl. 265 st. 2
+				</ref>
+				u vezi
+				<ref href="/krivicni#art_23">
+					čl. 23 st. 2 Krivičnog
+					zakonikaCrne Gore
+				</ref>
+				, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 12.09.2022.godine donio je presudu.
+			</p>
+			<p>
+				Optuženi kriv je sto je: Dana 16.02.2022. godine, oko 23,00 časa, u selu B., teritorija Opštine Tuzi, svjestan svog djela čije je izvršenjehtio, ostvarujući zajedničku odluku sa dva NN lica, drugom radnjom bitno doprinio da se sa teritorijeRepublike Albanije prenese preko carinske linije izbjegavajući mjere carinskog nadzora roba - duvan, čiji jepromet shodno
+				<ref href="/duvan#art_15">
+					članu 15 stav 2 Zakona o duvanu
+				</ref>
+				dozvoljen isključivo privrednim društvima i preduzetnicima Osnovni Sud u Podgorici K 187/2022 12. Septembar 2022 uz odobrenje za promet na malo duvanskim proizvodima izdatim od strane nadležnog organa uprave, nanačin, što se po prethodnom dogovoru, susreo sa ovim NN licima koja su sa teritorije Republike Albanijedonijela 21 crnu kesu u kojima se nalazilo ukupno 656 pakovanja rezanog duvana od po 0,5 kg, ukupne mase328 kg i vrijednosti 19.680,00 eura, a zatim su sva trojica navedene kese sa pakovanjima duvana unijeli upomoćni objekat - garažu koja se nalazi u dvorištu porodične kuće okrivljenog i navedene kese sakrili uplastičnu burad unutar garaže, koje kese sa duvanom je okrivljeni trebao da preveze u Tuzi i preda NN licu poimenu R., ali je u tome spriječen od strane službenika Uprave policije CB Podgorica koji su pretresomizvršenim dana 19.02.2022. godine pronašli i oduzeli navedeni duvan i tako okrivljenog zatekli u vršenjukrivičnog djela,
+			</p>
+			<p>
+				- čime je, kao saizvršilac, izvršio krivično djelo krijumčarenje iz
+				<ref href="/krivicni#art_265">
+					člana 265 stav 2
+				</ref>
+				u vezi
+				<ref href="/krivicni#art_23">
+					člana 23 stav 2 Krivičnog zakonika Crne Gore
+				</ref>
+				.
+			</p>
+			<conclusions>
+				<p>
+					Pa mu sud za navedeno krivično djelo primjenom
+					<ref href="/krivicni#art_4">
+						čl. 4 st. 2
+					</ref>
+					,
+					<ref href="/krivicni#art_32">
+						čl. 32
+					</ref>
+					,
+					<ref href="/krivicni#art_39">
+						čl.39
+					</ref>
+					,
+					<ref href="/krivicni#art_42">
+						čl. 42
+					</ref>
+					,
+					<ref href="/krivicni#art_52">
+						čl. 52
+					</ref>
+					,
+					<ref href="/krivicni#art_53">
+						čl. 53
+					</ref>
+					i
+					<ref href="/krivicni#art_54">
+						čl. 54 Krivičnogzakonika Crne Gore
+					</ref>
+					i
+					<ref href="/postupak#art_226">
+						čl. 226
+					</ref>
+					,
+					<ref href="/postupak#art_229">
+						čl. 229
+					</ref>
+					,
+					<ref href="/postupak#art_303">
+						čl. 303
+					</ref>
+					i
+					<ref href="/postupak#art_374">
+						čl. 374 Zakonika o krivičnom postupku
+					</ref>
+					, izriče USLOVNU OSUDU Kojom mu utvrđuje kaznu zatvora u trajanju od 1 (jedne) godine i istovremeno određuje da se ona nećeizvršiti, ako optuženi u roku od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo i O S U Đ U J E Na novčanu kaznu u iznosu od 1.200,00 € (hiljadu i dvije stotine eura), koju je optuženi dužan platiti u roku od3 (tri) mjeseca po pravosnažnosti presude, a ako izrečenu novčanu kaznu ne plati u određenom roku, sud ćenovčanu kaznu zamijeniti kaznom zatvora, tako što će za svakih započetih dvadeset pet eura novčane kazneodrediti jedan dan kazne zatvora, s tim da kazna zatvora ne može biti duža od šest mjeseci. Obavezuje se optuženi da plati na ime troškova krivičnog postupka plati iznos od 60,50 eura, kao i 30,00 eurana ime paušala, sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

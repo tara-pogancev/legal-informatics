@@ -124,4 +124,27 @@ public class CbrController  {
                 .body(Files.readAllBytes(path));
     }
 
+    @GetMapping("/cases-akoma-ntoso")
+    public ResponseEntity<?> getCasesAkomaNtoso() throws IOException {
+        List<String> retVal = new ArrayList<>();
+        Resource[] resources = resourceResolver.getResources("classpath:akoma-ntoso/*.html");
+        for (Resource res: resources) {
+            if (!res.getFilename().contains("Zakoni")) {
+                retVal.add(res.getFilename());
+            }
+        }
+        return ResponseEntity.ok()
+                .body(retVal);
+    }
+
+    @GetMapping("/cases-akoma-ntoso/{caseName}")
+    public ResponseEntity<?> getCaseAkomaNtoso(@PathVariable String caseName) throws IOException {
+        Resource resource = resourceLoader.getResource("classpath:akoma-ntoso/" + caseName);
+        Path path = Paths.get(resource.getURI());
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_XHTML_XML)
+                .body(Files.readAllBytes(path));
+    }
+
 }

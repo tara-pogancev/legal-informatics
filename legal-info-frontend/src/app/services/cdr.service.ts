@@ -54,4 +54,16 @@ export class CdrService {
       responseType: 'text' as 'json',
     });
   }
+
+  getCasesAkomaNtoso() {
+    const url = this.url + '/cases-akoma-ntoso';
+    return this._http.get<any>(url);
+  }
+
+  getCaseAkomaNtoso(name: String) {
+    const url = this.url + '/cases-akoma-ntoso/' + name;
+    return this._http.get<any>(url, {
+      responseType: 'text' as 'json',
+    });
+  }
 }

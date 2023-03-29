@@ -1,7 +1,7 @@
 <div class="page-container">
   <div class="columns stretch-height">
     <div class="is-5 column documents-section">
-      <h1>PDF Dokumenti</h1>
+      <h1>PDF dokumenti</h1>
       <mat-list>
         <div mat-subheader>Zakoni</div>
         <mat-list-item
@@ -13,6 +13,8 @@
           <div matListItemTitle>{{ law }}</div>
           <div matListItemLine>PDF dokument</div>
         </mat-list-item>
+
+        <mat-divider></mat-divider>
         <div mat-subheader>Presude</div>
         <mat-list-item
           *ngFor="let judgement of judgements"
@@ -23,7 +25,6 @@
           <div matListItemTitle>{{ judgement }}</div>
           <div matListItemLine>PDF dokument</div>
         </mat-list-item>
-        <mat-divider></mat-divider>
       </mat-list>
     </div>
     <div class="column">
