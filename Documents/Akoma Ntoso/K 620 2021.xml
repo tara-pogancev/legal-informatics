@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Podgorici
+					</FRBRauthor>
+					<FRBRdate date="2021-11-04">
+						2021-11-04
+					</FRBRdate>
+					<FRBRtitle>
+						K 620/2021
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo" showAs="Osnovno drzavno tuzilastvo" />
+				<TLCPerson eId="nrabrenovic" href="/ontology/person/nrabrenovic" showAs="Nada Rabrenovic" />
+				<TLCPerson eId="iljiljana" href="/ontology/person/iljiljana" showAs="Ivanovic Ljiljana" />
+				<TLCPerson eId="mljumovic" href="/ontology/person/mljumovic" showAs="Ljumovic Milos" />
+				<TLCPerson eId="bd" href="/ontology/person/bd" showAs="B.D." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				OSNOVNI SUD U PODGORICI, po sudiji Nadi Rabrenović, uz učešće Ivanović Ljiljane, kao zapisničara ukrivičnom predmetu protiv okrivljene B. D. , zbog krivičnog djela nedozvojena trgovina iz
+				<ref href="/krivicni#art_284">
+					čl. 284 st. 3 Krivičnog zakonika Crne Gore
+				</ref>
+				, odlučujući po optužnom predlogu Osnovnog državnog tužilaštva u Podgorici,Kt. br. 1264/21 od 10.09.2021. godine, nakon održanog glavnog i javnog pretresa dana 04.11.2021. godine, uprisustvu zastupnika optužbe Ljumović Miloša, savjetnika na radu u Osnovnom državnom tužilaštvu uPodgorici i okrivljene B. D. , donio je i dana 05.11.2021. godine, javno objavio, P R E S U D U OKRIVLJENA: B. D. , JMB: xxxxxxxxxxxxx, od oca B. i majke R., rođene P., rođena xx.xx.xxxx. godine u Skadru, Republika Albanija, sa prebivalištem u Podgorici, GO Golubovci, M. xx, državljanka Republike Albanije, završila srednjupoljoprivrednu školu, penzioner, udata, majka troje djece, lošeg imovnog stanja, neosudjivana, K r i v a j e, Zato što je:Dana 26.08.2021. godine, u blizini Centralnog parka Pobrežje u Podgorici, svjesna svog djela čije je izvršenjehtjela, znajući da je njeno djelo zabranjeno, suprotno
+				<ref href="/duvan#art_6">
+					čl. 6 Zakona o duvanu
+				</ref>
+				(Sl. list Crne Gore 48/08, 76/08,40/11 i 42/15), neovlašćeno od nepoznatih lica u Tuzima, Podgorica, kupila robu čiji je promet zabranjen i to17 kg rezanog duvana, koji duvan je namjeravala da preproda na označenom mjestu, u čemu je otkrivenaistog dana od strane službenika Uprave policije, Centra bezbjednosti Podgorica, - čime je izvršila krivično djelo nedozvoljena trgovina iz
+				<ref href="/krivicni#art_284">
+					čl. 284 st. 3 Krivičnog zakonika Crne Gore
+				</ref>
+				.
+			</p>
+			<conclusions>
+				<p>
+					Pa sud okrivljenoj, primjenom citiranih zakonskih odredbi, te
+					<ref href="/krivicni#art_2">
+						čl. 2
+					</ref>
+					,
+					<ref href="/krivicni#art_2">
+						4
+					</ref>
+					,
+					<ref href="/krivicni#art_2">
+						5,
+					</ref>
+					<ref href="/krivicni#art_15k">
+						15
+					</ref>
+					,
+					<ref href="/krivicni#art_42">
+						42
+					</ref>
+					,
+					<ref href="/krivicni#art_52">
+						52
+					</ref>
+					,
+					<ref href="/krivicni#art_53">
+						53
+					</ref>
+					i
+					<ref href="/krivicni#art_54">
+						54 Krivičnog zakonika Crne Gore
+					</ref>
+					, te
+					<ref href="/postupak#art_229">
+						čl.229
+					</ref>
+					i
+					<ref href="/postupak#art_374">
+						374 Zakonika o krivičnom postupku
+					</ref>
+					, i z r i č e USLOVNU OSUDU Kojom okrivljenoj utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se utvrđenakazna neće izvršiti ako okrivljena za vrijeme od 1 (jedne) godine po pravosnažnosti presude ne izvrši novokrivično djelo. Obavezuje se okrivljena da na ime troškova krivičnog postupka u korist Budžeta Crne Gore plati iznos od60,50 eura i na ime sudskog pau š ala iznos od 40,00 eura , sve u roku od 15 dana po pravnosna ž nosti presude . Sud okrivljenoj , na osnovu
+					<ref href="/krivicni#art_66">
+						čl. 66
+					</ref>
+					,
+					<ref href="/krivicni#art_67">
+						67
+					</ref>
+					<ref href="/krivicni#art_75">
+						i 75
+					</ref>
+					i
+					<ref href="/krivicni#art_284">
+						čl. 284 st. 6 Krivi č nog zakonika Crne Gore
+					</ref>
+					, i z r i č e MJERU BEZBJEDNOSTI Oduzimanje predmeta , i to 17 kg rezanog duvana, kao predmeta izvr š enja krivičnog djela . .
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

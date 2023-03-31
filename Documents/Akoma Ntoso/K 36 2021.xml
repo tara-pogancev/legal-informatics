@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Baru
+					</FRBRauthor>
+					<FRBRdate date="2021-05-07">
+						2021-05-07
+					</FRBRdate>
+					<FRBRtitle>
+						K 36/2021
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Bar" showAs="Osnovni sud u Baru" />
+				<TLCOrganization eId="ost" href="/ontology/organization/OkruzniSud.Titograd" showAs="Okruzni sud u Titogradu" />
+				<TLCPerson eId="tspasojevic" href="/ontology/person/tspasojevic" showAs="Tamara Spasojevic" />
+				<TLCPerson eId="astanisic" href="/ontology/person/astanisic" showAs="Ana Stanisic" />
+				<TLCPerson eId="astanisic" href="/ontology/person/astanisic" showAs="Scepanovic Darinka" />
+				<TLCPerson eId="si" href="/ontology/person/si" showAs="S.I." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				OSNOVNI SUD U BARU, sudija Tamara Spasojević, sa zapisničarom Anom Stanišić, u krivičnom predmetuokrivljenog S. I. , zbog krivičnog djela nedozvoljena trgovina iz
+				<ref href="/krivicni#art_284">
+					čl. 284 st.3 u vezi st.1 Krivičnog zakonika Crne Gore
+				</ref>
+				, po optužnom predlogu Osnovnog državnog tužilaštva u Baru Kt.br. 527/20 od 12.02.2021.godine, nakonodržanog glavnog javnog pretresa u prisustvu zastupnika optužbe savjetnice u Osnovnom državnomtužilaštvu u Baru Šćepanović Darinke i okrivljenog, dana 07.05.2021.godine donio je i javno objavio PRESUDU Okrivljeni S. I. , JMBG ..... , od oca P . i majke V . , rođene K . , rođen .... .godine u P . , sa prebivalištem u B . , ulica .... , oženjen, otac dvoje djece, državljanin C. G. , završio visoku školu, pismen, lošeg imovnog stanja,neosuđivan. K r i v j e Što je: Dana 29.10.2020.godine u Baru, svjestan svog djela, čije je izvršenje htio i znajući da je njegovo djelozabranjeno, nemajući ovlašćenje za trgovinu u svrhu prodaje na teritoriji Opštine Bar, nabavio robu čiji jepromet ograničen u ukupnoj vrijednosti od 3.060,00 eura i to 9 paketa u kojima se nalazilo 300 šteka cigaretamarke "Ashima" na načn što je cigarete kupio u Tuzima od nepoznatog lica, bez dokaza o porijeklu i akciznimmarkicama Crne Gore, a koja roba je zatečena u putničkom motornom vozilu marke "Jetta" registarskih Osnovni Sud u Baru K 36/2021 07. Maj 2021 oznaka PG .... , kojim je upravljao okrivljeni i koja roba je otkrivena i oduzeta prililkom kontrole okrivljenog uul. Bulevar Dinastije Petrovića u Baru, od strane službenika Centra bezbjednosti Bar, - čime je izvršio krivično djelo nedozvoljena trgovina iz
+				<ref href="/krivicni#art_284">
+					čl.284 st.3 u vezi st.1 i 2 Krivičnog zakonika Crne Gore
+				</ref>
+				,
+			</p>
+			<conclusions>
+				<p>
+					Pa sud okrivljenog primjenom citiranih zakonskih propisa, te
+					<ref href="/krivicni#art_4">
+						čl. 4
+					</ref>
+					,
+					<ref href="/krivicni#art_5">
+						5
+					</ref>
+					,
+					<ref href="/krivicni#art_13">
+						13
+					</ref>
+					,
+					<ref href="/krivicni#art_15k">
+						15
+					</ref>
+					,
+					<ref href="/krivicni#art_32">
+						32
+					</ref>
+					,
+					<ref href="/krivicni#art_41">
+						41
+					</ref>
+					i
+					<ref href="/krivicni#art_42">
+						42 KZ CG
+					</ref>
+					i
+					<ref href="/postupak#art_226">
+						čl.226
+					</ref>
+					,
+					<ref href="/postupak#art_229">
+						229
+					</ref>
+					i
+					<ref href="/postupak#art_374">
+						374 ZKP-a
+					</ref>
+					, O S U Đ U J E Na kaznu rada u javnom interesu u trajanju od 80 (osamdeset) časova, a koja se ima izvršiti za vrijeme od 6mjeseci, s tim što kazna ne može biti duža od 60 časova u toku jednog mjeseca. Ukoliko okrivljeni ne vrši rad u javnom interesu, ta kazna će se zamijeniti kaznom zatvora, tako što će sesvakih započetih 60 časova rada u javnom interesu zamijeniti kaznom zatvora u trajanju od jednog mjeseca. Prema okrivljenom se na osnovu
+					<ref href="/krivicni#art_75">
+						čl.75 st.1 Krivičnog zakonika
+					</ref>
+					i
+					<ref href="/krivicni#art_284">
+						čl.284 st.6 Krivičnog zakonika Crne Gore
+					</ref>
+					izriče MJERA BEZBJEDNOSTI Kojom se od okrivljenog oduzima 9 paketa u kojima se nalazilo 300 šteka cigareta marke "Ashima" , kaopredmet nedozvoljene trgovine. Okrivljeni je dužan da plati troškove krivičnog postupka u iznosu od 71,50 €, kao i na ime sudskog paušalaiznos od 30,00 eura, a sve u roku od 15 dana od dana pravosnažnosti pod prijetnjom izvršenja.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

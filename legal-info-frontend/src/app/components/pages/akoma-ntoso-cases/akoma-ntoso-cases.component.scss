@@ -5,6 +5,13 @@
 
 .documents-section {
   overflow-y: scroll;
+  border-bottom: 1px rgb(179, 179, 179) solid;
+}
+
+.case-section {
+  overflow-y: scroll;
+  padding: 40px;
+  max-height: 80%;
 }
 
 mat-list-item {
@@ -32,4 +39,19 @@ mat-list-item {
 ::ng-deep .selected .mat-mdc-list-item-line,
 .selected .mat-icon {
   color: white !important;
+}
+
+.table-container {
+  width: 100%;
+  max-height: 20%;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
 }

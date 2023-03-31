@@ -12,6 +12,7 @@ Projekat za master iz predmeta Pravna informatika na FTN-u.
 - Član 265
 - Član 284
 
+- Član 2: art_2k
 - Član 3
 - Član 4
 - Član 5
@@ -27,6 +28,8 @@ Projekat za master iz predmeta Pravna informatika na FTN-u.
 - Član 52
 - Član 53
 - Član 54
+- Član 66
+- Član 67
 - Član 75
 - Član 185
 - Član 190
@@ -38,24 +41,3 @@ Projekat za master iz predmeta Pravna informatika na FTN-u.
 - Član 229
 - Član 303
 - Član 374
-
-### Presude
-- K 187/2022
-
-<ref href="/krivicni#art_265_point_2"></ref>
-
-href="/krivicni#art_"
-
-<ref href="/krivicni#art_"></ref>
-
-<ref href="/postupak#art_"></ref>
-
-K 424/2020
-K 630/2021
-k88/2020 podgorica
-K 36/2021, bar
-K 684/2018
-K 809/2019,ovde imas organizaciju granicna policija
-K277/2021, podgorica
-K 620/2021
-K 103/2021,sud u ulcinju
