@@ -36,31 +36,31 @@ public class BaseCbrApplication implements StandardCBRApplication {
         simConfig = new NNConfig(); // KNN configuration
         simConfig.setDescriptionSimFunction(new Average());  // global similarity function = average
 
-        //simConfig.addMapping(new Attribute("krivicnoDelo", CaseDescription.class), new Equal());
         TabularSimilarity slicnostKrivicnogDela = new TabularSimilarity(Arrays.asList(
-                "cl.284st.3 KZ",
-                "cl.265.st.2 KZ",
-                "cl.239st.1 KZ"));
-        slicnostKrivicnogDela.setSimilarity("cl.284st.3 KZ", "cl.265.st.2 KZ", 0.5);
-        slicnostKrivicnogDela.setSimilarity("cl.265.st.2 KZ", "cl.239st.1 KZ", 0.8);
-        slicnostKrivicnogDela.setSimilarity("cl.284st.3 KZ", "cl.239st.1 KZ", 0.8);
+                "cl.265 KZ",
+                "cl.284 KZ",
+                "cl.6 ZOD",
+                "cl.14 ZOD",
+                "cl.15 ZOD",
+                "cl.12 ZOD"));
+        slicnostKrivicnogDela.setSimilarity("cl.265 KZ", "cl.284 KZ", 0.8);
+        slicnostKrivicnogDela.setSimilarity("cl.6 ZOD", "cl.14 ZOD", 0.8);
+        slicnostKrivicnogDela.setSimilarity("cl.6 ZOD", "cl.15 ZOD", 0.5);
+        slicnostKrivicnogDela.setSimilarity("cl.6 ZOD", "cl.12 ZOD", 0.5);
+        slicnostKrivicnogDela.setSimilarity("cl.14 ZOD", "cl.15 ZOD", 0.9);
         simConfig.addMapping(new Attribute("krivicnoDelo", CaseDescription.class), slicnostKrivicnogDela);
 
-        simConfig.addMapping(new Attribute("vrednostDuvana", CaseDescription.class), new Interval(20000));
+        TabularSimilarity slicnostVrsteDuvana = new TabularSimilarity(Arrays.asList(
+                "rezani duvan",
+                "cigarete"));
+        slicnostKrivicnogDela.setSimilarity("rezani duvan", "cigarete", 0.7);
+        simConfig.addMapping(new Attribute("vrstaDuvana", CaseDescription.class), slicnostVrsteDuvana);
 
-        TabularSimilarity slicnostPropisa = new TabularSimilarity(Arrays.asList(
-                "cl.226 ZOKP",
-                "cl.229 ZOKP",
-                "cl.374 ZOKP",
-                "cl.227 ZOKP",
-                "cl.303 ZOKP",
-                "cl.239 ZOKP"));
-        slicnostPropisa.setSimilarity("cl.226 ZOKP", "cl.229 ZOKP", .8);
-        slicnostPropisa.setSimilarity("cl.226 ZOKP", "cl.374 ZOKP", .8);
-        slicnostPropisa.setSimilarity("cl.229 ZOKP", "cl.374 ZOKP", .8);
-        slicnostPropisa.setSimilarity("cl.227 ZOKP", "cl.226 ZOKP", .5);
 
-        simConfig.addMapping(new Attribute("primenjeniPropisi", CaseDescription.class), slicnostPropisa);
+        simConfig.addMapping(new Attribute("vrednostDuvana", CaseDescription.class), new Interval(15000));
+        simConfig.addMapping(new Attribute("brojPakovanja", CaseDescription.class), new Interval(1000));
+        simConfig.addMapping(new Attribute("masaDuvana", CaseDescription.class), new Interval(1000));
+
 
         // Equal - returns 1 if both individuals are equal, otherwise returns 0
         // Interval - returns the similarity of two number inside an interval: sim(x,y) = 1-(|x-y|/interval)
@@ -79,6 +79,15 @@ public class BaseCbrApplication implements StandardCBRApplication {
         System.out.println("Retrieved cases:");
         for (RetrievalResult nse : eval)
             System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
+    }
+
+    public List<String> getCycle(CBRQuery query) throws ExecutionException {
+        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), query, simConfig);
+        eval = SelectCases.selectTopKRR(eval, 5);
+        List<String> retVal = new ArrayList<>();
+        for (RetrievalResult nse : eval)
+            retVal.add(nse.get_case().getDescription() + " -> " + nse.getEval());
+        return  retVal;
     }
 
     public void postCycle() throws ExecutionException {

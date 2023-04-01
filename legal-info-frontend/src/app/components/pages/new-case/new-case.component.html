@@ -1,1 +1,166 @@
-<p>new-case works!</p>
+<div class="page-container">
+  <div class="columns">
+    <div class="column scroll">
+      <h1>Dodavanje nove presude</h1>
+      <p>
+        Molimo unesite osnovne podatke kako biste dobili opciju dodavanja nove
+        presude. <br /><br />
+        Ukoliko unesete neophodne podatke za preporuku rasuđivanja, klikom na
+        relevantno dugme dobićete savete na osnovu baze slučajeva, i LegalRuleML
+        sistema.
+      </p>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Sud</mat-label>
+        <input matInput [(ngModel)]="case.sud" />
+      </mat-form-field>
+
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Broj presude</mat-label>
+            <input matInput [(ngModel)]="case.poslovniBroj" />
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Sudija</mat-label>
+            <input matInput [(ngModel)]="case.sudija" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Tužilac</mat-label>
+            <input matInput [(ngModel)]="case.tuzilac" />
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Optuženi</mat-label>
+            <input matInput [(ngModel)]="case.okrivljeni" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <mat-form-field appearance="outline" class="mb-5">
+        <mat-label>Krivično delo</mat-label>
+        <input matInput [(ngModel)]="krivicnoDelo" />
+        <mat-hint
+          >Sudske odredbe razdvojiti zarezima (cl.6 ZOD, cl.12 ZOD, cl.284
+          KZ...)</mat-hint
+        >
+      </mat-form-field>
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Vrednost duvana u evrima</mat-label>
+            <input matInput type="number" [(ngModel)]="case.vrednostDuvana" />
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Broj pakovanja</mat-label>
+            <input matInput type="number" [(ngModel)]="case.brojPakovanja" />
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Masa u kg</mat-label>
+            <input matInput type="number" [(ngModel)]="case.masaDuvana" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Vrsta duvana</mat-label>
+        <mat-select [(ngModel)]="case.vrstaDuvana">
+          <mat-option value="rezani duvan">Rezani duvan</mat-option>
+          <mat-option value="cigarete">Cigarete</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div
+        class="stretch-width is-flex is-flex-direction-row is-justify-content-center mb-5"
+      >
+        <button
+          mat-flat-button
+          color="accent"
+          (click)="getRecommendations()"
+          [disabled]="
+            krivicnoDelo == '' ||
+            case.vrednostDuvana == 0 ||
+            case.brojPakovanja == 0 ||
+            case.masaDuvana == 0 ||
+            case.vrstaDuvana == ''
+          "
+        >
+          Preporuke rasuđivanja
+        </button>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="columns mt-5">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Vrsta presude</mat-label>
+            <mat-select [(ngModel)]="case.vrstaPresude">
+              <mat-option value="otpuzujuca">Optužujuća</mat-option>
+              <mat-option value="uslovna">Uslovna</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline" class="mb-5">
+            <mat-label>Primenjeni propisi</mat-label>
+            <input matInput [(ngModel)]="primenjeniPropisi" />
+            <mat-hint
+              >Sudske odredbe razdvojiti zarezima (cl.6 ZOD, cl.12 ZOD, cl.284
+              KZ...)</mat-hint
+            >
+          </mat-form-field>
+        </div>
+      </div>
+      <div
+        class="stretch-width is-flex is-flex-direction-row is-justify-content-center mt-5"
+      >
+        <button
+          mat-flat-button
+          color="primary"
+          (click)="submitNewCase()"
+          [disabled]="
+            case.sudija == '' ||
+            case.tuzilac == '' ||
+            case.okrivljeni == '' ||
+            case.sud == '' ||
+            case.poslovniBroj == '' ||
+            krivicnoDelo == '' ||
+            case.vrednostDuvana == 0 ||
+            case.brojPakovanja == 0 ||
+            case.masaDuvana == 0 ||
+            case.vrstaDuvana == '' ||
+            case.vrstaPresude == '' ||
+            primenjeniPropisi == ''
+          "
+        >
+          Dodaj novu presudu
+        </button>
+      </div>
+    </div>
+    <div class="column scroll">
+      <h1>Rasuđivanje po slučajevima</h1>
+      <div>
+        <p *ngIf="recommendations.slucajevi.length == 0">Nema preporuka.</p>
+        <div class="mb-5" *ngFor="let item of recommendations.slucajevi">
+          {{ item }}
+        </div>
+      </div>
+      <mat-divider class="my-5"></mat-divider>
+      <h1 class="mt-5">Rasuđivanje po pravilima</h1>
+      <div>
+        <p *ngIf="recommendations.pravila == ''">Nema preporuka.</p>
+        <p>{{ recommendations.pravila }}</p>
+      </div>
+    </div>
+  </div>
+</div>

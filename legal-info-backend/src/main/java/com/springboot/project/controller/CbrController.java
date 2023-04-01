@@ -1,6 +1,8 @@
 package com.springboot.project.controller;
 
 
+import com.springboot.project.dto.CaseDTO;
+import com.springboot.project.dto.RecommendationsDTO;
 import com.springboot.project.service.FileDownloadUtil;
 import com.springboot.project.service.cbr.BaseCbrApplication;
 import com.springboot.project.service.cbr.CaseDescription;
@@ -22,10 +24,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -37,37 +36,61 @@ import java.util.List;
 @RequestMapping("/cbr")
 public class CbrController  {
 
-    Connector _connector;  /** Connector object */
-    CBRCaseBase _caseBase;  /** CaseBase object */
-    NNConfig simConfig;  /** KNN configuration */
-
     @Autowired ResourceLoader resourceLoader;
 
     @Autowired
     ResourcePatternResolver resourceResolver;
 
-
-    @GetMapping("/recommend-case-solution")
-    public ResponseEntity<?> recommendCaseSolution() {
-        StandardCBRApplication recommender = new BaseCbrApplication();
+    /***
+     * Cao cao Annaaa
+     * Ova ovde metoda te zanima!
+     */
+    @PostMapping("/recommend-case-solution")
+    public ResponseEntity<?> recommendCaseSolution(@RequestBody CaseDTO caseDTO) {
+        BaseCbrApplication recommender = new BaseCbrApplication();
+        RecommendationsDTO retVal = new RecommendationsDTO();
         try {
             recommender.configure();
-
             recommender.preCycle();
 
             CBRQuery query = new CBRQuery();
             CaseDescription caseDescription = new CaseDescription();
-
-            caseDescription.setKrivicnoDelo("cl.239st.1 KZ");
-            caseDescription.setVrednostDuvana(5000);
+            caseDescription.setKrivicnoDelo(caseDTO.krivicnoDelo);
+            caseDescription.setVrednostDuvana(caseDTO.vrednostDuvana);
+            caseDescription.setVrstaDuvana(caseDTO.vrstaDuvana);
+            caseDescription.setBrojPakovanja(caseDTO.brojPakovanja);
+            caseDescription.setMasaDuvana(caseDTO.masaDuvana);
 
             query.setDescription( caseDescription );
 
-            recommender.cycle(query);
+            retVal.slucajevi = recommender.getCycle(query);
             recommender.postCycle();
+
+            /***
+             * Ana ovde treba da uradis deo koji se tice dr device~
+             * Dodaj to u retVal.pravila ;--;
+             */
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return ResponseEntity.ok(retVal);
+    }
+
+    @PostMapping("/new-case")
+    public ResponseEntity<?> writeNewCase(@RequestBody CaseDTO caseDTO) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter(new ClassPathResource("presude.csv").getFile()));
+        bw.write("77" + ";" + caseDTO.sud + ";" + caseDTO.poslovniBroj +";" + caseDTO.sudija +";"
+                + caseDTO.tuzilac +";" + caseDTO.okrivljeni +";" + String.join(",", caseDTO.krivicnoDelo) +";"
+                + caseDTO.vrednostDuvana + ";"
+                + caseDTO.brojPakovanja + ";"
+                + caseDTO.masaDuvana + ";"
+                + caseDTO.vrstaDuvana + ";"
+                + caseDTO.vrstaPresude + ";"
+                + String.join(",", caseDTO.primenjeniPropisi)
+        );
+        bw.newLine();
+        bw.close();
 
         return ResponseEntity.ok(null);
     }

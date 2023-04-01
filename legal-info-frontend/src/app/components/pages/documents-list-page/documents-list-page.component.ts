@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CdrService } from 'src/app/services/cdr.service';
+import { CbrService } from 'src/app/services/cbr.service';
 
 @Component({
   selector: 'documents-list-page',
@@ -12,14 +12,14 @@ export class DocumentsListPageComponent implements OnInit {
   public currentPdf: String = '';
   public selectedPdfFile: any = null;
 
-  constructor(private cdrService: CdrService) {}
+  constructor(private cbrService: CbrService) {}
 
   ngOnInit(): void {
-    this.cdrService.getAllCasesPdf().subscribe((data) => {
+    this.cbrService.getAllCasesPdf().subscribe((data) => {
       this.judgements = data;
     });
 
-    this.cdrService.getAllLawPdf().subscribe((data) => {
+    this.cbrService.getAllLawPdf().subscribe((data) => {
       this.laws = data;
       this.currentPdf = this.laws[0];
 
@@ -28,14 +28,14 @@ export class DocumentsListPageComponent implements OnInit {
   }
 
   refreshCasePdf() {
-    this.cdrService.getCasePdf(this.currentPdf).subscribe((response: any) => {
+    this.cbrService.getCasePdf(this.currentPdf).subscribe((response: any) => {
       const blob = new Blob([response], { type: 'application/pdf' });
       this.selectedPdfFile = URL.createObjectURL(blob);
     });
   }
 
   refreshLawPdf() {
-    this.cdrService.getLawPdf(this.currentPdf).subscribe((response: any) => {
+    this.cbrService.getLawPdf(this.currentPdf).subscribe((response: any) => {
       const blob = new Blob([response], { type: 'application/pdf' });
       this.selectedPdfFile = URL.createObjectURL(blob);
     });

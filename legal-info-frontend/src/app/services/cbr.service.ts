@@ -1,11 +1,12 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { Case } from '../model/case';
 
 @Injectable({
   providedIn: 'root',
 })
-export class CdrService {
+export class CbrService {
   url = 'http://localhost:8080/cbr';
 
   constructor(private _http: HttpClient, private route: Router) {}
@@ -65,5 +66,15 @@ export class CdrService {
     return this._http.get<any>(url, {
       responseType: 'text' as 'json',
     });
+  }
+
+  getRecommendations(caseDto: Case) {
+    const url = this.url + '/recommend-case-solution';
+    return this._http.post<any>(url, caseDto);
+  }
+
+  postNewCase(caseDto: Case) {
+    const url = this.url + '/new-case';
+    return this._http.post<any>(url, caseDto);
   }
 }

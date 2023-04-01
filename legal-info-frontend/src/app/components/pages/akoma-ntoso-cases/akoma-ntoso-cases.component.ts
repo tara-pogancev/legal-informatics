@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { CdrService } from 'src/app/services/cdr.service';
+import { CbrService } from 'src/app/services/cbr.service';
 
 @Component({
   selector: 'akoma-ntoso-cases',
@@ -15,13 +15,13 @@ export class AkomaNtosoCasesComponent {
   public currentFile: String = '';
 
   constructor(
-    private cdrService: CdrService,
+    private cbrService: CbrService,
     private sanitizer: DomSanitizer,
     private router: Router
   ) {}
 
   ngOnInit(): void {
-    this.cdrService.getCasesAkomaNtoso().subscribe((data) => {
+    this.cbrService.getCasesAkomaNtoso().subscribe((data) => {
       this.judgements = data;
       this.currentFile = this.judgements[0];
       this.refreshCaseFile();
@@ -29,7 +29,7 @@ export class AkomaNtosoCasesComponent {
   }
 
   refreshCaseFile() {
-    this.cdrService
+    this.cbrService
       .getCaseAkomaNtoso(this.currentFile)
       .subscribe((response) => {
         this.xmlDocument = new DOMParser().parseFromString(

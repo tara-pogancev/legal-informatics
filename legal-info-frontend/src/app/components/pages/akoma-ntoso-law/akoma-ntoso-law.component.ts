@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CdrService } from 'src/app/services/cdr.service';
+import { CbrService } from 'src/app/services/cbr.service';
 
 @Component({
   selector: 'akoma-ntoso-law',
@@ -13,13 +13,13 @@ export class AkomaNtosoLawComponent {
   public xmlHtml: SafeHtml | undefined;
 
   constructor(
-    private cdrService: CdrService,
+    private cbrService: CbrService,
     private sanitizer: DomSanitizer,
     private router: Router
   ) {}
 
   ngOnInit(): void {
-    this.cdrService.getLawAkomaNtoso().subscribe((response) => {
+    this.cbrService.getLawAkomaNtoso().subscribe((response) => {
       this.xmlDocument = new DOMParser().parseFromString(response, 'text/xml');
       this.xmlHtml = this.sanitizer.bypassSecurityTrustHtml(
         new XMLSerializer().serializeToString(this.xmlDocument)
