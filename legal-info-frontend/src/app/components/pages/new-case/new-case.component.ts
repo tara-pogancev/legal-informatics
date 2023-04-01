@@ -40,7 +40,9 @@ export class NewCaseComponent {
 
     this.cbrService.postNewCase(this.case).subscribe((response) => {
       alert('Novi slučaj je zabeležen u bazi!');
-      //   this.case = new Case();
+      this.case = new Case();
+      this.primenjeniPropisi = '';
+      this.krivicnoDelo = '';
     });
   }
 }

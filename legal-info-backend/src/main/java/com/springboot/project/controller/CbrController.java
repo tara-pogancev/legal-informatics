@@ -77,10 +77,13 @@ public class CbrController  {
         return ResponseEntity.ok(retVal);
     }
 
+    /***
+     * Promene su vidljive u okvriru TARGET foldera > classes
+     */
     @PostMapping("/new-case")
     public ResponseEntity<?> writeNewCase(@RequestBody CaseDTO caseDTO) throws IOException {
-        BufferedWriter bw = new BufferedWriter(new FileWriter(new ClassPathResource("presude.csv").getFile()));
-        bw.write("77" + ";" + caseDTO.sud + ";" + caseDTO.poslovniBroj +";" + caseDTO.sudija +";"
+        BufferedWriter bw = new BufferedWriter(new FileWriter(new ClassPathResource("presude.csv").getFile(), true));
+        bw.write("00" + ";" + caseDTO.sud + ";" + caseDTO.poslovniBroj +";" + caseDTO.sudija +";"
                 + caseDTO.tuzilac +";" + caseDTO.okrivljeni +";" + String.join(",", caseDTO.krivicnoDelo) +";"
                 + caseDTO.vrednostDuvana + ";"
                 + caseDTO.brojPakovanja + ";"
