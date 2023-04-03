@@ -21,6 +21,7 @@
 			</identification>
 			<references>
 				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Ulcinj" showAs="Osnovni sud u Ulcinju" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Ulcinj" showAs="Osnovno drzavno tuzilastvo" />
 				<TLCPerson eId="smirovic" href="/ontology/person/smirovic" showAs="mr Sanja Mirovic" />
 				<TLCPerson eId="vkatana" href="/ontology/person/vkatana" showAs="Katana Violeta" />
 				<TLCPerson eId="ls" href="/ontology/person/ls" showAs="L.S." />
@@ -29,15 +30,47 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U ULCINJU, kao prvostepeni krivi čni, sudija mr Sanja Mirović, uz učešće namještenika sudaKatana Violete,kao zapisničara,u krivičnom predmetu okrivljenog H.B. iz U . koga brani L.S. advokat iz U . , zbogkrivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U ULCINJU
+				</organization>
+				, kao prvostepeni krivi čni,
+				<party id="smirovic" refersTo="#smirovic" as="#judge">
+					sudija mr Sanja Mirović
+				</party>
+				, uz učešće namještenika suda
+				<party id="vkatana" refersTo="#vkatana">
+					Katana Violete
+				</party>
+				,kao zapisničara,u krivičnom predmetu okrivljenog
+				<party id="hb" refersTo="#hb" as="#defendant">
+					H.B.
+				</party>
+				iz U . koga brani
+				<party id="ls" refersTo="#ls" as="#lawyer">
+					L.S. advokat
+				</party>
+				iz U . , zbogkrivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl.284 st.3 Krivičnog zakonika Crne Gore
 				</ref>
-				, odlučujući po optužnompredlogu Osnovnog državnog tužilaštva u Ulcinju, Kt.br.13/21 od 19.01.2021.godine, nakon održanog glavnogi javnog pretresa dana 08.02.2021.godine, u prisustvu zastupnika optužbe Državnog tužioca VladimiraSavovića, okrivljenog i njegovog branioca, donio je i istog dana javno objavio P R E S U D U Okrivljeni H.B. ,JMBG ... ,od oca B . i majke M . rodjene Z . , rodjen ... .godine u B . , sa prebivalištem u U . – V . ,državljanin C . G . ,moler,neoženjen, pismen, sa završenom srednjom školom, lošeg imovnog stanja,neosuđivan K r i v j e Zato što je: Dana 14.01.2021.godine u U . , nemajući ovlašćenja za trgovinu u svrhu prodaje je kupio robu čiji je promet ograničen , postupajući na taj način suprotno odredbi
+				, odlučujući po optužnompredlogu
+				<organization id="odt" refersTo="#odt">
+					Osnovnog državnog tužilaštva u Ulcinju
+				</organization>
+				, Kt.br.13/21 od 19.01.2021.godine, nakon održanog glavnogi javnog pretresa dana 08.02.2021. godine, u prisustvu zastupnika optužbe Državnog tužioca
+				<party id="vsavovic" refersTo="#vsavovic" as="#plaintiff">
+					Vladimira Savovića
+				</party>
+				, okrivljenog i njegovog branioca, donio je i istog dana javno objavio P R E S U D U Okrivljeni
+				<party id="hb" refersTo="#hb" as="#defendant">
+					H.B.
+				</party>
+				,JMBG ... ,od oca B . i majke M . rodjene Z . , rodjen ... .godine u B . , sa prebivalištem u U . – V . ,državljanin C . G . ,moler,neoženjen, pismen, sa završenom srednjom školom, lošeg imovnog stanja,neosuđivan K r i v j e Zato što je: Dana 14.01.2021.godine u U . , nemajući ovlašćenja za trgovinu u svrhu prodaje je kupio robu čiji je promet ograničen , postupajući na taj način suprotno odredbi
 				<ref href="/duvan#art_14">
 					čl.14 Zakona o duvanu
 				</ref>
@@ -49,7 +82,11 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa mu sud za navedeno krivično djelo primjenom
+					Pa mu
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					za navedeno krivično djelo primjenom
 					<ref href="/krivicni#art_4">
 						čl. 4 st. 2
 					</ref>
@@ -97,11 +134,27 @@
 					<ref href="/postupak#art_374">
 						čl. 374 Zakonika o krivičnom postupku
 					</ref>
-					izriče USLOVNU OSUDU Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ista neće izvršitiukoliko okrivljeni u roku od 1 (jedne) godine od dana pravosnažnosti presude ne učini novo krivično djelo. Obavezuje se okrivljeni H.B. da na ime troškova krivičnog postupka, uplati iznos od 57,20 eura, kao i iznos od30,00 eura na ime sudskog paušala, u roku od 15 dana od dana pravnosnažnosti presude. Na osnovu
+					izriče USLOVNU OSUDU Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ista neće izvršitiukoliko okrivljeni u roku od 1 (jedne) godine od dana pravosnažnosti presude ne učini novo krivično djelo. Obavezuje se okrivljeni
+					<party id="hb" refersTo="#hb" as="#defendant">
+						H.B.
+					</party>
+					da na ime troškova krivičnog postupka, uplati iznos od 57,20 eura, kao i iznos od30,00 eura na ime sudskog paušala, u roku od 15 dana od dana pravnosnažnosti presude. Na osnovu
 					<ref href="/krivicni#art_75">
 						čl. 75 Krivčnog zakonika
 					</ref>
-					, sud prema okrivljenom H.B. izriče, Osnovni Sud u Ulcinju K 12/2021 08. Februar 2021 MJERU BEZBJEDNOSTI Oduzimanje predmeta 12 pakovanja crnih najlonskih vreća rezanog duvana , težine 184 kg. , kao predmeta upotrijebljenih za izvršenje djela .
+					,
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					prema okrivljenom
+					<party refersTo="#hb" as="#defendant">
+						H.B.
+					</party>
+					izriče,
+					<organization id="os" refersTo="#os">
+						Osnovni Sud u Ulcinju
+					</organization>
+					K 12/2021 08. Februar 2021 MJERU BEZBJEDNOSTI Oduzimanje predmeta 12 pakovanja crnih najlonskih vreća rezanog duvana , težine 184 kg. , kao predmeta upotrijebljenih za izvršenje djela .
 				</p>
 			</conclusions>
 		</judgmentBody>

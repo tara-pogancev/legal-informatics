@@ -34,16 +34,51 @@
 		</meta>
 		<judgmentBody>
 			<p>
-				Osnovni sud u Podgorici, sudija Rade Ćetković, uz učešće zapisničarke Edine Kraja, u krivičnom postupkuprotiv okrivljenog E.LJ., zbog krivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					Osnovni sud u Podgorici
+				</organization>
+				,
+				<party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
+					sudija Rade Ćetković
+				</party>
+				, uz učešće zapisničarke
+				<party id="ekraja" refersTo="#ekraja">
+					Edine Kraja
+				</party>
+				, u krivičnom postupku protiv okrivljenog
+				<party id="elj" refersTo="#elj" as="#defendant">
+					E.LJ.
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st. 2 Krivičnog zakonika Crne Gore
 				</ref>
-				, nakon glavnog pretresa održanog 17.07.2020. godine, u prisustvu zastupnika optužbe I.Š. - savjetnika u Osnovnom državnom tužilaštvu Podgorica i okrivljenog, izrekao je i istog dana objavio, P R E S U D U Okrivljeni: E.LJ. , JMB ..., od oca Đ. i majke V., rođene V., rođen ..... godine u P., sa prebivalištem u P. - T. - S. bb,državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, nezaposlen, neoženjen, bez djece, pismen, završio srednju školu, lošeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za drugokrivično djelo.
+				, nakon glavnog pretresa održanog 17.07.2020. godine, u prisustvu zastupnika optužbe
+				<party id="is" refersTo="#is" as="#plaintiff">
+					I.Š.
+				</party>
+				- savjetnika u
+				<organization id="odt" refersTo="#odt">
+					Osnovnom državnom tužilaštvu Podgorica
+				</organization>
+				i okrivljenog, izrekao je i istog dana objavio, P R E S U D U Okrivljeni:
+				<party id="elj" refersTo="#elj" as="#defendant">
+					E.LJ.
+				</party>
+				, JMB ..., od oca Đ. i majke V., rođene V., rođen ..... godine u P., sa prebivalištem u P. - T. - S. bb,državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, nezaposlen, neoženjen, bez djece, pismen, završio srednju školu, lošeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za drugokrivično djelo.
 				Kriv je Što je: Dana 25.01.2020. godine u mjestu C., opština T., svjestan svog djela, čije je izvršenje htio, znajući da je istozabranjeno, suprotno
 				<ref href="/duvan#art_6">
 					čl. 6 Zakona o duvanu
 				</ref>
-				("Sl. list Crne Gore", br. 48/08 od 11.08.2008. godine, 76/08 od12.12.2008. godine, 40/11 od 08.08.2011. godine, 42/15 od 29.07.2015. godine) neovlašćeno kupio robu čije jestavljanje u promet zabranjeno, na način što je od nepoznatog lica kupio 435 kg rezanog duvana upakovanog Osnovni Sud u Podgorici K 88/2020 17. Jul 2020 u 870 pakovanja od po pola kilograma, ukupne vrijednosti 9.135,00 eura, koji je pronađen istog dana prilikompretresa p.m.v. marke "M." reg. oznaka PG ... ... vlasništvo okrivljenog, izvršenog od strane službenika Sektoragranične policije I - Podgorica, - čime je izvršio krivično djelo nedozvoljena trgovina iz
+				("Sl. list Crne Gore", br. 48/08 od 11.08.2008. godine, 76/08 od12.12.2008. godine, 40/11 od 08.08.2011. godine, 42/15 od 29.07.2015. godine) neovlašćeno kupio robu čije jestavljanje u promet zabranjeno, na način što je od nepoznatog lica kupio 435 kg rezanog duvana upakovanog
+				<organization id="os" refersTo="#os">
+					Osnovni Sud u Podgorici
+				</organization>
+				K 88/2020 17. Jul 2020 u 870 pakovanja od po pola kilograma, ukupne vrijednosti 9.135,00 eura, koji je pronađen istog dana prilikompretresa p.m.v. marke "M." reg. oznaka PG ... ... vlasništvo
+				<party id="elj" refersTo="#elj" as="#defendant">
+					okrivljenog
+				</party>
+				, izvršenog od strane službenika Sektoragranične policije I - Podgorica, - čime je izvršio krivično djelo nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st. 2 Krivičnog zakonika Crne Gore
 				</ref>
@@ -51,7 +86,11 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa mu sud za navedeno krivično djelo primjenom
+					Pa mu
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					za navedeno krivično djelo primjenom
 					<ref href="/krivicni#art_4">
 						čl. 4 st. 2
 					</ref>
@@ -85,16 +124,32 @@
 					</ref>
 					, izriče
 					USLOVNU OSUDU
-					Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ona neće izvršiti,ako okrivljeni u roku od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo.
+					Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ona neće izvršiti,ako
+					<party id="elj" refersTo="#elj" as="#defendant">
+						okrivljeni
+					</party>
+					u roku od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo.
 					Na osnovu
 					<ref href="/krivicni#art_75">
 						čl. 75 st. 3 u vezi čl. 284 st. 6 Krivičnog zakonika Crne Gore
 					</ref>
-					prema okrivljenom se izriče:
+					prema
+					<party id="elj" refersTo="#elj" as="#defendant">
+						okrivljenom
+					</party>
+					se izriče:
 					MJERA BEZBJEDNOSTI
 					ODUZIMANjE PREDMETA
-					Oduzima se od okrivljenog 435 kilograma rezanog duvana upakovanog u pakovanja od po 0,5 kg, kaopredmet nedozvoljene trgovine.
-					Obavezuje se okrivljeni da plati na ime troškova krivičnog postupka iznos od 90,50 €, u roku od 15 dana popravosnažnosti presude, pod prijetnjom izvršenja.
+					Oduzima se od
+					<party id="elj" refersTo="#elj" as="#defendant">
+						okrivljenog
+					</party>
+					435 kilograma rezanog duvana upakovanog u pakovanja od po 0,5 kg, kaopredmet nedozvoljene trgovine.
+					Obavezuje se
+					<party id="elj" refersTo="#elj" as="#defendant">
+						okrivljeni
+					</party>
+					da plati na ime troškova krivičnog postupka iznos od 90,50 €, u roku od 15 dana popravosnažnosti presude, pod prijetnjom izvršenja.
 				</p>
 			</conclusions>
 		</judgmentBody>
