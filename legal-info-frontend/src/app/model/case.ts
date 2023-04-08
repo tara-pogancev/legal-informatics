@@ -11,6 +11,9 @@ export class Case {
     public brojPakovanja: number = 0,
     public masaDuvana: number = 0,
     public vrstaDuvana: String = '',
+    public imaDozvolu: String = '',
+    public vrstaTrgovine: String = '',
+    public akcija: String = '',
     public vrstaPresude: String = '',
     public primenjeniPropisi: String[] = []
   ) {}

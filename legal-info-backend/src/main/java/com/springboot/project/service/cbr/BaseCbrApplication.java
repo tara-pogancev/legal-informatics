@@ -36,24 +36,35 @@ public class BaseCbrApplication implements StandardCBRApplication {
         simConfig = new NNConfig(); // KNN configuration
         simConfig.setDescriptionSimFunction(new Average());  // global similarity function = average
 
-        TabularSimilarity slicnostKrivicnogDela = new TabularSimilarity(Arrays.asList(
-                "cl.265 KZ",
-                "cl.284 KZ",
-                "cl.6 ZOD",
-                "cl.14 ZOD",
-                "cl.15 ZOD",
-                "cl.12 ZOD"));
-        slicnostKrivicnogDela.setSimilarity("cl.265 KZ", "cl.284 KZ", 0.8);
-        slicnostKrivicnogDela.setSimilarity("cl.6 ZOD", "cl.14 ZOD", 0.8);
-        slicnostKrivicnogDela.setSimilarity("cl.6 ZOD", "cl.15 ZOD", 0.5);
-        slicnostKrivicnogDela.setSimilarity("cl.6 ZOD", "cl.12 ZOD", 0.5);
-        slicnostKrivicnogDela.setSimilarity("cl.14 ZOD", "cl.15 ZOD", 0.9);
-        simConfig.addMapping(new Attribute("krivicnoDelo", CaseDescription.class), slicnostKrivicnogDela);
+        TabularSimilarity slicnostImanjaDozvole = new TabularSimilarity(Arrays.asList(
+                "ima dozvolu",
+                "nema dozvolu"));
+        slicnostImanjaDozvole.setSimilarity("ima dozvolu", "nema dozvolu", 0.1);
+        simConfig.addMapping(new Attribute("imaDozvolu", CaseDescription.class), slicnostImanjaDozvole);
+
+        TabularSimilarity slicnostVrsteTrgovine = new TabularSimilarity(Arrays.asList(
+                "promet na malo",
+                "promet na veliko",
+                "promet na malo i veliko"));
+        slicnostVrsteTrgovine.setSimilarity("promet na malo", "promet na veliko", 0.5);
+        slicnostVrsteTrgovine.setSimilarity("promet na malo", "promet na malo i veliko", 0.8);
+        slicnostVrsteTrgovine.setSimilarity("promet na veliko", "promet na malo i veliko", 0.8);
+        simConfig.addMapping(new Attribute("vrstaTrgovine", CaseDescription.class), slicnostVrsteTrgovine);
+
+        TabularSimilarity slicnostAkcije = new TabularSimilarity(Arrays.asList(
+                "kupovina",
+                "prodaja",
+                "krijumcarenje"));
+        slicnostAkcije.setSimilarity("kupovina", "prodaja", 0.7);
+        slicnostAkcije.setSimilarity("prodaja", "krijumcarenje", 0.3);
+        slicnostAkcije.setSimilarity("kupovina", "krijumcarenje", 0.3);
+        simConfig.addMapping(new Attribute("akcija", CaseDescription.class), slicnostAkcije);
+
 
         TabularSimilarity slicnostVrsteDuvana = new TabularSimilarity(Arrays.asList(
                 "rezani duvan",
                 "cigarete"));
-        slicnostKrivicnogDela.setSimilarity("rezani duvan", "cigarete", 0.7);
+        slicnostImanjaDozvole.setSimilarity("rezani duvan", "cigarete", 0.7);
         simConfig.addMapping(new Attribute("vrstaDuvana", CaseDescription.class), slicnostVrsteDuvana);
 
 

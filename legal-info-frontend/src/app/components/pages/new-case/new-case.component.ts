@@ -17,11 +17,6 @@ export class NewCaseComponent {
   constructor(private cbrService: CbrService) {}
 
   getRecommendations() {
-    this.case.krivicnoDelo = this.krivicnoDelo.split(',');
-    this.case.krivicnoDelo = this.case.krivicnoDelo.map((x) => {
-      return x.trim();
-    });
-
     this.cbrService.getRecommendations(this.case).subscribe((response) => {
       this.recommendations = response;
     });

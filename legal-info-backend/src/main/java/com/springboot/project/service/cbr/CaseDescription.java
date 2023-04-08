@@ -18,8 +18,35 @@ public class CaseDescription implements CaseComponent {
     private Integer brojPakovanja;
     private Integer masaDuvana;
     private String vrstaDuvana;
+    private String imaDozvolu;
+    private String vrstaTrgovine;
+    private String akcija;
     private String vrstaPresude;
     private List<String> primenjeniPropisi = new ArrayList<String>();
+
+    public String getImaDozvolu() {
+        return imaDozvolu;
+    }
+
+    public void setImaDozvolu(String imaDozvolu) {
+        this.imaDozvolu = imaDozvolu;
+    }
+
+    public String getVrstaTrgovine() {
+        return vrstaTrgovine;
+    }
+
+    public void setVrstaTrgovine(String vrstaTrgovine) {
+        this.vrstaTrgovine = vrstaTrgovine;
+    }
+
+    public String getAkcija() {
+        return akcija;
+    }
+
+    public void setAkcija(String akcija) {
+        this.akcija = akcija;
+    }
 
     @Override
     public String toString() {

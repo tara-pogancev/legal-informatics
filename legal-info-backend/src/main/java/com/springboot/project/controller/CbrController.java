@@ -60,6 +60,9 @@ public class CbrController  {
             caseDescription.setVrstaDuvana(caseDTO.vrstaDuvana);
             caseDescription.setBrojPakovanja(caseDTO.brojPakovanja);
             caseDescription.setMasaDuvana(caseDTO.masaDuvana);
+            caseDescription.setAkcija(caseDTO.akcija);
+            caseDescription.setVrstaTrgovine(caseDTO.vrstaTrgovine);
+            caseDescription.setImaDozvolu(caseDTO.imaDozvolu);
 
             query.setDescription( caseDescription );
 
@@ -89,6 +92,9 @@ public class CbrController  {
                 + caseDTO.brojPakovanja + ";"
                 + caseDTO.masaDuvana + ";"
                 + caseDTO.vrstaDuvana + ";"
+                + caseDTO.imaDozvolu + ";"
+                + caseDTO.vrstaTrgovine + ";"
+                + caseDTO.akcija + ";"
                 + caseDTO.vrstaPresude + ";"
                 + String.join(",", caseDTO.primenjeniPropisi)
         );

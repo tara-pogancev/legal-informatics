@@ -45,14 +45,31 @@
         </div>
       </div>
 
-      <mat-form-field appearance="outline" class="mb-5">
-        <mat-label>Krivično delo</mat-label>
-        <input matInput [(ngModel)]="krivicnoDelo" />
-        <mat-hint
-          >Sudske odredbe razdvojiti zarezima (cl.6 ZOD, cl.12 ZOD, cl.284
-          KZ...)</mat-hint
-        >
-      </mat-form-field>
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline" class="mb-5">
+            <mat-label>Krivično delo</mat-label>
+            <input matInput [(ngModel)]="krivicnoDelo" />
+            <mat-hint
+              >Sudske odredbe razdvojiti zarezima (cl.6 ZOD, cl.12 ZOD, cl.284
+              KZ...)</mat-hint
+            >
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <div class="column action-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Akcija</mat-label>
+              <mat-select [(ngModel)]="case.akcija">
+                <mat-option value="kupovina">Kupovina</mat-option>
+                <mat-option value="prodaja">Prodaja</mat-option>
+                <mat-option value="krijumcarenje">Krijumcarenje</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
       <div class="columns">
         <div class="column">
           <mat-form-field appearance="outline">
@@ -74,13 +91,39 @@
         </div>
       </div>
 
-      <mat-form-field appearance="outline">
-        <mat-label>Vrsta duvana</mat-label>
-        <mat-select [(ngModel)]="case.vrstaDuvana">
-          <mat-option value="rezani duvan">Rezani duvan</mat-option>
-          <mat-option value="cigarete">Cigarete</mat-option>
-        </mat-select>
-      </mat-form-field>
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Vrsta duvana</mat-label>
+            <mat-select [(ngModel)]="case.vrstaDuvana">
+              <mat-option value="rezani duvan">Rezani duvan</mat-option>
+              <mat-option value="cigarete">Cigarete</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Posedovanje dozvole</mat-label>
+            <mat-select [(ngModel)]="case.imaDozvolu">
+              <mat-option value="nema dozvolu">Ne poseduje</mat-option>
+              <mat-option value="ima dozvolu">Poseduje</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Vrsta trgovine</mat-label>
+            <mat-select [(ngModel)]="case.vrstaTrgovine">
+              <mat-option value="promet na malo">Promet na malo</mat-option>
+              <mat-option value="promet na veliko">Promet na veliko</mat-option>
+              <mat-option value="promet na malo i veliko"
+                >Promet na malo i veliko</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
       <div
         class="stretch-width is-flex is-flex-direction-row is-justify-content-center mb-5"
       >
@@ -89,7 +132,9 @@
           color="accent"
           (click)="getRecommendations()"
           [disabled]="
-            krivicnoDelo == '' ||
+            case.akcija == '' ||
+            case.vrstaTrgovine == '' ||
+            case.imaDozvolu == '' ||
             case.vrednostDuvana == 0 ||
             case.brojPakovanja == 0 ||
             case.masaDuvana == 0 ||
