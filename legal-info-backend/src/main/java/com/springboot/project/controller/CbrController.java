@@ -62,7 +62,8 @@ public class CbrController  {
             caseDescription.setMasaDuvana(caseDTO.masaDuvana);
             caseDescription.setAkcija(caseDTO.akcija);
             caseDescription.setVrstaTrgovine(caseDTO.vrstaTrgovine);
-            caseDescription.setImaDozvolu(caseDTO.imaDozvolu);
+            caseDescription.setImaDozvoluZaMalo(caseDTO.imaDozvoluZaMalo);
+            caseDescription.setImaDozvoluZaVeliko(caseDTO.imaDozvoluZaVeliko);
 
             query.setDescription( caseDescription );
 
@@ -92,7 +93,8 @@ public class CbrController  {
                 + caseDTO.brojPakovanja + ";"
                 + caseDTO.masaDuvana + ";"
                 + caseDTO.vrstaDuvana + ";"
-                + caseDTO.imaDozvolu + ";"
+                + caseDTO.imaDozvoluZaMalo + ";"
+                + caseDTO.imaDozvoluZaVeliko + ";"
                 + caseDTO.vrstaTrgovine + ";"
                 + caseDTO.akcija + ";"
                 + caseDTO.vrstaPresude + ";"

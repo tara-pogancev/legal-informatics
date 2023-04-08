@@ -45,11 +45,12 @@ public class CsvConnector implements Connector {
                 caseDescription.setBrojPakovanja(Integer.valueOf(values[8]));
                 caseDescription.setMasaDuvana(Integer.valueOf(values[9]));
                 caseDescription.setVrstaDuvana(values[10]);
-                caseDescription.setImaDozvolu(values[11]);
-                caseDescription.setVrstaTrgovine(values[12]);
-                caseDescription.setAkcija(values[13]);
-                caseDescription.setVrstaPresude(values[14]);
-                caseDescription.setPrimenjeniPropisi(Arrays.asList(values[15].split(",")));
+                caseDescription.setImaDozvoluZaMalo(values[11]);
+                caseDescription.setImaDozvoluZaVeliko(values[12]);
+                caseDescription.setVrstaTrgovine(values[13]);
+                caseDescription.setAkcija(values[14]);
+                caseDescription.setVrstaPresude(values[15]);
+                caseDescription.setPrimenjeniPropisi(Arrays.asList(values[16].split(",")));
 
                 cbrCase.setDescription(caseDescription);
                 cases.add(cbrCase);

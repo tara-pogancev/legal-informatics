@@ -18,18 +18,45 @@ public class CaseDescription implements CaseComponent {
     private Integer brojPakovanja;
     private Integer masaDuvana;
     private String vrstaDuvana;
-    private String imaDozvolu;
+    private String imaDozvoluZaMalo;
+    private String imaDozvoluZaVeliko;
     private String vrstaTrgovine;
     private String akcija;
     private String vrstaPresude;
+    private String mrezaPreprodavaca;
+    private String uloga;
     private List<String> primenjeniPropisi = new ArrayList<String>();
 
-    public String getImaDozvolu() {
-        return imaDozvolu;
+    public String getMrezaPreprodavaca() {
+        return mrezaPreprodavaca;
     }
 
-    public void setImaDozvolu(String imaDozvolu) {
-        this.imaDozvolu = imaDozvolu;
+    public void setMrezaPreprodavaca(String mrezaPreprodavaca) {
+        this.mrezaPreprodavaca = mrezaPreprodavaca;
+    }
+
+    public String getUloga() {
+        return uloga;
+    }
+
+    public void setUloga(String uloga) {
+        this.uloga = uloga;
+    }
+
+    public String getImaDozvoluZaMalo() {
+        return imaDozvoluZaMalo;
+    }
+
+    public void setImaDozvoluZaMalo(String imaDozvoluZaMalo) {
+        this.imaDozvoluZaMalo = imaDozvoluZaMalo;
+    }
+
+    public String getImaDozvoluZaVeliko() {
+        return imaDozvoluZaVeliko;
+    }
+
+    public void setImaDozvoluZaVeliko(String imaDozvoluZaVeliko) {
+        this.imaDozvoluZaVeliko = imaDozvoluZaVeliko;
     }
 
     public String getVrstaTrgovine() {

@@ -18,9 +18,12 @@ public class CaseDTO {
     public Integer brojPakovanja;
     public Integer masaDuvana;
     public String vrstaDuvana;
-    public String imaDozvolu;
+    public String imaDozvoluZaMalo;
+    public String imaDozvoluZaVeliko;
     public String vrstaTrgovine;
     public String akcija;
+    public String uloga;
+    public String mrezaPreprodavaca;
     public String vrstaPresude;
     public List<String> primenjeniPropisi = new ArrayList<String>();
 }

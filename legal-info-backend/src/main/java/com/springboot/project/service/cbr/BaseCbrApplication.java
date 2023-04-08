@@ -36,11 +36,18 @@ public class BaseCbrApplication implements StandardCBRApplication {
         simConfig = new NNConfig(); // KNN configuration
         simConfig.setDescriptionSimFunction(new Average());  // global similarity function = average
 
-        TabularSimilarity slicnostImanjaDozvole = new TabularSimilarity(Arrays.asList(
+        TabularSimilarity slicnostImanjaDozvoleZaMalo = new TabularSimilarity(Arrays.asList(
                 "ima dozvolu",
                 "nema dozvolu"));
-        slicnostImanjaDozvole.setSimilarity("ima dozvolu", "nema dozvolu", 0.1);
-        simConfig.addMapping(new Attribute("imaDozvolu", CaseDescription.class), slicnostImanjaDozvole);
+        slicnostImanjaDozvoleZaMalo.setSimilarity("ima dozvolu", "nema dozvolu", 0.1);
+        simConfig.addMapping(new Attribute("imaDozvoluZaMalo", CaseDescription.class), slicnostImanjaDozvoleZaMalo);
+
+        TabularSimilarity slicnostImanjaDozvoleZaVeliko = new TabularSimilarity(Arrays.asList(
+                "ima dozvolu",
+                "nema dozvolu"));
+        slicnostImanjaDozvoleZaVeliko.setSimilarity("ima dozvolu", "nema dozvolu", 0.1);
+        simConfig.addMapping(new Attribute("imaDozvoluZaVeliko", CaseDescription.class), slicnostImanjaDozvoleZaVeliko);
+
 
         TabularSimilarity slicnostVrsteTrgovine = new TabularSimilarity(Arrays.asList(
                 "promet na malo",
@@ -64,7 +71,7 @@ public class BaseCbrApplication implements StandardCBRApplication {
         TabularSimilarity slicnostVrsteDuvana = new TabularSimilarity(Arrays.asList(
                 "rezani duvan",
                 "cigarete"));
-        slicnostImanjaDozvole.setSimilarity("rezani duvan", "cigarete", 0.7);
+        slicnostVrsteDuvana.setSimilarity("rezani duvan", "cigarete", 0.7);
         simConfig.addMapping(new Attribute("vrstaDuvana", CaseDescription.class), slicnostVrsteDuvana);
 
 

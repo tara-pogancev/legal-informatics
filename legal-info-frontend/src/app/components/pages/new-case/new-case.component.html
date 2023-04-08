@@ -101,15 +101,7 @@
             </mat-select>
           </mat-form-field>
         </div>
-        <div class="column">
-          <mat-form-field appearance="outline">
-            <mat-label>Posedovanje dozvole</mat-label>
-            <mat-select [(ngModel)]="case.imaDozvolu">
-              <mat-option value="nema dozvolu">Ne poseduje</mat-option>
-              <mat-option value="ima dozvolu">Poseduje</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+
         <div class="column">
           <mat-form-field appearance="outline">
             <mat-label>Vrsta trgovine</mat-label>
@@ -119,6 +111,52 @@
               <mat-option value="promet na malo i veliko"
                 >Promet na malo i veliko</mat-option
               >
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Posedovanje dozvole za malo</mat-label>
+            <mat-select [(ngModel)]="case.imaDozvoluZaMalo">
+              <mat-option value="nema dozvolu">Ne poseduje</mat-option>
+              <mat-option value="ima dozvolu">Poseduje</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Posedovanje dozvole za veliko</mat-label>
+            <mat-select [(ngModel)]="case.imaDozvoluZaVeliko">
+              <mat-option value="nema dozvolu">Ne poseduje</mat-option>
+              <mat-option value="ima dozvolu">Poseduje</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Uloga</mat-label>
+            <mat-select [(ngModel)]="case.uloga">
+              <mat-option value="fizicko lice">Fizičko lice</mat-option>
+              <mat-option value="pravo lice">Pravno lice</mat-option>
+              <mat-option value="odgovorno lice za pravno lice"
+                >Odgovorno lice za pravno lice</mat-option
+              >
+              <mat-option value="preduzetnik">Preduzetnik</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="outline">
+            <mat-label>Uključena mreža preprodavača</mat-label>
+            <mat-select [(ngModel)]="case.mrezaPreprodavaca">
+              <mat-option value="ukljucena">Uključena</mat-option>
+              <mat-option value="nije ukljucena">Nije uključena</mat-option>
             </mat-select>
           </mat-form-field>
         </div>
@@ -134,10 +172,13 @@
           [disabled]="
             case.akcija == '' ||
             case.vrstaTrgovine == '' ||
-            case.imaDozvolu == '' ||
+            case.imaDozvoluZaMalo == '' ||
+            case.imaDozvoluZaVeliko == '' ||
             case.vrednostDuvana == 0 ||
             case.brojPakovanja == 0 ||
             case.masaDuvana == 0 ||
+            case.uloga == '' ||
+            case.mrezaPreprodavaca == '' ||
             case.vrstaDuvana == ''
           "
         >
@@ -185,6 +226,12 @@
             case.masaDuvana == 0 ||
             case.vrstaDuvana == '' ||
             case.vrstaPresude == '' ||
+            case.imaDozvoluZaMalo == '' ||
+            case.imaDozvoluZaVeliko == '' ||
+            case.uloga == '' ||
+            case.vrstaTrgovine == '' ||
+            case.akcija == '' ||
+            case.mrezaPreprodavaca == '' ||
             primenjeniPropisi == ''
           "
         >
