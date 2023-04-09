@@ -32,15 +32,59 @@
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
 				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
 				<TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, sudija Nenad Vujanović, uz učešće Nataše Paunović, kao zapisničara, ukrivičnom postupku protiv okrivljene A.G., koju brani advokat D. J. iz P., zbog krivičnog djela nedozvoljenatrgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				,
+				<party id="nvujanovic" refersTo="#nvujanovic" as="#judge">
+					sudija Nenad Vujanović
+				</party>
+				, uz učešće
+				<party id="npaunovic" refersTo="#npaunovic" as="#clerk">
+					Nataše Paunović
+				</party>
+				, kao zapisničara, ukrivičnom postupku protiv okrivljene
+				<party id="ag" refersTo="#ag" as="#defendant">
+					A.G.
+				</party>
+				, koju brani advokat
+				<party id="dj" refersTo="#dj" as="#lawyer">
+					D. J.
+				</party>
+				iz P., zbog krivičnog djela nedozvoljenatrgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st. 2 Krivičnog zakonika Crne Gore
 				</ref>
-				, rješavajući po optu ž nom predlogu Osnovnog dr ž avnog tu ž ila š tva u Podgorici Kt . br . 276/21 od 05.03.2021. godine , nakon odr ž anog glavnog i javnog pretresa dana 12.05.2021. godine , u prisustvu zastupnika optu ž be Miloša Pipovića , savjetnika na radu uOsnovnom državnom tužilaštvu u Podgorici , okrivljene i njenog branioca , donio je i istog dana javno objavio, P R E S U D U Okrivljena: A.G. , JMB ..., od oca P. i majke Z., rođene G., rođena .... godine u P., sa prebivalištem u P., Ulica B. B. br. .,državljanka Crne Gore, penzioner, majka dvoje djece, završila srednju školu, lošeg imovnog stanja,neosuđivana. K r i v a j e Što je: Dana 15. februara 2021. godine, u Podgorici, u Bulevaru Save Kova čevića, svjesna svog djela, čije je izvršenjehtjela i znajući da je isto zabranjeno, neovlašćeno kupila robu čije je stavljanje u promet zabranjeno, na načinšto je od nepoznatog lica kupila 29,5 kg rezanog duvana upakovanog u 12 pakovanja od po 1 kilogram i 35 pakovanja od po 0,5 kg, ukupne vrijednosti 1.180,00 eura, koji je namjeravala da stavi u promet na sivomtržištu na području teritorije Crne Gore, a što je suprotno
+				, rješavajući po optužnom predlogu
+				<organization id="odt" refersTo="#odt">
+					Osnovnog državnog tužilaštva u Podgorici
+				</organization>
+				Kt . br . 276/21 od 05.03.2021. godine , nakon održanog glavnog i javnog pretresa dana 12.05.2021. godine , u prisustvu zastupnika optužbe
+				<party id="mpipovic" refersTo="#mpipovic">
+					Miloša Pipovića
+				</party>
+				, savjetnika na radu u
+				<organization id="odt" refersTo="#odt">
+					Osnovnom državnom tužilaštvu u Podgorici
+				</organization>
+				,
+				<party id="ag" refersTo="#ag" as="#defendant">
+					okrivljene
+				</party>
+				i njenog branioca , donio je i istog dana javno objavio, P R E S U D U
+				<party id="ag" refersTo="#ag" as="#defendant">
+					Okrivljena
+				</party>
+				:
+				<party id="ag" refersTo="#ag" as="#defendant">
+					A.G.
+				</party>
+				, JMB ..., od oca P. i majke Z., rođene G., rođena .... godine u P., sa prebivalištem u P., Ulica B. B. br. .,državljanka Crne Gore, penzioner, majka dvoje djece, završila srednju školu, lošeg imovnog stanja,neosuđivana. K r i v a j e Što je: Dana 15. februara 2021. godine, u Podgorici, u Bulevaru Save Kova čevića, svjesna svog djela, čije je izvršenjehtjela i znajući da je isto zabranjeno, neovlašćeno kupila robu čije je stavljanje u promet zabranjeno, na načinšto je od nepoznatog lica kupila 29,5 kg rezanog duvana upakovanog u 12 pakovanja od po 1 kilogram i 35 pakovanja od po 0,5 kg, ukupne vrijednosti 1.180,00 eura, koji je namjeravala da stavi u promet na sivomtržištu na području teritorije Crne Gore, a što je suprotno
 				<ref href="/duvan#art_6">
 					čl. 6 Zakona o duvanu
 				</ref>
@@ -52,7 +96,11 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa joj sud primjenom citirane zakonske odredbe, te odredbi
+					Pa joj
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					primjenom citirane zakonske odredbe, te odredbi
 					<ref href="/krivicni#art_4">
 						čl. 4 st. 2
 					</ref>
@@ -84,11 +132,27 @@
 					<ref href="/postupak#art_374">
 						374 Zakonika o krivičnom postupku
 					</ref>
-					, izriče Osnovni Sud u Podgorici K 277/2021 12. Maj 2021 USLOVNU OSUDU Kojom joj utvrđuje kaznu zatvora u trajanju od 3 ( tri) mjeseca i istovremeno određuje da se ista neće izvršiti,ako okrivljena u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo. Na osnovu
+					, izriče
+					<organization id="os" refersTo="#os">
+						Osnovni Sud u Podgorici
+					</organization>
+					K 277/2021 12. Maj 2021 USLOVNU OSUDU Kojom joj utvrđuje kaznu zatvora u trajanju od 3 ( tri) mjeseca i istovremeno određuje da se ista neće izvršiti,ako
+					<party id="ag" refersTo="#ag" as="#defendant">
+						okrivljena
+					</party>
+					u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo. Na osnovu
 					<ref href="/krivicni#art_75">
 						čl. 75 Krivičnog zakonika Crne Gore
 					</ref>
-					, prema okrivljenoj se izriče: MJERA BEZBJEDNOSTI ODUZIMANJE PREDMETA I to : 12 pakovanja rezanog duvana od po 1 kg i 35 pakovanja rezanog duvana od po 0,5 kg, tj. ukupno 29,5 kg. Obavezuje se okrivljena da u budžet Crne Gore na ime troškova krivičnog postupka, uplati iznos od 90,50eura, u roku od 15 dana po pravosnažnosti presude.
+					, prema
+					<party id="ag" refersTo="#ag" as="#defendant">
+						okrivljenoj
+					</party>
+					se izriče: MJERA BEZBJEDNOSTI ODUZIMANJE PREDMETA I to : 12 pakovanja rezanog duvana od po 1 kg i 35 pakovanja rezanog duvana od po 0,5 kg, tj. ukupno 29,5 kg. Obavezuje se
+					<party id="ag" refersTo="#ag" as="#defendant">
+						okrivljena
+					</party>
+					da u budžet Crne Gore na ime troškova krivičnog postupka, uplati iznos od 90,50eura, u roku od 15 dana po pravosnažnosti presude.
 				</p>
 			</conclusions>
 		</judgmentBody>

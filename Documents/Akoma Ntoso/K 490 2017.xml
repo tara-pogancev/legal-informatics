@@ -27,19 +27,47 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, po sutkinji Željki Jovović, uz učešće namještenice suda Danijele Rajković kaozapisničarke, u krivičnom predmetu protiv okrivljenog D . J . , zbog krivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				, po
+				<party id="zjovovic" refersTo="#zjovovic" as="#judge">
+					sutkinji Željki Jovović
+				</party>
+				, uz učešće namještenice suda
+				<party id="drajkovic" refersTo="#drajkovic" as="#clerk">
+					Danijele Rajković
+				</party>
+				kao zapisničarke, u krivičnom predmetu protiv
+				<party id="dj" refersTo="#dj" as="#defendant">
+					okrivljenog D . J .
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl.284 st. 3 Krivičnog zakonika Crne Gore
 				</ref>
-				, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanjukrivice, dana 20. 07. 2017. godine donio je P R E S U D U Okrivljeni: J . D . , JMB xxxxxxxxxxxxxx , od oca N . i majke I ., rođene V. , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u mjestu Tuzi selo Drume bb, državljanin Crne Gore, završio Osnovnu školu, penzioner,oženjen, otac jednog djeteta, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K. br.1553/07 od 24. 10. 2008. godine, zbog krivičnog djela iz
+				, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanjukrivice, dana 20. 07. 2017. godine donio je P R E S U D U Okrivljeni:
+				<party id="dj" refersTo="#dj" as="#defendant">
+					J . D .
+				</party>
+				, JMB xxxxxxxxxxxxxx , od oca N . i majke I ., rođene V. , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u mjestu Tuzi selo Drume bb, državljanin Crne Gore, završio Osnovnu školu, penzioner,oženjen, otac jednog djeteta, lošeg imovnog stanja, osuđivan presudom
+				<organization id="os" refersTo="#os">
+					Osnovnog suda u Podgorici
+				</organization>
+				K. br.1553/07 od 24. 10. 2008. godine, zbog krivičnog djela iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 1 Krivičnog zakonika
 				</ref>
-				- uslovnom osudom 3(tri) mjeseca na 1 (jednu) godinu i Okružnog suda u Titogradu K. br. 134/79 od 15. 12. 1980. godine, zbogkrivičnog djela iz
+				- uslovnom osudom 3(tri) mjeseca na 1 (jednu) godinu i
+				<organization id="ost" refersTo="#ost">
+					Okružnog suda u Titogradu
+				</organization>
+				K. br. 134/79 od 15. 12. 1980. godine, zbogkrivičnog djela iz
 				<ref href="/krivicni#art_190">
 					čl. 190
 				</ref>
@@ -47,7 +75,11 @@
 				<ref href="/krivicni#art_185">
 					čl. 185 Krivičnog zakonika
 				</ref>
-				- 2 (dvije) godine zatvora, u pritvoru od 19. 06. 2017.godine od 14:15 časova po rješenju Osnovnog suda u Podgorici Kri. br. 334/17. Kriv je Što je: Dana 19. 06. 2017. godine, u mjestu Drume - GO Tuzi, u Podgorici, svjestan svog djela, čije je izvršenje htio iznajući da je njegovo djelo zabranjeno, neovlašćeno kupio robu, čiji je promet ograničen, na način što je,neispunjavajući uslove pod kojima se može baviti prometom duvanskim proizvodima na veliko i malo iz
+				- 2 (dvije) godine zatvora, u pritvoru od 19. 06. 2017.godine od 14:15 časova po rješenju
+				<organization id="os" refersTo="#os">
+					Osnovnog suda u Podgorici
+				</organization>
+				Kri. br. 334/17. Kriv je Što je: Dana 19. 06. 2017. godine, u mjestu Drume - GO Tuzi, u Podgorici, svjestan svog djela, čije je izvršenje htio iznajući da je njegovo djelo zabranjeno, neovlašćeno kupio robu, čiji je promet ograničen, na način što je,neispunjavajući uslove pod kojima se može baviti prometom duvanskim proizvodima na veliko i malo iz
 				<ref href="/duvan#art_12">
 					čl. 12
 				</ref>
@@ -55,11 +87,23 @@
 				<ref href="/duvan#art_14">
 					14 Zakon o duvanu
 				</ref>
-				(Sl. list CG br. 48/08 od 11. 08. 2008. godine, Sl. list CG br. 76/08c od 12. 12. 2008. godine,Sl. list CG br. 40/11 od 08. 08. 2011. godine i Sl. list CG br. 42/15 od 29. 07. 2015. godine) kupio od NN lica oko Osnovni Sud u Podgorici K 490/2017 20. Jul 2017 170 kg rezanog duvana upakovanog u crne plastične kese, bez dokaza o porijeklu i akciznih markica CrneGore, a koji rezani duvan je bio namijenjen daljoj prodaji, koji duvan je pronađen istog dana prilikom pretresapm/v marke "Passat" reg. oznaka PG TE xxx , vlasništvo okrivljenog, izvršenog od strane službenikaRegionalnog centra granične policije OGB Tuzi, - čime je izvršio krivično djelo nedozvoljena trgovina iz čl. 284 st. 3 Krivičnog zakonika Crne Gore.
+				(Sl. list CG br. 48/08 od 11. 08. 2008. godine, Sl. list CG br. 76/08c od 12. 12. 2008. godine,Sl. list CG br. 40/11 od 08. 08. 2011. godine i Sl. list CG br. 42/15 od 29. 07. 2015. godine) kupio od NN lica oko
+				<organization id="os" refersTo="#os">
+					Osnovni Sud u Podgorici
+				</organization>
+				K 490/2017 20. Jul 2017 170 kg rezanog duvana upakovanog u crne plastične kese, bez dokaza o porijeklu i akciznih markica CrneGore, a koji rezani duvan je bio namijenjen daljoj prodaji, koji duvan je pronađen istog dana prilikom pretresapm/v marke "Passat" reg. oznaka PG TE xxx , vlasništvo
+				<party id="dj" refersTo="#dj" as="#defendant">
+					okrivljenog
+				</party>
+				, izvršenog od strane službenikaRegionalnog centra granične policije OGB Tuzi, - čime je izvršio krivično djelo nedozvoljena trgovina iz čl. 284 st. 3 Krivičnog zakonika Crne Gore.
 			</p>
 			<conclusions>
 				<p>
-					Pa ga sud na osnovu
+					Pa ga
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					na osnovu
 					<ref href="/krivicni#art_4">
 						čl. 4
 					</ref>
@@ -101,7 +145,15 @@
 					</ref>
 					Zakonika o krivičnom postupku
 				</p>
-				O S U Đ U J E Na kaznu zatvora u trajanju od 2 (dva) mjeseca, u koju kaznu se uračunava vrijeme provedeno u pritvoru od19. 06. 2017. godine od 14:15 časova , pa nadalje dok pritvor bude trajao. Obavezuje se okrivljeni da plati po osnovu troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, dok će sud o troškovima koji seodnose na nagradu angažovanog branioca po službenoj dužnosti odlučiti posebnim rješenjem. Na osnovu
+				O S U Đ U J E Na kaznu zatvora u trajanju od 2 (dva) mjeseca, u koju kaznu se uračunava vrijeme provedeno u pritvoru od19. 06. 2017. godine od 14:15 časova , pa nadalje dok pritvor bude trajao. Obavezuje se
+				<party id="dj" refersTo="#dj" as="#defendant">
+					okrivljeni
+				</party>
+				da plati po osnovu troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, dok će
+				<organization id="os" refersTo="#os">
+					sud
+				</organization>
+				o troškovima koji seodnose na nagradu angažovanog branioca po službenoj dužnosti odlučiti posebnim rješenjem. Na osnovu
 				<ref href="/krivicni#art_75">
 					čl. 75
 				</ref>
@@ -109,7 +161,15 @@
 				<ref href="/krivicni#art_284">
 					284 st. 6 Krivičnog zakonika Crne Gore
 				</ref>
-				, prema okrivljenom se izriče MJERA BEZBJEDNOSTI Oduzima se od okrivljenog J . D . 340 pakovanja rezanog duvana od po 0,5 kg, kao predmeti upotrijebljeni uizvršenju krivičnog djela.
+				, prema
+				<party id="dj" refersTo="#dj" as="#defendant">
+					okrivljenom
+				</party>
+				se izriče MJERA BEZBJEDNOSTI Oduzima se od
+				<party id="dj" refersTo="#dj" as="#defendant">
+					okrivljenog J . D .
+				</party>
+				340 pakovanja rezanog duvana od po 0,5 kg, kao predmeti upotrijebljeni uizvršenju krivičnog djela.
 			</conclusions>
 		</judgmentBody>
 	</judgment>

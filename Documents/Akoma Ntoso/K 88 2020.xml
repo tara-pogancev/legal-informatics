@@ -30,6 +30,7 @@
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
 				<TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
@@ -42,7 +43,7 @@
 					sudija Rade Ćetković
 				</party>
 				, uz učešće zapisničarke
-				<party id="ekraja" refersTo="#ekraja">
+				<party id="ekraja" refersTo="#ekraja" as="#clerk">
 					Edine Kraja
 				</party>
 				, u krivičnom postupku protiv okrivljenog

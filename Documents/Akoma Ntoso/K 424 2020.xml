@@ -29,15 +29,45 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="advisor" href="/ontology/role/advosor" showAs="Advisor" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, po sudiji Goranu Đukoviću, uz učešće namjetenika suda Sanje Radević, kaozapisničara, u krivičnom predmetu protiv okrivljene V. P. , zbog krivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				, po
+				<party id="gdjukovic" refersTo="#gdjukovic" as="#judge">
+					sudiji Goranu Đukoviću
+				</party>
+				, uz učešće namjetenika suda
+				<party id="sradevic" refersTo="#sradevic" as="#clerk">
+					Sanje Radević
+				</party>
+				, kao zapisničara, u krivičnom predmetu protiv
+				<party id="vp" refersTo="#vp" as="#defendant">
+					okrivljene V. P.
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl.284.st.3 Krivičnog zakonika Crne Gore
 				</ref>
-				, odlučujući po optužnom predlogu Osnovnog državnog tužilaštva Kt br.855/20 od 02. juna 2020. godine, koji je zastupao savjetnik ODT-a Pipović Miloš, nakon glavnog i javnogpretresa, održanog dana 16.09.2020. godine, u prisustvu stranaka, donio je, i istog dana, javno objavio P R E S U D U Okrivljena: V. P. , od oca Lj . i majke V . , rođene C ., rođena xx . xx .19 xx . godine u mjestu Vraka- Skadar, RepublikaAlbanija, sa prebivalištem u Golubovcima M . bb, državljanka Republike Albanije, sa dozvolom za stalniboravak u Crnoj Gori, udata, majka dvoje punoljetne djece, zavšila srednju školu, domaćica, lošeg imovnogstanja, neosuđivana KRIVA JE Zato što je: Dana 28. maja 2020. godine, u Podgorici, svjesna svog djela čije je izvršenje htjela, znajući da je njeno djelozabranjeno, neovlašćeno kupila robu čiji je promet ograničen kao i robu čiji je promet zabranjen, na način štoje od nepoznatog lica, ispred tržnog centra Gintaš, kupila 26 paklica cigareta Calvin, 12 paklica cigareta Dune,19 paklica cigareta De santins, 35 paklica cigareta King, 45 paklica cigareta Mancehster, 78 paklica cigaretaFM, 61 paklica cigareta Merlin, 10 paklica cigareta Organza, 42 paklice cigareta Ibiza, 58 paklica cigaretaMonte, 10 paklica cigareta Donatela, 133 paklice cigareta Corset, 90 paklica cigareta Trokadero, 21 paklicacigareta President, 2 paklice cigareta Dijamont, 1 paklica cigareta Cosmopolitan i 4 pakovanja po 1/2 kgrezanog duvana, sve ukupne vrijednosti 593,79 eura, koje je namjeravala da stavi u promet na sivom tržištuna području teritorije Glavnog grada Podgorica, što je suprotno
+				, odlučujući po optužnom predlogu
+				<organization id="odt" refersTo="#odt">
+					Osnovnog državnog tužilaštva
+				</organization>
+				Kt br.855/20 od 02. juna 2020. godine, koji je zastupao savjetnik ODT-a
+				<party id="mpipovic
+				" refersTo="#mpipovic" as="#advisor">
+					Pipović Miloš
+				</party>
+				, nakon glavnog i javnogpretresa, održanog dana 16.09.2020. godine, u prisustvu stranaka, donio je, i istog dana, javno objavio P R E S U D U
+				<party id="vp" refersTo="#vp" as="#defendant">
+					Okrivljena: V. P.
+				</party>
+				, od oca Lj . i majke V . , rođene C ., rođena xx . xx .19 xx . godine u mjestu Vraka- Skadar, RepublikaAlbanija, sa prebivalištem u Golubovcima M . bb, državljanka Republike Albanije, sa dozvolom za stalniboravak u Crnoj Gori, udata, majka dvoje punoljetne djece, zavšila srednju školu, domaćica, lošeg imovnogstanja, neosuđivana KRIVA JE Zato što je: Dana 28. maja 2020. godine, u Podgorici, svjesna svog djela čije je izvršenje htjela, znajući da je njeno djelozabranjeno, neovlašćeno kupila robu čiji je promet ograničen kao i robu čiji je promet zabranjen, na način štoje od nepoznatog lica, ispred tržnog centra Gintaš, kupila 26 paklica cigareta Calvin, 12 paklica cigareta Dune,19 paklica cigareta De santins, 35 paklica cigareta King, 45 paklica cigareta Mancehster, 78 paklica cigaretaFM, 61 paklica cigareta Merlin, 10 paklica cigareta Organza, 42 paklice cigareta Ibiza, 58 paklica cigaretaMonte, 10 paklica cigareta Donatela, 133 paklice cigareta Corset, 90 paklica cigareta Trokadero, 21 paklicacigareta President, 2 paklice cigareta Dijamont, 1 paklica cigareta Cosmopolitan i 4 pakovanja po 1/2 kgrezanog duvana, sve ukupne vrijednosti 593,79 eura, koje je namjeravala da stavi u promet na sivom tržištuna području teritorije Glavnog grada Podgorica, što je suprotno
 				<ref href="/duvan#art_6">
 					čl. 6
 				</ref>
@@ -49,11 +79,22 @@
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 Krivičnog zakonika Crne Gore
 				</ref>
-				. Osnovni Sud u Podgorici K 424/2020 17. Septembar 2020
+				.
+				<organization id="os" refersTo="#os">
+					Osnovni Sud u Podgorici
+				</organization>
+				K 424/2020 17. Septembar 2020
 			</p>
 			<conclusions>
 				<p>
-					Pa sud okrivljenoj primjenom citiranih zakonskih propisa te
+					Pa
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					<party id="vp" refersTo="#vp" as="#defendant">
+						okrivljenoj
+					</party>
+					primjenom citiranih zakonskih propisa te
 					<ref href="/krivicni#art_3">
 						čl. 3
 					</ref>
@@ -111,11 +152,38 @@
 						čl. 374
 					</ref>
 					Zakonika o krivičnom postupku
-					Iz r i č e: USLOVNU OSUDU Kojom joj prethodno utvrdjuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno odredjuje da seutvrdjena kazna neće izvršiti ukoliko okrivljena u roku od 1 (jedne) godine po pravosnažnosti presude neizvrši novo krivično djelo. Ukoliko dodje do opoziva uslovne osude, sud će okrivljenoj uračunati vrijeme provedeno na zadržavanjupred Upravom policije CB Podgorica od 28.05.2020. godine od 12:10 časova kao dana i časa lišenja slobode,do 28.05.2020. godine do 14:35 časova. Sud okrivljenoj na osnovu
+					Iz r i č e: USLOVNU OSUDU Kojom joj prethodno utvrdjuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno odredjuje da seutvrdjena kazna neće izvršiti ukoliko
+					<party id="vp" refersTo="#vp" as="#defendant">
+						okrivljena
+					</party>
+					u roku od 1 (jedne) godine po pravosnažnosti presude neizvrši novo krivično djelo. Ukoliko dodje do opoziva uslovne osude,
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					će
+					<party id="vp" refersTo="#vp" as="#defendant">
+						okrivljenoj
+					</party>
+					uračunati vrijeme provedeno na zadržavanjupred Upravom policije CB Podgorica od 28.05.2020. godine od 12:10 časova kao dana i časa lišenja slobode,do 28.05.2020. godine do 14:35 časova.
+					<organization id="os" refersTo="#os">
+						Sud
+					</organization>
+					<party id="vp" refersTo="#vp" as="#defendant">
+						okrivljenoj
+					</party>
+					na osnovu
 					<ref href="/krivicni#art_75">
 						čl. 75 st. 1 Krivičnog zakonika Crne Gore
 					</ref>
-					, I z r i č e: MJERU BEZBJEDNOSTI Oduzimanje predmeta i to: 26 paklica cigareta Calvin, 12 paklica cigareta Dune, 19 paklica cigareta Desantins, 35 paklica cigareta King, 45 paklica cigareta Mancehster, 78 paklica cigareta FM, 61 paklica cigaretaMerlin, 10 paklica cigareta Organza, 42 paklice cigareta Ibiza, 58 paklica cigareta Monte, 10 paklica cigaretaDonatela, 133 paklice cigareta Corset, 90 paklica cigareta Trokadero, 21 paklica cigareta President, 2 paklicecigareta Dijamont, 1 paklica cigareta Cosmopolitan i 4 pakovanja po 1/2 kg rezanog duvana. Obavezuje se okrivljena da ovom sudu na ime troškova krivičnog postupka uplati novčani iznos od 60,50 eurakao i 30,00 eura na ime paušala u roku od 15 dana po pravosnažnosti presude.
+					, I z r i č e: MJERU BEZBJEDNOSTI Oduzimanje predmeta i to: 26 paklica cigareta Calvin, 12 paklica cigareta Dune, 19 paklica cigareta Desantins, 35 paklica cigareta King, 45 paklica cigareta Mancehster, 78 paklica cigareta FM, 61 paklica cigaretaMerlin, 10 paklica cigareta Organza, 42 paklice cigareta Ibiza, 58 paklica cigareta Monte, 10 paklica cigaretaDonatela, 133 paklice cigareta Corset, 90 paklica cigareta Trokadero, 21 paklica cigareta President, 2 paklicecigareta Dijamont, 1 paklica cigareta Cosmopolitan i 4 pakovanja po 1/2 kg rezanog duvana. Obavezuje se
+					<party id="vp" refersTo="#vp" as="#defendant">
+						okrivljena
+					</party>
+					da ovom
+					<organization id="os" refersTo="#os">
+						sudu
+					</organization>
+					na ime troškova krivičnog postupka uplati novčani iznos od 60,50 eurakao i 30,00 eura na ime paušala u roku od 15 dana po pravosnažnosti presude.
 				</p>
 			</conclusions>
 		</judgmentBody>

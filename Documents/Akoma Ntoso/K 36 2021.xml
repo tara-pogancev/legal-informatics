@@ -30,6 +30,7 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
@@ -42,7 +43,7 @@
 					sudija Tamara Spasojević
 				</party>
 				, sa zapisničarom
-				<party id="astanisic" refersTo="#astanisic">
+				<party id="astanisic" refersTo="#astanisic" as="#clerk">
 					Anom Stanišić
 				</party>
 				, u krivičnom predmetu okrivljenog

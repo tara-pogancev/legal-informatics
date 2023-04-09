@@ -21,6 +21,7 @@
 			</identification>
 			<references>
 				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+				<TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica" showAs="Visi sud u Podgorici" />
 				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo" showAs="Osnovno drzavno tuzilastvo" />
 				<TLCPerson eId="nrabrenovic" href="/ontology/person/nrabrenovic" showAs="Nada Rabrenovic" />
 				<TLCPerson eId="amitrovic" href="/ontology/person/amitrovic" showAs="Andjela Mitrovic" />
@@ -31,15 +32,67 @@
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
 				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, po sudiji Nadi Rabrenović, uz učešće Mitrović Anđele, kao zapisničara ukrivičnom predmetu protiv okrivljenog P.P., zbog krivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				, po
+				<party id="nrabrenovic" refersTo="#nrabrenovic" as="#judge">
+					sudiji Nadi Rabrenović
+				</party>
+				, uz učešće
+				<party id="amitrovic" refersTo="#amitrovic" as="#clerk">
+					Mitrović Anđele
+				</party>
+				, kao zapisničara ukrivičnom predmetu protiv
+				<party id="pp" refersTo="#pp" as="#defendant">
+					okrivljenog P.P.
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st.2 Krivičnog zakonika Crne Gore
 				</ref>
-				, odlučujući po Optužnom predlogu Osnovnog državnog tužilaštva uPodgorici, Kt. br. 1677/18 od 06.11.2018. godine, koji je izmijenjen na glavnom pretresu, nakon održanogglavnog i javnog pretresa dana 27.11.2018. godine, u prisustvu zastupnika optužbe V.R., državnog tužioca uOsnovnom državnom tužilaštvu u Podgorici, okrivljenog P.P. i branioca po službenoj dužnosti okrivljenog,advokata V.A. iz PG, donio je i dana 29.11.2018. godine, javno objavio P R E S U D U OKRIVLJENI: P.P., JMB: ..., od oca Đ. i majke Lj., rođene Đ., rođen ... godine u PG, sa prebivalištem u PG ..., državljanin Crne Gore, završio četiri razreda osnovne škole, nezaposlen, oženjen, otac četvoro djece, lošeg imovinogstanja, osuđivan Presudom Osnovnog suda u Podgorici, K.br. 10/99 od 17.12.2010. godine, zbog krivičnogdjela iz čl. 339 st. 3 u vezi st. 1 KZ, 45 dana zatvora, uslovno na 1 godinu, Presudom Osnovnog suda uPodgorici, K.br. 711/14 od 25.11.2015. godine, zbog krivičnog djela iz čl. 284 st. 1 KZCG, 4 mjeseca zatvora,uslovno na 2 godine i Presudom Višeg suda u Podgorici, K.br. 89/2014 od 09.03.2017. godine, zbog krivičnogdjela iz čl. 300 st. 1 KZCG, 2 godine i 6 mjeseci zatvora, K r i v j e, Zato što je: Dana 25.10.2018. godine, u mjestu C., G.grad PG, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno suprotno
+				, odlučujući po
+				<organization id="odt" refersTo="#odt">
+					Optužnom predlogu Osnovnog državnog tužilaštva u Podgorici
+				</organization>
+				, Kt. br. 1677/18 od 06.11.2018. godine, koji je izmijenjen na glavnom pretresu, nakon održanogglavnog i javnog pretresa dana 27.11.2018. godine, u prisustvu
+				<party id="vr" refersTo="#vr" as="#plaintiff">
+					zastupnika optužbe V.R.
+				</party>
+				, državnog tužioca u
+				<organization id="odt" refersTo="#odt">
+					Osnovnom državnom tužilaštvu u Podgorici
+				</organization>
+				,
+				<party id="pp" refersTo="#pp" as="#defendant">
+					okrivljenog P.P.
+				</party>
+				i branioca po službenoj dužnosti okrivljenog,
+				<party id="va" refersTo="#va" as="#lawyer">
+					advokata V.A.
+				</party>
+				iz PG, donio je i dana 29.11.2018. godine, javno objavio P R E S U D U
+				<party id="pp" refersTo="#pp" as="#defendant">
+					OKRIVLJENI: P.P.
+				</party>
+				, JMB: ..., od oca Đ. i majke Lj., rođene Đ., rođen ... godine u PG, sa prebivalištem u PG ..., državljanin Crne Gore, završio četiri razreda osnovne škole, nezaposlen, oženjen, otac četvoro djece, lošeg imovinogstanja, osuđivan
+				<organization id="os" refersTo="#os">
+					Presudom Osnovnog suda u Podgorici
+				</organization>
+				, K.br. 10/99 od 17.12.2010. godine, zbog krivičnogdjela iz čl. 339 st. 3 u vezi st. 1 KZ, 45 dana zatvora, uslovno na 1 godinu,
+				<organization id="os" refersTo="#os">
+					Presudom Osnovnog suda u Podgorici
+				</organization>
+				, K.br. 711/14 od 25.11.2015. godine, zbog krivičnog djela iz čl. 284 st. 1 KZCG, 4 mjeseca zatvora,uslovno na 2 godine i
+				<organization id="vs" refersTo="#vs">
+					Presudom Višeg suda u Podgorici
+				</organization>
+				, K.br. 89/2014 od 09.03.2017. godine, zbog krivičnogdjela iz čl. 300 st. 1 KZCG, 2 godine i 6 mjeseci zatvora, K r i v j e, Zato što je: Dana 25.10.2018. godine, u mjestu C., G.grad PG, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno suprotno
 				<ref href="/duvan#art_6">
 					čl. 6
 				</ref>
@@ -55,7 +108,15 @@
 				<ref href="/duvan#art_15">
 					čl. 15 Zakona o duvanu
 				</ref>
-				(“Sl. list CG”, br. 48/08, 76/08, 40/11 i42/15), u svrhu prodaje, neovlašćeno kupio robu, čiji je promet zabranjen, na način što je, od nepoznatog lica,kupio 195 kg rezanog duvana upakovanog u 14 PVC kesa crne boje, u kojima se nalazilo 390 pakovanja od po 0,5 kg, ukupne vrijednosti 5.850,00 eura, a koji rezani duvan je pronađen, dana 25.10.2018. godine, prilikomkontrole izvršene od strane ovlašćenih policijskih službenika, u putničkom vozilu marke "P." registarskihoznaka ..., vlasništvo okrivljenog, u mjestu M., Osnovni Sud u Podgorici K 684/2018 27. Novembar 2018 - čime je izvršio krivično djelo nedozvoljena trgovina iz
+				(“Sl. list CG”, br. 48/08, 76/08, 40/11 i42/15), u svrhu prodaje, neovlašćeno kupio robu, čiji je promet zabranjen, na način što je, od nepoznatog lica,kupio 195 kg rezanog duvana upakovanog u 14 PVC kesa crne boje, u kojima se nalazilo 390 pakovanja od po 0,5 kg, ukupne vrijednosti 5.850,00 eura, a koji rezani duvan je pronađen, dana 25.10.2018. godine, prilikomkontrole izvršene od strane ovlašćenih policijskih službenika, u putničkom vozilu marke "P." registarskihoznaka ..., vlasništvo
+				<party id="pp" refersTo="#pp" as="#defendant">
+					okrivljenog
+				</party>
+				, u mjestu M.,
+				<organization id="os" refersTo="#os">
+					Osnovni Sud u Podgorici
+				</organization>
+				K 684/2018 27. Novembar 2018 - čime je izvršio krivično djelo nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st. 2 Krivičnog zakonika CrneGore
 				</ref>
@@ -63,7 +124,14 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa sud okrivljenog , primjenom citiranih zakonskih odredbi , te
+					Pa
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					<party id="pp" refersTo="#pp" as="#defendant">
+						okrivljenog
+					</party>
+					, primjenom citiranih zakonskih odredbi , te
 					<ref href="/krivicni#art_2k">
 						čl. 2
 					</ref>
@@ -100,7 +168,30 @@
 						čl. 374
 					</ref>
 					Zakonika o krivičnom postupku
-					O S U Đ U J E Na kaznu zatvora u trajanju od 4 (četiri) mjeseca, u koju kaznu se okrivljenom uračunava vrijeme koje jeproveo u pritvoru od 25.10.2018. godine od 11,00 časova, kao dana i časa lišenja slobode, pa nadalje . Obavezuje se okrivljeni da Osnovnom sudu u Podgorici plati tro š kove krivi č nog postupka u iznosu od60,50 eura i troškove na ime angažovanja branioca po službenoj dužnosti o kojima će sud odlučiti posebnimrješenjem i na ime sudskog pau š ala iznos od 30,00 eura , sve u roku od 15 dana po pravnosna ž nosti presude . Sud okrivljenom , na osnovu
+					O S U Đ U J E Na kaznu zatvora u trajanju od 4 (četiri) mjeseca, u koju kaznu se
+					<party id="pp" refersTo="#pp" as="#defendant">
+						okrivljenom
+					</party>
+					uračunava vrijeme koje jeproveo u pritvoru od 25.10.2018. godine od 11,00 časova, kao dana i časa lišenja slobode, pa nadalje . Obavezuje se
+					<party id="pp" refersTo="#pp" as="#defendant">
+						okrivljeni
+					</party>
+					da
+					<organization id="os" refersTo="#os">
+						Osnovnom sudu u Podgorici
+					</organization>
+					plati tro š kove krivi č nog postupka u iznosu od60,50 eura i troškove na ime angažovanja branioca po službenoj dužnosti o kojima će
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					odlučiti posebnimrješenjem i na ime sudskog pau š ala iznos od 30,00 eura , sve u roku od 15 dana po pravnosna ž nosti presude .
+					<organization id="os" refersTo="#os">
+						Sud
+					</organization>
+					<party id="pp" refersTo="#pp" as="#defendant">
+						okrivljenom
+					</party>
+					, na osnovu
 					<ref href="/krivicni#art_66">
 						čl . 66
 					</ref>

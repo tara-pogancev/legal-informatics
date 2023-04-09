@@ -29,15 +29,51 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, sudija Nenad Vujanović, uz učešće Nataše Paunović, kao zapisničara, ukrivičnom postupku protiv okrivljene M.C., zbog krivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				,
+				<party id="nvujanovic" refersTo="#nvujanovic" as="#judge">
+					sudija Nenad Vujanović
+				</party>
+				, uz učešće
+				<party id="npaunovic" refersTo="#npaunovic" as="#clerk">
+					Nataše Paunović
+				</party>
+				, kao zapisničara, ukrivičnom postupku protiv
+				<party id="mc" refersTo="#mc" as="#defendant">
+					okrivljene M.C.
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 Krivičnog zakonika Crne Gore
 				</ref>
-				, postupajući po optužnom predlogu Osnovnog državnog tužilaštva u PodgoriciKt. br. 1842/20 od 21.12.2020. godine, nakon održanog glavnog i javnog pretresa dana 15.02.2021. godine, uprisustvu zastupnika optužbe Filipa Vukovića, savjetnika na radu kod Osnovnog državnog tužilaštva iokrivljene, donio je i javno objavio, P R E S U D U Okrivljena: M.C., JMB ... od oca Đ. i majke S., rođene Đ., rođena .... godine u Skadru u A., sa prebivalištem u P., Ul. S. I. bb,Z., državljanka Albanije, nezaposlena, udata, majka dvoje djece, sa završenom osnovnom školom, lošegimovnog stanja, neosuđivana. K r i v a j e Što je: Početkom decembra mjeseca 2020. godine u Tuzima, svjesna svog djela, čije je izvršenje htjela, znajući da jeisto zabranjeno, neovlašćeno kupila robu – duvanske proizvode, čiji je promet ograničen i zabranjen, na načinšto je, neispunjavajući uslove pod kojima se može baviti prometom duvanskih proizvoda na veliko i malo iz
+				, postupajući po optužnom predlogu
+				<organization id="odt" refersTo="#odt">
+					Osnovnog državnog tužilaštva u Podgorici
+				</organization>
+				Kt. br. 1842/20 od 21.12.2020. godine, nakon održanog glavnog i javnog pretresa dana 15.02.2021. godine, uprisustvu zastupnika optužbe
+				<party id="fvukovic" refersTo="#fvukovic" as="#advisor">
+					Filipa Vukovića
+				</party>
+				, savjetnika na radu kod
+				<organization id="odt" refersTo="#odt">
+					Osnovnog državnog tužilaštva
+				</organization>
+				i
+				<party id="mc" refersTo="#mc" as="#defendant">
+					okrivljene
+				</party>
+				, donio je i javno objavio, P R E S U D U
+				<party id="mc" refersTo="#mc" as="#defendant">
+					Okrivljena: M.C.
+				</party>
+				, JMB ... od oca Đ. i majke S., rođene Đ., rođena .... godine u Skadru u A., sa prebivalištem u P., Ul. S. I. bb,Z., državljanka Albanije, nezaposlena, udata, majka dvoje djece, sa završenom osnovnom školom, lošegimovnog stanja, neosuđivana. K r i v a j e Što je: Početkom decembra mjeseca 2020. godine u Tuzima, svjesna svog djela, čije je izvršenje htjela, znajući da jeisto zabranjeno, neovlašćeno kupila robu – duvanske proizvode, čiji je promet ograničen i zabranjen, na načinšto je, neispunjavajući uslove pod kojima se može baviti prometom duvanskih proizvoda na veliko i malo iz
 				<ref href="/duvan#art_6">
 					čl. 6
 				</ref>
@@ -49,7 +85,11 @@
 				<ref href="/duvan#art_14">
 					čl. 14 Zakona o duvanu
 				</ref>
-				(„Sl.list Crne Gore 48/08, 76/08, 40/11, 42/15 “) , kupila od NN licaduvanske proizvode – 211 paklica cigareta i to: 15 paklica cigareta marke „Trokadero Blue“, 19 paklicacigareta marke „Trokadero Classic“, 19 paklica cigareta marke „Trokadero Slims“, 11 paklica cigareta marke„Corset Lila preklapanje“, 7 paklica cigareta marke „Corset Lila Kocka“, 10 paklica cigareta marke„Manchester crveni“, 9 paklica cigareta marke „ Ibiza“, 2 paklice cigareta marke „Trokadero crveni“, 10 paklicacigareta marke „Manchester plavi“, 12 paklica cigareta marke „Virgina Exclusive“, 6 paklica cigareta marke„Fency“, 4 paklice cigareta marke „Calvin“, 6 paklica cigareta marke „FM crveni debeli“, 4 paklice cigaretamarke „FM plavi Slims“, 13 paklica cigareta marke „FM plavi debeli“, 3 paklice cigareta marke „Mac“, 4 paklicecigareta marke „Calvin red“, 8 paklica cigareta marke „Organza“, 11 paklica cigareta marke „ Merylin“, 14paklica cigareta marke „De santis classic“, 14 paklica cigareta marke „ Manchester crni“, 7 paklica cigaretamarke „De santis crveni“, 2 paklice cigareta marke „Dune“, 1 paklica cigareta marke „King“ i 15,5 kg rezanogduvana upakovanog u 31 pakovanje od po 0,5 kg, sve ukupne vrijednosti 1.502,70 eura, bez dokaza oporijeklu i akciznih markica Crne Gore, a koje cigarete i rezani duvan su bili namijenjeni daljoj prodaju, u Osnovni Sud u Podgorici K 1009/2020 15. Februar 2021 čemu je otkrivena dana 10.12.2020. godine, prilikom kontrole izvršene od strane ovlašćenih policijskihsužbenika CB Podgorica. - čime je učinila krivično djelo nedozvoljena trgovina iz
+				(„Sl.list Crne Gore 48/08, 76/08, 40/11, 42/15 “) , kupila od NN licaduvanske proizvode – 211 paklica cigareta i to: 15 paklica cigareta marke „Trokadero Blue“, 19 paklicacigareta marke „Trokadero Classic“, 19 paklica cigareta marke „Trokadero Slims“, 11 paklica cigareta marke„Corset Lila preklapanje“, 7 paklica cigareta marke „Corset Lila Kocka“, 10 paklica cigareta marke„Manchester crveni“, 9 paklica cigareta marke „ Ibiza“, 2 paklice cigareta marke „Trokadero crveni“, 10 paklicacigareta marke „Manchester plavi“, 12 paklica cigareta marke „Virgina Exclusive“, 6 paklica cigareta marke„Fency“, 4 paklice cigareta marke „Calvin“, 6 paklica cigareta marke „FM crveni debeli“, 4 paklice cigaretamarke „FM plavi Slims“, 13 paklica cigareta marke „FM plavi debeli“, 3 paklice cigareta marke „Mac“, 4 paklicecigareta marke „Calvin red“, 8 paklica cigareta marke „Organza“, 11 paklica cigareta marke „ Merylin“, 14paklica cigareta marke „De santis classic“, 14 paklica cigareta marke „ Manchester crni“, 7 paklica cigaretamarke „De santis crveni“, 2 paklice cigareta marke „Dune“, 1 paklica cigareta marke „King“ i 15,5 kg rezanogduvana upakovanog u 31 pakovanje od po 0,5 kg, sve ukupne vrijednosti 1.502,70 eura, bez dokaza oporijeklu i akciznih markica Crne Gore, a koje cigarete i rezani duvan su bili namijenjeni daljoj prodaju, u
+				<organization id="os" refersTo="#os">
+					Osnovni Sud u Podgorici
+				</organization>
+				K 1009/2020 15. Februar 2021 čemu je otkrivena dana 10.12.2020. godine, prilikom kontrole izvršene od strane ovlašćenih policijskihsužbenika CB Podgorica. - čime je učinila krivično djelo nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st. 2 Krivičnog zakonika Crne Gore
 				</ref>
@@ -57,7 +97,11 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa joj sud primjenom citirane zakonske odredbe, te odredbe
+					Pa joj
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					primjenom citirane zakonske odredbe, te odredbe
 					<ref href="/krivicni#art_4">
 						čl. 4
 					</ref>
@@ -90,11 +134,23 @@
 						čl. 374
 					</ref>
 					Zakonika o krivičnom postupku
-					izriče USLOVNU OSUDU Kojom joj utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ista neće izvršitiako okrivljena u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo. Na osnovu
+					izriče USLOVNU OSUDU Kojom joj utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ista neće izvršitiako
+					<party id="mc" refersTo="#mc" as="#defendant">
+						okrivljena
+					</party>
+					u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo. Na osnovu
 					<ref href="/krivicni#art_75">
 						čl. 75 u vezi čl. 284 st. 6 Krivičnog zakonika Crne Gore
 					</ref>
-					, prema okrivljenoj se izriče: MJERA BEZBJEDNOSTI ODUZIMANJE PREDMETA 211 paklica cigareta i to: 15 paklica cigareta marke „Trokadero Blue“, 19 paklica cigareta marke „TrokaderoClassic“, 19 paklica cigareta marke „Trokadero Slims“, 11 paklica cigareta marke „Corset Lila preklapanje“, 7paklica cigareta marke „Corset Lila Kocka“, 10 paklica cigareta marke „Manchester crveni“, 9 paklica cigaretamarke „ Ibiza“, 2 paklice cigareta marke „Trokadero crveni“, 10 paklica cigareta marke „Manchester plavi“, 12paklica cigareta marke „Virgina Exclusive“, 6 paklica cigareta marke „Fency“, 4 paklice cigareta marke„Calvin“, 6 paklica cigareta marke „FM crveni debeli“, 4 paklice cigareta marke „FM plavi Slims“, 13 paklicacigareta marke „FM plavi debeli“, 3 paklice cigareta marke „Mac“, 4 paklice cigareta marke „Calvin red“, 8paklica cigareta marke „Organza“, 11 paklica cigareta marke „ Merylin“, 14 paklica cigareta marke „De santisclassic“, 14 paklica cigareta marke „ Manchester crni“, 7 paklica cigareta marke „De santis crveni“, 2 paklicecigareta marke „Dune“, 1 paklica cigareta marke „King“ i 15,5 kg rezanog duvana upakovanog u 31 pakovanjeod po 0,5 kg. Obavezuje se okrivljena da na ime troškova krivičnog postupka plati u budžet Crne Gore iznos od 90,50 eura,u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
+					, prema
+					<party id="mc" refersTo="#mc" as="#defendant">
+						okrivljenoj
+					</party>
+					se izriče: MJERA BEZBJEDNOSTI ODUZIMANJE PREDMETA 211 paklica cigareta i to: 15 paklica cigareta marke „Trokadero Blue“, 19 paklica cigareta marke „TrokaderoClassic“, 19 paklica cigareta marke „Trokadero Slims“, 11 paklica cigareta marke „Corset Lila preklapanje“, 7paklica cigareta marke „Corset Lila Kocka“, 10 paklica cigareta marke „Manchester crveni“, 9 paklica cigaretamarke „ Ibiza“, 2 paklice cigareta marke „Trokadero crveni“, 10 paklica cigareta marke „Manchester plavi“, 12paklica cigareta marke „Virgina Exclusive“, 6 paklica cigareta marke „Fency“, 4 paklice cigareta marke„Calvin“, 6 paklica cigareta marke „FM crveni debeli“, 4 paklice cigareta marke „FM plavi Slims“, 13 paklicacigareta marke „FM plavi debeli“, 3 paklice cigareta marke „Mac“, 4 paklice cigareta marke „Calvin red“, 8paklica cigareta marke „Organza“, 11 paklica cigareta marke „ Merylin“, 14 paklica cigareta marke „De santisclassic“, 14 paklica cigareta marke „ Manchester crni“, 7 paklica cigareta marke „De santis crveni“, 2 paklicecigareta marke „Dune“, 1 paklica cigareta marke „King“ i 15,5 kg rezanog duvana upakovanog u 31 pakovanjeod po 0,5 kg. Obavezuje se
+					<party id="mc" refersTo="#mc" as="#defendant">
+						okrivljena
+					</party>
+					da na ime troškova krivičnog postupka plati u budžet Crne Gore iznos od 90,50 eura,u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
 				</p>
 			</conclusions>
 		</judgmentBody>

@@ -31,19 +31,51 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, sudija Nenad Vujanović, uz učešće Nataše Paunović kao zapisničara, ukrivičnom postupku protiv okrivljenog B.V., zbog krivičnog djela nedozvoljena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				,
+				<party id="nvujanovic" refersTo="#nvujanovic" as="#judge">
+					sudija Nenad Vujanović
+				</party>
+				, uz učešće
+				<party id="npaunovic" refersTo="#npaunovic" as="#clerk">
+					Nataše Paunović
+				</party>
+				kao zapisničara, ukrivičnom postupku protiv
+				<party id="bv" refersTo="#bv" as="#defendant">
+					okrivljenog B.V.
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 Krivičnog zakonika Crne Gore
 				</ref>
-				, rješavajući po Optužnom predlogu Osnovnog državnog tužilaštva u Podgorici Kt.br. 1638/19 od 25.12.2019. godine, nakon održanog glavnog i javnog pretresa u prisustvu zastupnikaoptužbe Danijele Ivanović, savjetnice na radu kod ODT-a i okrivljenog, dana 04.02.2020. godine, donio je iistog dana javno objavio P R E S U D U Okrivljeni : B.V. JMBL ... od oca N. i majke I. , rođene M. , rođen .... godine u P. , sa prebivalištem u P. - M.bb - GO G. , državljanin Crne Gore , nezaposlen , oženjen , otac petoro djece , završio osnovnu š kolu , srednjeg imovnog stanja , neosu đ ivan , li š en slobode 08.12.2019. godine od 01.30 h do 15.05 h . K R I V J E Što je: Dana 07.12.2019. godine u Tuzima, svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelozabranjeno, suprotno
+				, rješavajući po
+				<organization id="odt" refersTo="#odt">
+					Optužnom predlogu Osnovnog državnog tužilaštva u Podgorici
+				</organization>
+				Kt.br. 1638/19 od 25.12.2019. godine, nakon održanog glavnog i javnog pretresa u prisustvu zastupnikaoptužbe
+				<party id="divanovic" refersTo="#divanovic" as="#advisor">
+					Danijele Ivanović
+				</party>
+				, savjetnice na radu kod ODT-a i okrivljenog, dana 04.02.2020. godine, donio je iistog dana javno objavio P R E S U D U
+				<party id="bv" refersTo="#bv" as="#defendant">
+					Okrivljeni : B.V.
+				</party>
+				JMBL ... od oca N. i majke I. , rođene M. , rođen .... godine u P. , sa prebivalištem u P. - M.bb - GO G. , državljanin Crne Gore , nezaposlen , oženjen , otac petoro djece , završio osnovnu š kolu , srednjeg imovnog stanja , neosu đ ivan , li š en slobode 08.12.2019. godine od 01.30 h do 15.05 h . K R I V J E Što je: Dana 07.12.2019. godine u Tuzima, svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelozabranjeno, suprotno
 				<ref href="/duvan#art_6">
 					čl. 6 Zakona o duvanu
 				</ref>
-				( Sl. list CG br. 48/08 76/08, 40/11 i 42/15) neovlašćeno kupiorobu čije je stavljanje u promet zabranjeno, na način što je od nepoznatog lica na pijaci u Tuzima, kupio 180kg rezanog duvana upakovanog u 360 pakovanja od po pola kilograma, ukupne vrijednosti 10.800,00 eura,koji je pronađen istog dana prilikom pretresa p.m.v marke "Renault Laguna" reg. oznaka PG GD ... vlasništvookrivljenog, izvršenog od strane službenika sektora granične policije I - Podgorica.
+				( Sl. list CG br. 48/08 76/08, 40/11 i 42/15) neovlašćeno kupiorobu čije je stavljanje u promet zabranjeno, na način što je od nepoznatog lica na pijaci u Tuzima, kupio 180kg rezanog duvana upakovanog u 360 pakovanja od po pola kilograma, ukupne vrijednosti 10.800,00 eura,koji je pronađen istog dana prilikom pretresa p.m.v marke "Renault Laguna" reg. oznaka PG GD ... vlasništvo
+				<party id="bv" refersTo="#bv" as="#defendant">
+					okrivljenog
+				</party>
+				, izvršenog od strane službenika sektora granične policije I - Podgorica.
 				- čime je učinio krivično djelo nedozvoljena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 u vezi st. 2 Krivičnog zakonika Crne Gore
@@ -52,7 +84,11 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa mu sud primjenom citirane zakonske odredbe, te odredbe
+					Pa mu
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					primjenom citirane zakonske odredbe, te odredbe
 					<ref href="/krivicni#art_4">
 						čl. 4 st. 2
 					</ref>
@@ -89,7 +125,15 @@
 						374 Zakonika o krivičnom postupku
 					</ref>
 					, izriče
-					USLOVNU OSUDU Kojom mu utvrdjuje kaznu zatvora u trajanju od 4 (četiri) mjeseca i istovremeno odredjuje da se ista nećeizvršiti ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo. Ukoliko dođe do opoziva uslovne osude, okrivljenom se u utvrđenu kaznu zatvora ima uračunati vrijemelišenja slobode 08.12.2019. godine od 01.30h do 15.05h. Na osnovu
+					USLOVNU OSUDU Kojom mu utvrdjuje kaznu zatvora u trajanju od 4 (četiri) mjeseca i istovremeno odredjuje da se ista nećeizvršiti ako
+					<party id="bv" refersTo="#bv" as="#defendant">
+						okrivljeni
+					</party>
+					u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo. Ukoliko dođe do opoziva uslovne osude,
+					<party id="bv" refersTo="#bv" as="#defendant">
+						okrivljenom
+					</party>
+					se u utvrđenu kaznu zatvora ima uračunati vrijemelišenja slobode 08.12.2019. godine od 01.30h do 15.05h. Na osnovu
 					<ref href="/krivicni#art_75">
 						čl. 75
 					</ref>
@@ -97,7 +141,23 @@
 					<ref href="/krivicni#art_284">
 						čl. 284 st. 6 Krivičnog zakonika Crne Gore
 					</ref>
-					, okrivljenom se izriče: MJERA BEZBJEDNOSTI Osnovni Sud u Podgorici K 809/2019 04. Februar 2020 ODUZIMANJE PREDMETA I to: 180 kg rezanog duvana upakovanog u 360 pakovanja od po pola kilograma. Obavezuje se okrivljeni da na ime troškova krivičnog postupka plati ovom sudu iznos od 90,50 eura, u roku od15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
+					,
+					<party id="bv" refersTo="#bv" as="#defendant">
+						okrivljenom
+					</party>
+					se izriče: MJERA BEZBJEDNOSTI
+					<organization id="os" refersTo="#os">
+						Osnovni Sud u Podgorici
+					</organization>
+					K 809/2019 04. Februar 2020 ODUZIMANJE PREDMETA I to: 180 kg rezanog duvana upakovanog u 360 pakovanja od po pola kilograma. Obavezuje se
+					<party id="bv" refersTo="#bv" as="#defendant">
+						okrivljeni
+					</party>
+					da na ime troškova krivičnog postupka plati ovom
+					<organization id="os" refersTo="#os">
+						sudu
+					</organization>
+					iznos od 90,50 eura, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
 				</p>
 			</conclusions>
 		</judgmentBody>

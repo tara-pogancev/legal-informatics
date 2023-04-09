@@ -21,7 +21,6 @@
 			</identification>
 			<references>
 				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Niksic" showAs="Osnovni sud u Niksicu" />
-				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno drzavno tuzilastvo u Podgorici" />
 				<TLCPerson eId="vkovacevic" href="/ontology/person/vkovacevic" showAs="Vesna Kovacevic" />
 				<TLCPerson eId="rnikolic" href="/ontology/person/rnikolic" showAs="Nikolic Rade" />
 				<TLCPerson eId="slukovac" href="/ontology/person/slukovac" showAs="Sofija Lukovac" />
@@ -29,14 +28,42 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				U IME CRNE GORE OSNOVNI SUD U NIKŠIĆU, kao prvostepeni krivični, sudija Vesna Kovačević, uz sudjelovanje Nikolić Rade, kaozapisničara, u krivičnom predmetu protiv okrivljenog D . S . , zbog krivičnog djela nedozvoljena trgovina iz čl.284, stav 3 u vezi stava 2 Krivičnog zakonika Crne Gore, nakon završenog glavnog i javnog pretresa dana18.10.2019. godine, u prisustvu državnog tužioca Lukovac Sofije i okrivljenog D . S . , istog dana donio je i javno objavio presudu.
+				U IME CRNE GORE
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U NIKŠIĆU
+				</organization>
+				, kao prvostepeni krivični,
+				<party id="vkovacevic" refersTo="#vkovacevic" as="#judge">
+					sudija Vesna Kovačević
+				</party>
+				, uz sudjelovanje
+				<party id="rnikolic" refersTo="#rnikolic" as="#clerk">
+					Nikolić Rade
+				</party>
+				, kao zapisničara, u krivičnom predmetu protiv okrivljenog
+				<party id="ds" refersTo="#ds" as="defendant">
+					D . S .
+				</party>
+				, zbog krivičnog djela nedozvoljena trgovina iz čl.284, stav 3 u vezi stava 2 Krivičnog zakonika Crne Gore, nakon završenog glavnog i javnog pretresa dana 18.10.2019. godine, u prisustvu
+				<party id="slukovac" refersTo="#slukovac" as="plaintiff">
+					državnog tužioca Lukovac Sofije
+				</party>
+				i okrivljenog
+				<party id="ds" refersTo="#ds" as="defendant">
+					D . S .
+				</party>
+				, istog dana donio je i javno objavio presudu.
 			</p>
 			<p>
-				Okrivljeni: D . S . , JMBG: . , od oca M . i majke Lj . , rođene Ć . , rođen .. . godine u Plužinama, sa prebivalištem uNikšiću - ul. .. , državljanin Crne Gore, pismen, završio srednju školu, po zanimanju lugar, oženjen, otac jednogdjeteta, lošeg imovnog stanja, ranije neosuđivan, K r i v j e Što je: Dana 05. 07. 2019. godine, svjestan svog djela i htio njegovo izvršenje, u Podgorici, neovlašćeno, radi prodaje,kupio robu čiji je promet, shodno odredbama
+				<party id="ds" refersTo="#ds" as="defendant">
+					Okrivljeni: D . S .
+				</party>
+				, JMBG: . , od oca M . i majke Lj . , rođene Ć . , rođen .. . godine u Plužinama, sa prebivalištem uNikšiću - ul. .. , državljanin Crne Gore, pismen, završio srednju školu, po zanimanju lugar, oženjen, otac jednogdjeteta, lošeg imovnog stanja, ranije neosuđivan, K r i v j e Što je: Dana 05. 07. 2019. godine, svjestan svog djela i htio njegovo izvršenje, u Podgorici, neovlašćeno, radi prodaje,kupio robu čiji je promet, shodno odredbama
 				<ref href="/duvan#art_2">
 					člana 2, stav 1, tačka 3
 				</ref>
@@ -44,11 +71,19 @@
 				<ref href="/duvan#art_14">
 					člana 14 Zakona o duvanu Crne Gore
 				</ref>
-				,ograničen, i to 500 kutija cigareta »M . c . « i 500 kutija cigareta marke »K . c . «, u ukupnoj vrijednosti od 1. 350, 00eura, koju robu su navedenog dana prilikom kontrole putničkog motornog vozila marke »Golf 2«, reg. br. PŽ .. , u kojem je istu prevozio, na putnom pravcu Vilusi – Vraćenovići, u blizini raskrsnice za mjesto Petrovići,pronašli i oduzeli službenici Uprave policije – Stanice Granične policije I Nikšić, Osnovni Sud u Nikšiću K 244/2019 18. Oktobar 2019 čime je izvršio krivično djelo nedozvoljena trgovina iz čl. 284 stav 3 u vezi stava 2 Krivičnog zakonika CrneGore,
+				,ograničen, i to 500 kutija cigareta »M . c . « i 500 kutija cigareta marke »K . c . «, u ukupnoj vrijednosti od 1. 350, 00eura, koju robu su navedenog dana prilikom kontrole putničkog motornog vozila marke »Golf 2«, reg. br. PŽ .. , u kojem je istu prevozio, na putnom pravcu Vilusi – Vraćenovići, u blizini raskrsnice za mjesto Petrovići,pronašli i oduzeli službenici Uprave policije – Stanice Granične policije I Nikšić,
+				<organization id="os" refersTo="#os">
+					Osnovni Sud u Nikšiću
+				</organization>
+				K 244/2019 18. Oktobar 2019 čime je izvršio krivično djelo nedozvoljena trgovina iz čl. 284 stav 3 u vezi stava 2 Krivičnog zakonika CrneGore,
 			</p>
 			<conclusions>
 				<p>
-					Pa mu sud za navedeno krivično djelo primjenom
+					Pa mu
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					za navedeno krivično djelo primjenom
 					<ref href="/krivicni#art_4">
 						čl. 4 st. 2
 					</ref>
@@ -80,7 +115,15 @@
 					<ref href="/postupak#art_374">
 						čl. 374 Zakonika o krivičnom postupku
 					</ref>
-					izrice U S L O V N U O S U D U Kojom okrivljenom utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i ujedno određuje da se ova kaznaneće izvršiti ukoliko okrivljeni u roku od 1 (jedne) godine od dana pravosnažnosti presude ne učini novokrivično djelo. Obavezuje se okrivljeni da na ime troškova krivičnog postupka, plati iznos od 84,00 (osamdeset četiri) eura, uroku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, a koji iznos ima uplatiti nažiro račun ovog suda br. 832-152-32. Na osnovu
+					izrice U S L O V N U O S U D U Kojom
+					<party id="ds" refersTo="#ds" as="defendant">
+						okrivljenom
+					</party>
+					utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i ujedno određuje da se ova kaznaneće izvršiti ukoliko okrivljeni u roku od 1 (jedne) godine od dana pravosnažnosti presude ne učini novokrivično djelo. Obavezuje se
+					<party id="ds" refersTo="#ds" as="defendant">
+						okrivljeni
+					</party>
+					da na ime troškova krivičnog postupka, plati iznos od 84,00 (osamdeset četiri) eura, uroku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, a koji iznos ima uplatiti nažiro račun ovog suda br. 832-152-32. Na osnovu
 					<ref href="/krivicni#art_57">
 						člana 75
 					</ref>
@@ -88,7 +131,11 @@
 					<ref href="/krivicni#art_284">
 						čl. 284. st. 6. Krivičnog zakonika Crne Gore
 					</ref>
-					prema okrivljenom se izriče MJERA BEZBJEDNOSTI Trajno se od okrivljenog oduzima 500 (pet stotina) kutija cigareta “M . c . ” i 500 (pet stotina) kutija cigaretamarke “K . . , kao predmeti izvršenja krivičnog djela.
+					prema
+					<party id="ds" refersTo="#ds" as="defendant">
+						okrivljenom
+					</party>
+					se izriče MJERA BEZBJEDNOSTI Trajno se od okrivljenog oduzima 500 (pet stotina) kutija cigareta “M . c . ” i 500 (pet stotina) kutija cigaretamarke “K . . , kao predmeti izvršenja krivičnog djela.
 				</p>
 			</conclusions>
 		</judgmentBody>

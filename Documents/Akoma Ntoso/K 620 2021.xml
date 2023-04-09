@@ -23,22 +23,54 @@
 				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
 				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo" showAs="Osnovno drzavno tuzilastvo" />
 				<TLCPerson eId="nrabrenovic" href="/ontology/person/nrabrenovic" showAs="Nada Rabrenovic" />
-				<TLCPerson eId="iljiljana" href="/ontology/person/iljiljana" showAs="Ivanovic Ljiljana" />
+				<TLCPerson eId="ljivanovic" href="/ontology/person/ljivanovic" showAs="Ivanovic Ljiljana" />
 				<TLCPerson eId="mljumovic" href="/ontology/person/mljumovic" showAs="Ljumovic Milos" />
 				<TLCPerson eId="bd" href="/ontology/person/bd" showAs="B.D." />
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
 				<TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				OSNOVNI SUD U PODGORICI, po sudiji Nadi Rabrenović, uz učešće Ivanović Ljiljane, kao zapisničara ukrivičnom predmetu protiv okrivljene B. D. , zbog krivičnog djela nedozvojena trgovina iz
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				, po
+				<party id="nrabrenovic" refersTo="#nrabrenovic" as="#judge">
+					sudiji Nadi Rabrenović
+				</party>
+				, uz učešće
+				<party id="ljivanovic" refersTo="#ljivanovic" as="#clerk">
+					Ivanović Ljiljane
+				</party>
+				, kao zapisničara ukrivičnom predmetu protiv
+				<party id="hb" refersTo="#hb" as="#defendant">
+					okrivljene B. D.
+				</party>
+				, zbog krivičnog djela nedozvojena trgovina iz
 				<ref href="/krivicni#art_284">
 					čl. 284 st. 3 Krivičnog zakonika Crne Gore
 				</ref>
-				, odlučujući po optužnom predlogu Osnovnog državnog tužilaštva u Podgorici,Kt. br. 1264/21 od 10.09.2021. godine, nakon održanog glavnog i javnog pretresa dana 04.11.2021. godine, uprisustvu zastupnika optužbe Ljumović Miloša, savjetnika na radu u Osnovnom državnom tužilaštvu uPodgorici i okrivljene B. D. , donio je i dana 05.11.2021. godine, javno objavio, P R E S U D U OKRIVLJENA: B. D. , JMB: xxxxxxxxxxxxx, od oca B. i majke R., rođene P., rođena xx.xx.xxxx. godine u Skadru, Republika Albanija, sa prebivalištem u Podgorici, GO Golubovci, M. xx, državljanka Republike Albanije, završila srednjupoljoprivrednu školu, penzioner, udata, majka troje djece, lošeg imovnog stanja, neosudjivana, K r i v a j e, Zato što je:Dana 26.08.2021. godine, u blizini Centralnog parka Pobrežje u Podgorici, svjesna svog djela čije je izvršenjehtjela, znajući da je njeno djelo zabranjeno, suprotno
+				, odlučujući po optužnom predlogu
+				<organization id="odt" refersTo="#odt">
+					Osnovnog državnog tužilaštva u Podgorici
+				</organization>
+				,Kt. br. 1264/21 od 10.09.2021. godine, nakon održanog glavnog i javnog pretresa dana 04.11.2021. godine, uprisustvu zastupnika optužbe
+				<party id="mljumovic" refersTo="#mljumovic" as="#advisor">
+					Ljumović Miloša
+				</party>
+				, savjetnika na radu u
+				<organization id="odt" refersTo="#odt">
+					Osnovnom državnom tužilaštvu u Podgorici
+				</organization>
+				i okrivljene B. D. , donio je i dana 05.11.2021. godine, javno objavio, P R E S U D U
+				<party id="bd" refersTo="#bd" as="#defendant">
+					OKRIVLJENA: B. D.
+				</party>
+				, JMB: xxxxxxxxxxxxx, od oca B. i majke R., rođene P., rođena xx.xx.xxxx. godine u Skadru, Republika Albanija, sa prebivalištem u Podgorici, GO Golubovci, M. xx, državljanka Republike Albanije, završila srednjupoljoprivrednu školu, penzioner, udata, majka troje djece, lošeg imovnog stanja, neosudjivana, K r i v a j e, Zato što je:Dana 26.08.2021. godine, u blizini Centralnog parka Pobrežje u Podgorici, svjesna svog djela čije je izvršenjehtjela, znajući da je njeno djelo zabranjeno, suprotno
 				<ref href="/duvan#art_6">
 					čl. 6 Zakona o duvanu
 				</ref>
@@ -50,7 +82,14 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa sud okrivljenoj, primjenom citiranih zakonskih odredbi, te
+					Pa
+					<organization id="os" refersTo="#os">
+						sud
+					</organization>
+					<party id="bd" refersTo="#bd" as="#defendant">
+						okrivljenoj
+					</party>
+					, primjenom citiranih zakonskih odredbi, te
 					<ref href="/krivicni#art_2">
 						čl. 2
 					</ref>
@@ -89,7 +128,26 @@
 					<ref href="/postupak#art_374">
 						374 Zakonika o krivičnom postupku
 					</ref>
-					, i z r i č e USLOVNU OSUDU Kojom okrivljenoj utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se utvrđenakazna neće izvršiti ako okrivljena za vrijeme od 1 (jedne) godine po pravosnažnosti presude ne izvrši novokrivično djelo. Obavezuje se okrivljena da na ime troškova krivičnog postupka u korist Budžeta Crne Gore plati iznos od60,50 eura i na ime sudskog pau š ala iznos od 40,00 eura , sve u roku od 15 dana po pravnosna ž nosti presude . Sud okrivljenoj , na osnovu
+					, i z r i č e USLOVNU OSUDU Kojom
+					<party id="bd" refersTo="#bd" as="#defendant">
+						okrivljenoj
+					</party>
+					utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se utvrđenakazna neće izvršiti ako
+					<party id="bd" refersTo="#bd" as="#defendant">
+						okrivljena
+					</party>
+					za vrijeme od 1 (jedne) godine po pravosnažnosti presude ne izvrši novokrivično djelo. Obavezuje se
+					<party id="bd" refersTo="#bd" as="#defendant">
+						okrivljena
+					</party>
+					da na ime troškova krivičnog postupka u korist Budžeta Crne Gore plati iznos od60,50 eura i na ime sudskog pau š ala iznos od 40,00 eura , sve u roku od 15 dana po pravnosna ž nosti presude .
+					<organization id="os" refersTo="#os">
+						Sud
+					</organization>
+					<party id="bd" refersTo="#bd" as="#defendant">
+						okrivljenoj
+					</party>
+					, na osnovu
 					<ref href="/krivicni#art_66">
 						čl. 66
 					</ref>

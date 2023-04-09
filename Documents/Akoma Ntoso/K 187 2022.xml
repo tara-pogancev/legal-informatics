@@ -28,15 +28,27 @@
 				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
 			<p>
-				<organization refersTo="#osp">
+				<organization id="osp" refersTo="#osp">
 					Osnovni sud u Podgorici
 				</organization>
-				sudija Ivana Becić, uz učešće zapisničarke Anđele Mitrović, u krivičnom postupku protiv
-				optuženog A. G., zbog krivičnog djela krijumčarenje iz
+				<party id="ibecic" refersTo="#ibecic" as="#judge">
+					sudija Ivana Becić
+				</party>
+				, uz učešće zapisničarke
+				<party id="amitrovic" refersTo="#amitrovic" as="#clerk">
+					Anđele Mitrović
+				</party>
+				, u krivičnom postupku protiv
+				optuženog
+				<party id="ag" refersTo="#ag" as="#defendant">
+					A. G.
+				</party>
+				, zbog krivičnog djela krijumčarenje iz
 				<ref href="/krivicni#art_265">
 					čl. 265 st. 2
 				</ref>
@@ -48,11 +60,18 @@
 				, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 12.09.2022.godine donio je presudu.
 			</p>
 			<p>
-				Optuženi kriv je sto je: Dana 16.02.2022. godine, oko 23,00 časa, u selu B., teritorija Opštine Tuzi, svjestan svog djela čije je izvršenjehtio, ostvarujući zajedničku odluku sa dva NN lica, drugom radnjom bitno doprinio da se sa teritorijeRepublike Albanije prenese preko carinske linije izbjegavajući mjere carinskog nadzora roba - duvan, čiji jepromet shodno
+				<party id="ag" refersTo="#ag" as="#defendant">
+					Optuženi
+				</party>
+				kriv je sto je: Dana 16.02.2022. godine, oko 23,00 časa, u selu B., teritorija Opštine Tuzi, svjestan svog djela čije je izvršenjehtio, ostvarujući zajedničku odluku sa dva NN lica, drugom radnjom bitno doprinio da se sa teritorijeRepublike Albanije prenese preko carinske linije izbjegavajući mjere carinskog nadzora roba - duvan, čiji jepromet shodno
 				<ref href="/duvan#art_15">
 					članu 15 stav 2 Zakona o duvanu
 				</ref>
-				dozvoljen isključivo privrednim društvima i preduzetnicima Osnovni Sud u Podgorici K 187/2022 12. Septembar 2022 uz odobrenje za promet na malo duvanskim proizvodima izdatim od strane nadležnog organa uprave, nanačin, što se po prethodnom dogovoru, susreo sa ovim NN licima koja su sa teritorije Republike Albanijedonijela 21 crnu kesu u kojima se nalazilo ukupno 656 pakovanja rezanog duvana od po 0,5 kg, ukupne mase328 kg i vrijednosti 19.680,00 eura, a zatim su sva trojica navedene kese sa pakovanjima duvana unijeli upomoćni objekat - garažu koja se nalazi u dvorištu porodične kuće okrivljenog i navedene kese sakrili uplastičnu burad unutar garaže, koje kese sa duvanom je okrivljeni trebao da preveze u Tuzi i preda NN licu poimenu R., ali je u tome spriječen od strane službenika Uprave policije CB Podgorica koji su pretresomizvršenim dana 19.02.2022. godine pronašli i oduzeli navedeni duvan i tako okrivljenog zatekli u vršenjukrivičnog djela,
+				dozvoljen isključivo privrednim društvima i preduzetnicima
+				<organization id="osp" refersTo="#osp">
+					Osnovni Sud u Podgorici
+				</organization>
+				K 187/2022 12. Septembar 2022 uz odobrenje za promet na malo duvanskim proizvodima izdatim od strane nadležnog organa uprave, nanačin, što se po prethodnom dogovoru, susreo sa ovim NN licima koja su sa teritorije Republike Albanijedonijela 21 crnu kesu u kojima se nalazilo ukupno 656 pakovanja rezanog duvana od po 0,5 kg, ukupne mase328 kg i vrijednosti 19.680,00 eura, a zatim su sva trojica navedene kese sa pakovanjima duvana unijeli upomoćni objekat - garažu koja se nalazi u dvorištu porodične kuće okrivljenog i navedene kese sakrili uplastičnu burad unutar garaže, koje kese sa duvanom je okrivljeni trebao da preveze u Tuzi i preda NN licu poimenu R., ali je u tome spriječen od strane službenika Uprave policije CB Podgorica koji su pretresomizvršenim dana 19.02.2022. godine pronašli i oduzeli navedeni duvan i tako okrivljenog zatekli u vršenjukrivičnog djela,
 			</p>
 			<p>
 				- čime je, kao saizvršilac, izvršio krivično djelo krijumčarenje iz
@@ -67,7 +86,11 @@
 			</p>
 			<conclusions>
 				<p>
-					Pa mu sud za navedeno krivično djelo primjenom
+					Pa mu
+					<organization id="osp" refersTo="#osp">
+						sud
+					</organization>
+					za navedeno krivično djelo primjenom
 					<ref href="/krivicni#art_4">
 						čl. 4 st. 2
 					</ref>
@@ -111,7 +134,15 @@
 					<ref href="/postupak#art_374">
 						čl. 374 Zakonika o krivičnom postupku
 					</ref>
-					, izriče USLOVNU OSUDU Kojom mu utvrđuje kaznu zatvora u trajanju od 1 (jedne) godine i istovremeno određuje da se ona nećeizvršiti, ako optuženi u roku od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo i O S U Đ U J E Na novčanu kaznu u iznosu od 1.200,00 € (hiljadu i dvije stotine eura), koju je optuženi dužan platiti u roku od3 (tri) mjeseca po pravosnažnosti presude, a ako izrečenu novčanu kaznu ne plati u određenom roku, sud ćenovčanu kaznu zamijeniti kaznom zatvora, tako što će za svakih započetih dvadeset pet eura novčane kazneodrediti jedan dan kazne zatvora, s tim da kazna zatvora ne može biti duža od šest mjeseci. Obavezuje se optuženi da plati na ime troškova krivičnog postupka plati iznos od 60,50 eura, kao i 30,00 eurana ime paušala, sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
+					, izriče USLOVNU OSUDU Kojom mu utvrđuje kaznu zatvora u trajanju od 1 (jedne) godine i istovremeno određuje da se ona nećeizvršiti, ako optuženi u roku od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo i O S U Đ U J E Na novčanu kaznu u iznosu od 1.200,00 € (hiljadu i dvije stotine eura), koju je
+					<party id="ag" refersTo="#ag" as="#defendant">
+						optuženi
+					</party>
+					dužan platiti u roku od3 (tri) mjeseca po pravosnažnosti presude, a ako izrečenu novčanu kaznu ne plati u određenom roku, sud ćenovčanu kaznu zamijeniti kaznom zatvora, tako što će za svakih započetih dvadeset pet eura novčane kazneodrediti jedan dan kazne zatvora, s tim da kazna zatvora ne može biti duža od šest mjeseci. Obavezuje se
+					<party id="ag" refersTo="#ag" as="#defendant">
+						optuženi
+					</party>
+					da plati na ime troškova krivičnog postupka plati iznos od 60,50 eura, kao i 30,00 eurana ime paušala, sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
 				</p>
 			</conclusions>
 		</judgmentBody>

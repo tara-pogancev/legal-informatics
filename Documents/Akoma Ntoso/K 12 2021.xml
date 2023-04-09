@@ -31,6 +31,7 @@
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
 				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
 			</references>
 		</meta>
 		<judgmentBody>
@@ -43,7 +44,7 @@
 					sudija mr Sanja Mirović
 				</party>
 				, uz učešće namještenika suda
-				<party id="vkatana" refersTo="#vkatana">
+				<party id="vkatana" refersTo="#vkatana" as="#clerk">
 					Katana Violete
 				</party>
 				,kao zapisničara,u krivičnom predmetu okrivljenog
