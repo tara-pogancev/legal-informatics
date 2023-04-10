@@ -83,4 +83,22 @@ public class FeatureExtractionService {
         return ret.replace(",", ".").replace(". ", ".").replace(".", ". ").trim();
     }
 
+    public String extractCourt(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\sU IME CRNE GORE\\s*[A-ZŽĐŠČĆa-zžđšćčć]+ ((SUD U)|(sud u)) [A-ZŽĐŠČĆa-zžđšćčć]+");
+        Matcher matcher = pattern.matcher(str);
+        String substr = "";
+        String ret = "unknown";
+        if (matcher.find()){
+            ret = matcher.group();
+
+            Pattern pattern2 = Pattern.compile("\\s[A-ZŽĐŠČĆa-zžđšćčć]+ ((SUD U)|(sud u)) [A-ZŽĐŠČĆa-zžđšćčć]+");
+            Matcher matcher2 = pattern2.matcher(ret);
+            if (matcher2.find()){
+                ret = matcher2.group();
+            }
+        }
+        return ret.trim();
+    }
+
 }
