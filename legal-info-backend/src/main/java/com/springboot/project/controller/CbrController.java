@@ -187,9 +187,7 @@ public class CbrController  {
 
     @GetMapping("/extract-case-features/{caseNumber}")
     public ResponseEntity<?> extractCaseFeatures(@PathVariable String caseNumber) throws IOException {
-        Resource resource = resourceLoader.getResource("classpath:cases/" + caseNumber + ".pdf");
-        Path path = Paths.get(resource.getURI());
-        String text = featureExtractionService.readPDF(path.toString());
+        String text = featureExtractionService.extractCaseNumber(caseNumber);
 
         return ResponseEntity.ok(text);
     }
