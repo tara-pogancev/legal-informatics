@@ -3,6 +3,7 @@ package com.springboot.project.controller;
 
 import com.springboot.project.dto.CaseDTO;
 import com.springboot.project.dto.RecommendationsDTO;
+import com.springboot.project.service.FeatureExtractionService;
 import com.springboot.project.service.FileDownloadUtil;
 import com.springboot.project.service.cbr.BaseCbrApplication;
 import com.springboot.project.service.cbr.CaseDescription;
@@ -40,6 +41,9 @@ public class CbrController  {
 
     @Autowired
     ResourcePatternResolver resourceResolver;
+
+    @Autowired
+    FeatureExtractionService featureExtractionService;
 
     /***
      * Cao cao Annaaa
@@ -179,6 +183,13 @@ public class CbrController  {
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_XHTML_XML)
                 .body(Files.readAllBytes(path));
+    }
+
+    @GetMapping("/extract-case-features/{caseNumber}")
+    public ResponseEntity<?> extractCaseFeatures(@PathVariable String caseNumber) throws IOException {
+        //featureExtractionService.testMethod();
+
+        return ResponseEntity.ok(featureExtractionService.testMethod(caseNumber));
     }
 
 }
