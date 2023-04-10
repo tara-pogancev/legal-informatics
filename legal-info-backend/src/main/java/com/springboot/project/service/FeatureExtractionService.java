@@ -65,4 +65,22 @@ public class FeatureExtractionService {
         return ret.trim();
     }
 
+    //radi za sve slucajeve
+    public String extractDefendantInitials(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s((PRESUDU)|(P R E S U D U))\\s*((Okrivljen[ai])|(OKRIVLJEN[AI])|(Optužen[ia])):?\\s*[A-ZŽĐŠČĆ]{1,2}(\\.|,) ?[A-ZŽĐŠČĆ]{1,2}(\\.|,)");
+        Matcher matcher = pattern.matcher(str);
+        String substr = "";
+        String ret = "unknown";
+        if (matcher.find()){
+            ret = matcher.group();
+            Pattern pattern2 = Pattern.compile("\\s[A-ZŽĐŠČĆ]{1,2}(\\.|,) ?[A-ZŽĐŠČĆ]{1,2}(\\.|,)");
+            Matcher matcher2 = pattern2.matcher(ret);
+            if (matcher2.find()){
+                ret = matcher2.group();
+            }
+        }
+        return ret.replace(",", ".").replace(". ", ".").replace(".", ". ").trim();
+    }
+
 }
