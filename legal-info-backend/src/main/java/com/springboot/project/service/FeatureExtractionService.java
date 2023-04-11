@@ -161,6 +161,18 @@ public class FeatureExtractionService {
         return ret;
     }
 
-
+    //radi za sve slucajeve sem 12 i 809 (vrv zbog preloma strane hvata zaglavlje)
+    public String extractConfiscationStatus(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s[Ii] ?z ?r ?i ?č ?e(,|:)?\\s+(MJER[AU] BEZBI?JEDNOSTI)\\s+((ODUZIMAN[jJ]E PREDMETA)|((([A-ZŽĐŠČĆa-zžđšćčć0-9/\\.]+\\s){0,10})[Oo]duzima((nje)|(ti))?))");
+        Matcher matcher = pattern.matcher(str);
+        String ret = "NE";
+        String matchedText = "";
+        if (matcher.find()){
+            matchedText = matcher.group();
+            ret = "DA";
+        }
+        return ret.trim();
+    }
 
 }

@@ -25,4 +25,7 @@ public class LegalCase extends DatabaseEntity{
 
     @Column(name = "defendant")
     private String defendant;
+
+    @Column(name = "confiscationStatus")
+    private String confiscationStatus;
 }
