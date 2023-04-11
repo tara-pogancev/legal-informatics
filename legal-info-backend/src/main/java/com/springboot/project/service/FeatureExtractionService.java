@@ -70,7 +70,6 @@ public class FeatureExtractionService {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\s((PRESUDU)|(P R E S U D U))\\s*((Okrivljen[ai])|(OKRIVLJEN[AI])|(Optužen[ia])):?\\s*[A-ZŽĐŠČĆ]{1,2}(\\.|,) ?[A-ZŽĐŠČĆ]{1,2}(\\.|,)");
         Matcher matcher = pattern.matcher(str);
-        String substr = "";
         String ret = "unknown";
         if (matcher.find()){
             ret = matcher.group();
@@ -87,7 +86,6 @@ public class FeatureExtractionService {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\sU IME CRNE GORE\\s*[A-ZŽĐŠČĆa-zžđšćčć]+ ((SUD U)|(sud u)) [A-ZŽĐŠČĆa-zžđšćčć]+");
         Matcher matcher = pattern.matcher(str);
-        String substr = "";
         String ret = "unknown";
         if (matcher.find()){
             ret = matcher.group();
@@ -99,6 +97,43 @@ public class FeatureExtractionService {
             }
         }
         return ret.trim();
+    }
+
+    //radi za sve slucajeve
+    public String extractJudgeName(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s((ZAPISNIČAR(KA)?)|(Zapisničar(ka)?))(,|\\s)?\\s*((SUDIJA)|(S U D I J A)|(SUTKINJA)|(S U T K I N J A)),?\\s+[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+((,\\s?s.r.)|,|\\s)\\s?[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+,?(\\s?s.r.)?");
+        Matcher matcher = pattern.matcher(str);
+        String ret = "unknown";
+        if (matcher.find()){
+            ret = matcher.group();
+            String lines[] = ret.split("\\r?\\n");
+            ret = lines[2];
+
+            String names[] = ret.split(",");
+            if (names.length > 1)
+                ret = names[1].replace("s.r.", "").trim();
+            else{
+                names = ret.split(" ");
+                ret = names[2] + " " + names[3];
+            }
+        }
+        else{
+            Pattern pattern2 = Pattern.compile("\\s((Sudija)|(SUDIJA)|(S U D I J A)|(Sutkinja)|(SUTKINJA)|(S U T K I N J A))(:|,)?\\s+(Mr )?[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+");
+            Matcher matcher2 = pattern2.matcher(str);
+            if (matcher2.find()){
+                ret = matcher2.group();
+
+                String lines[] = ret.split("\\r?\\n");
+                int i = 1;
+                do {
+                    i++;
+                    ret = lines[i].replace("s.r.", "").trim();
+
+                } while(lines[i].matches("^\\s*$"));
+            }
+        }
+        return ret;
     }
 
 }
