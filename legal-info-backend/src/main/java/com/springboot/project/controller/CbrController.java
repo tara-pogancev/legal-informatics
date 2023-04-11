@@ -187,7 +187,7 @@ public class CbrController  {
 
     @GetMapping("/extract-case-features/{caseNumber}")
     public ResponseEntity<?> extractCaseFeatures(@PathVariable String caseNumber) throws IOException {
-        String text = featureExtractionService.extractJudgeName(caseNumber);
+        String text = featureExtractionService.extractCourtReporterName(caseNumber);
 
         return ResponseEntity.ok(text);
     }

@@ -136,4 +136,31 @@ public class FeatureExtractionService {
         return ret;
     }
 
+    //radi za sve, proveriti jos slucaj K 12 2021
+    public String extractCourtReporterName(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s((ZAPISNIČAR(KA)?)|(Zapisničar(ka)?))(,|\\s)?\\s*((SUDIJA)|(S U D I J A)|(SUTKINJA)|(S U T K I N J A)),?\\s+[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+");        Matcher matcher = pattern.matcher(str);
+        String ret = "unknown";
+        if (matcher.find()){
+            ret = matcher.group();
+            String lines[] = ret.split("\\r?\\n");
+            ret = lines[2];
+            return ret.replace("s.r.", "").trim();
+        }
+        Pattern pattern2 = Pattern.compile("\\sZTO(:|-)\\s?[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+");
+        Matcher matcher2 = pattern2.matcher(str);
+
+        //Pattern pattern3 = Pattern.compile("\\s((uz\\sučešće(\\snamještenika\\ssuda)?)|(sa\\szapisničarom))\\s+[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+");
+        if (matcher2.find())
+            return matcher2.group().replace("ZTO:", "").replace("ZTO-", "").trim();
+        Pattern pattern3 = Pattern.compile("\\s((uz učešće\\s([a-zžđšćčć]+\\s){0,5})|(sa zapisničarom\\s))\\s*[A-ZŽĐŠČĆ]{1,2}[a-zžđšćčć]+ [A-ZŽĐŠČĆ]{1,2}[a-zžđšćčć]+");
+        Matcher matcher3 = pattern3.matcher(str);
+        if (matcher3.find()){
+            ret = matcher3.group().replace(",", "").replace("\r\n", " ").replace("\n", " ").trim();
+        }
+        return ret;
+    }
+
+
+
 }
