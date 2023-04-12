@@ -82,6 +82,7 @@ public class FeatureExtractionService {
         return ret.replace(",", ".").replace(". ", ".").replace(".", ". ").trim();
     }
 
+    //radi za sve slucajeve
     public String extractCourt(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\sU IME CRNE GORE\\s*[A-ZŽĐŠČĆa-zžđšćčć]+ ((SUD U)|(sud u)) [A-ZŽĐŠČĆa-zžđšćčć]+");
@@ -136,7 +137,7 @@ public class FeatureExtractionService {
         return ret;
     }
 
-    //radi za sve, proveriti jos slucaj K 12 2021
+    //radi za sve, proveriti jos slucaj K 12 2021 - ostavljen je recenicni kontekst jer se ime nalazi u padezu
     public String extractCourtReporterName(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\s((ZAPISNIČAR(KA)?)|(Zapisničar(ka)?))(,|\\s)?\\s*((SUDIJA)|(S U D I J A)|(SUTKINJA)|(S U T K I N J A)),?\\s+[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+");        Matcher matcher = pattern.matcher(str);

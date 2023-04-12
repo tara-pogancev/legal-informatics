@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec">
+	<lrml:Statements>
+		<!--CLAN 6-->
+		<lrml:PrescriptiveStatement key="cl6_ind">
+			<ruleml:Rule key=":rule61" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>	
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:is_entity"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">individual</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:placed_on_market_rezani_duvan"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>placed_on_market_rezani_duvan_individual</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl6_le">
+			<ruleml:Rule key=":rule62" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>	
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:is_entity"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">legal_entity</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:placed_on_market_rezani_duvan"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl6_le_ri">
+			<ruleml:Rule key=":rule63" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>	
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:is_entity"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">legal_entity_responsible_individual</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:placed_on_market_rezani_duvan"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl6_ind_free">
+			<ruleml:Rule key=":rule64" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>	
+						<ruleml:Rel iri="lc:is_entity"/>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">individual</ruleml:Data>
+					</ruleml:Atom>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:placed_on_market_rezani_duvan"/>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>placed_on_market_rezani_duvan_individual</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<!--CLAN 6-->
+		<!--individual-->
+		<lrml:PenaltyStatement key="pen_cl6_ind_min">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_pay_min_cl6_ind"/>
+							<ruleml:Var>Money</ruleml:Var>
+							<ruleml:Ind>50</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen_cl6_ind_max">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_pay_max_cl6_ind"/>
+							<ruleml:Var>Money</ruleml:Var>
+							<ruleml:Ind>1000</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl6_ind">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl6_ind"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<!--legal entity-->
+		<lrml:PenaltyStatement key="pen_cl6_le_min">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_pay_min_cl6_le"/>
+							<ruleml:Var>Money</ruleml:Var>
+							<ruleml:Ind>10000</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen_cl6_le_max">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_pay_max_cl6_le"/>
+							<ruleml:Var>Money</ruleml:Var>
+							<ruleml:Ind>20000</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl6_le">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl6_le"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="prohibition_min_cl6_le">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_prohibit_min_cl6_le"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>0</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="prohibition_max_cl6_le">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_prohibit_max_cl6_le"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>12</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<!--legal entity - responsible individual-->
+		<lrml:PenaltyStatement key="pen_cl6_le_ri_min">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_pay_min_cl6_le_ri"/>
+							<ruleml:Var>Money</ruleml:Var>
+							<ruleml:Ind>1000</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen_cl6_le_ri_max">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_pay_max_cl6_le_ri"/>
+							<ruleml:Var>Money</ruleml:Var>
+							<ruleml:Ind>2000</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl6_le_ri">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl6_le_ri"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="prohibition_min_cl6_le_ri">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_prohibit_min_cl6_le_ri"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>0</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="prohibition_max_cl6_le_ri">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_prohibit_max_cl6_le_ri"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>12</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<!--other-->
+		
+
+
+		<!--CLAN 6-->
+		<!--individual-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_cl6_ind_min"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_ind"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_cl6_ind_max"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_ind"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl6_ind"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_ind"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<!--legal entity-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_cl6_le_min"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_cl6_le_max"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl6_le"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#prohibition_min_cl6_le"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#prohibition_max_cl6_le"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<!--legal entity - responsible individual-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_cl6_le_ri_min"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_cl6_le_ri_max"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl6_le_ri"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#prohibition_min_cl6_le_ri"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#prohibition_max_cl6_le_ri"/>
+				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+
+		<!--CLAN 6-->
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl6_ind" over="#cl6_free"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl6_le" over="#cl6_free"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl6_le_ri" over="#cl6_free"/>
+		</lrml:OverrideStatement>
+	</lrml:Statements>
+</lrml:LegalRuleML>
