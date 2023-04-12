@@ -74,6 +74,7 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
+		<!--
 		<lrml:PrescriptiveStatement key="cl6_ind_free">
 			<ruleml:Rule key=":rule64" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -92,6 +93,181 @@
 					<ruleml:Negation>
 						<ruleml:Atom>
 							<ruleml:Rel>placed_on_market_rezani_duvan_individual</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		-->
+		<lrml:PrescriptiveStatement key="cl12_lv1">
+			<ruleml:Rule key=":rule121" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_done_wholesale_distribution"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_wholesale_distribution_permit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:organized_reseller_network"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasMadeProfit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasProfit">Profit</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&lt;</ruleml:Fun>
+								<ruleml:Var>Profit</ruleml:Var>
+								<ruleml:Ind>3000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>unauthorized_wholesale_distribution_lv1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl12_lv2n">
+			<ruleml:Rule key=":rule122" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_done_wholesale_distribution"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_wholesale_distribution_permit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasMadeProfit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasProfit">Profit</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&lt;</ruleml:Fun>
+								<ruleml:Var>Profit</ruleml:Var>
+								<ruleml:Ind>3000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:organized_reseller_network"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>unauthorized_wholesale_distribution_lv2n</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl12_lv2p">
+			<ruleml:Rule key=":rule123" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_done_wholesale_distribution"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_wholesale_distribution_permit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasMadeProfit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasProfit">Profit</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Profit</ruleml:Var>
+								<ruleml:Ind>3000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>unauthorized_wholesale_distribution_lv2p</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl12_lv3">
+			<ruleml:Rule key=":rule124" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_done_wholesale_distribution"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_wholesale_distribution_permit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasMadeProfit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasProfit">Profit</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Profit</ruleml:Var>
+								<ruleml:Ind>30000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>unauthorized_wholesale_distribution_lv3</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="cl12_lv3_over_lv2p">
+			<ruleml:Rule key=":rule125" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>unauthorized_wholesale_distribution_lv3</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>unauthorized_wholesale_distribution_lv2p</ruleml:Rel>
 							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 						</ruleml:Atom>
 					</ruleml:Negation>
@@ -246,9 +422,145 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<!--other-->
 		
-
+		<!--CLAN 12-->
+		<!--lv1-->
+		<lrml:PenaltyStatement key="imprisonment_min_cl12_lv1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_min_cl12_lv1"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>3</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="imprisonment_max_cl12_lv1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_max_cl12_lv1"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>36</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl12_lv1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl12_lv1"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<!--lv2n-->
+		<lrml:PenaltyStatement key="imprisonment_min_cl12_lv2n">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_min_cl12_lv2n"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>6</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="imprisonment_max_cl12_lv2n">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_max_cl12_lv2n"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>60</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl12_lv2n">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl12_lv2n"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<!--lv2p-->
+		<lrml:PenaltyStatement key="imprisonment_min_cl12_lv2p">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_min_cl12_lv2p"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>6</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="imprisonment_max_cl12_lv2p">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_max_cl12_lv2p"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>60</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl12_lv2p">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl12_lv2p"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<!--lv3-->
+		<lrml:PenaltyStatement key="imprisonment_min_cl12_lv3">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_min_cl12_lv3"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>12</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="imprisonment_max_cl12_lv3">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_imprison_max_cl12_lv3"/>
+							<ruleml:Var>Months</ruleml:Var>
+							<ruleml:Ind>72</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="confiscation_cl12_lv3">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate_cl12_lv3"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		
 
 		<!--CLAN 6-->
 		<!--individual-->
@@ -332,9 +644,85 @@
 				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
+		<!--CLAN 12-->
+		<!--lv1-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_min_cl12_lv1"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv1"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_max_cl12_lv1"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv1"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl12_lv1"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv1"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<!--lv2n-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_min_cl12_lv2n"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv2n"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_max_cl12_lv2n"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv2n"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl12_lv2n"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv2n"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<!--lv2p-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_min_cl12_lv2p"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv2p"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_max_cl12_lv2p"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv2p"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl12_lv2p"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv2p"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<!--lv3-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_min_cl12_lv3"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#imprisonment_max_cl12_lv3"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#confiscation_cl12_lv3"/>
+				<lrml:toPrescriptiveStatement keyref="#cl12_lv3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 
-
-		<!--CLAN 6-->
+		<!--CLAN 6
 		<lrml:OverrideStatement>
 			<lrml:Override under="#cl6_ind" over="#cl6_free"/>
 		</lrml:OverrideStatement>
@@ -343,6 +731,25 @@
 		</lrml:OverrideStatement>
 		<lrml:OverrideStatement>
 			<lrml:Override under="#cl6_le_ri" over="#cl6_free"/>
+		</lrml:OverrideStatement>-->
+		<!--CLAN 12-->
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl12_lv1" over="#cl12_lv2p"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl12_lv1" over="#cl12_lv2n"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl12_lv2n" over="#cl12_lv2p"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl12_lv1" over="#cl12_lv3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl12_lv2n" over="#cl12_lv3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#cl12_lv2p" over="#cl12_lv3"/>
 		</lrml:OverrideStatement>
 	</lrml:Statements>
 </lrml:LegalRuleML>
