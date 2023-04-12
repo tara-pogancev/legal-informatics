@@ -100,6 +100,32 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
+		<!--CLAN 14-->
+		<lrml:PrescriptiveStatement key="cl14">
+			<ruleml:Rule key=":rule14" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>	
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_done_retail_distribution"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_retail_distribution_permit"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>unauthorized_retail_distribution</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<!--CLAN 284 kz - nedozvoljena trgovina-->
 		<lrml:PrescriptiveStatement key="nt_lv1">
 			<ruleml:Rule key=":rulent1" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -114,11 +140,15 @@
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>unauthorized_tobacco_distribution_lv3</ruleml:Rel>
+								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
+								<ruleml:Rel>unauthorized_retail_distribution</ruleml:Rel>
+								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+							</ruleml:Atom>
+							<ruleml:Atom>
+								<ruleml:Rel>unauthorized_wholesale_distribution</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:Or>
@@ -163,11 +193,15 @@
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>unauthorized_tobacco_distribution_lv3</ruleml:Rel>
+								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
+								<ruleml:Rel>unauthorized_retail_distribution</ruleml:Rel>
+								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+							</ruleml:Atom>
+							<ruleml:Atom>
+								<ruleml:Rel>unauthorized_wholesale_distribution</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:Or>
@@ -212,11 +246,15 @@
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>unauthorized_tobacco_distribution_lv3</ruleml:Rel>
+								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
+								<ruleml:Rel>unauthorized_retail_distribution</ruleml:Rel>
+								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+							</ruleml:Atom>
+							<ruleml:Atom>
+								<ruleml:Rel>unauthorized_wholesale_distribution</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:Or>
@@ -256,11 +294,15 @@
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>unauthorized_tobacco_distribution_lv3</ruleml:Rel>
+								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</ruleml:Rel>
+								<ruleml:Rel>unauthorized_retail_distribution</ruleml:Rel>
+								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+							</ruleml:Atom>
+							<ruleml:Atom>
+								<ruleml:Rel>unauthorized_wholesale_distribution</ruleml:Rel>
 								<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:Or>
@@ -455,7 +497,7 @@
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
 		
-		<!--CLAN 284 - nedozvoljena trgovina -->
+		<!--CLAN 284 kz - nedozvoljena trgovina -->
 		<!--lv1-->
 		<lrml:PenaltyStatement key="imprisonment_min_nt_lv1">
 			<lrml:SuborderList>
@@ -676,7 +718,8 @@
 				<lrml:toPrescriptiveStatement keyref="#cl6_le_ri"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
-		<!--CLAN 12-->
+		
+		<!--CLAN 284 kz - nedozvoljena trgovina-->
 		<!--lv1-->
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
@@ -754,17 +797,8 @@
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
-		<!--CLAN 6
-		<lrml:OverrideStatement>
-			<lrml:Override under="#cl6_ind" over="#cl6_free"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#cl6_le" over="#cl6_free"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#cl6_le_ri" over="#cl6_free"/>
-		</lrml:OverrideStatement>-->
-		<!--CLAN 12-->
+		
+		<!--CLAN 284 kz - nedozvoljena trgovina-->
 		<lrml:OverrideStatement>
 			<lrml:Override under="#nt_lv1" over="#nt_lv2p"/>
 		</lrml:OverrideStatement>
