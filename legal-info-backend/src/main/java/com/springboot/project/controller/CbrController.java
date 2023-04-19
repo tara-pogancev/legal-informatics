@@ -5,23 +5,15 @@ import com.springboot.project.dto.CaseDTO;
 import com.springboot.project.dto.RecommendationsDTO;
 import com.springboot.project.service.DrDeviceService;
 import com.springboot.project.service.FeatureExtractionService;
-import com.springboot.project.service.FileDownloadUtil;
 import com.springboot.project.service.cbr.BaseCbrApplication;
 import com.springboot.project.service.cbr.CaseDescription;
-import es.ucm.fdi.gaia.jcolibri.cbraplications.StandardCBRApplication;
-import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRCaseBase;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
-import es.ucm.fdi.gaia.jcolibri.cbrcore.Connector;
-import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNConfig;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.io.support.ResourcePatternResolver;
-import org.springframework.http.ContentDisposition;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +23,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -184,6 +178,23 @@ public class CbrController  {
                 .body(Files.readAllBytes(path));
     }
 
+    @GetMapping("/extract-case-features-from-pdf/{caseNumber}")
+    public ResponseEntity<?> extractCaseFeaturesFromPdf(@PathVariable String caseNumber) throws IOException {
+        Map<String, String> retVal = new HashMap<>();
+
+        retVal.put("Broj slučaja", featureExtractionService.extractCaseNumber(caseNumber));
+        retVal.put("Optuženi", featureExtractionService.extractDefendantInitials(caseNumber));
+        retVal.put("Sud", featureExtractionService.extractCourt(caseNumber));
+        retVal.put("Sudija", featureExtractionService.extractJudgeName(caseNumber));
+        retVal.put("Zapisničar", featureExtractionService.extractCourtReporterName(caseNumber));
+        retVal.put("Oduzimajne sredstava", featureExtractionService.extractConfiscationStatus(caseNumber));
+
+        return ResponseEntity.ok(retVal);
+    }
+
+    /***
+     * Anina metodica za testiranje koju ne diram!
+     */
     @GetMapping("/extract-case-features/{caseNumber}")
     public ResponseEntity<?> extractCaseFeatures(@PathVariable String caseNumber) throws IOException {
         String text = featureExtractionService.readPDF(caseNumber);

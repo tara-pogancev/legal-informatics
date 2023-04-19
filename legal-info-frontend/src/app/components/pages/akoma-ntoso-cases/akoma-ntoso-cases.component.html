@@ -24,29 +24,9 @@
             <th>Naziv atributa</th>
             <th>Atribut</th>
           </tr>
-          <tr>
-            <td>Sud</td>
-            <td>Osnovni sud u Podgorici</td>
-          </tr>
-          <tr>
-            <td>Sud</td>
-            <td>Osnovni sud u Podgorici</td>
-          </tr>
-          <tr>
-            <td>Sud</td>
-            <td>Osnovni sud u Podgorici</td>
-          </tr>
-          <tr>
-            <td>Sud</td>
-            <td>Osnovni sud u Podgorici</td>
-          </tr>
-          <tr>
-            <td>Sud</td>
-            <td>Osnovni sud u Podgorici</td>
-          </tr>
-          <tr>
-            <td>Sud</td>
-            <td>Osnovni sud u Podgorici</td>
+          <tr *ngFor="let attribute of attributes | keyvalue">
+            <td>{{ attribute.key }}</td>
+            <td>{{ attribute.value }}</td>
           </tr>
         </table>
       </div>

@@ -13,6 +13,7 @@ export class AkomaNtosoCasesComponent {
   public xmlHtml: SafeHtml | undefined;
   public judgements: String[] = [];
   public currentFile: String = '';
+  public attributes: Map<String, String> = new Map();
 
   constructor(
     private cbrService: CbrService,
@@ -39,16 +40,13 @@ export class AkomaNtosoCasesComponent {
         this.xmlHtml = this.sanitizer.bypassSecurityTrustHtml(
           new XMLSerializer().serializeToString(this.xmlDocument)
         );
+      });
 
-        /*  window.onload = () => {
-        let scrollTo = this.router.url.split('#')[1];
-        if (scrollTo != undefined) {
-          const myElement = document.getElementById(scrollTo);
-          if (myElement != null) {
-            myElement.scrollIntoView();
-          }
-        }
-      }; */
+    this.cbrService
+      .extractCaseFeaturesFromPdf(this.currentFile.replace(".html", ""))
+      .subscribe((response) => {
+        console.log(response);
+        this.attributes = response;
       });
   }
 

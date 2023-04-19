@@ -73,6 +73,11 @@ export class CbrService {
     return this._http.post<any>(url, caseDto);
   }
 
+  extractCaseFeaturesFromPdf(name: String) {
+    const url = this.url + '/extract-case-features-from-pdf/' + name;
+    return this._http.get<any>(url);
+  }
+
   postNewCase(caseDto: Case) {
     const url = this.url + '/new-case';
     return this._http.post<any>(url, caseDto);
