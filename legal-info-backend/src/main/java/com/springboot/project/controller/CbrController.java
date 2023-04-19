@@ -3,6 +3,7 @@ package com.springboot.project.controller;
 
 import com.springboot.project.dto.CaseDTO;
 import com.springboot.project.dto.RecommendationsDTO;
+import com.springboot.project.service.DrDeviceService;
 import com.springboot.project.service.FeatureExtractionService;
 import com.springboot.project.service.FileDownloadUtil;
 import com.springboot.project.service.cbr.BaseCbrApplication;
@@ -45,10 +46,10 @@ public class CbrController  {
     @Autowired
     FeatureExtractionService featureExtractionService;
 
-    /***
-     * Cao cao Annaaa
-     * Ova ovde metoda te zanima!
-     */
+    @Autowired
+    DrDeviceService drDeviceService;
+
+
     @PostMapping("/recommend-case-solution")
     public ResponseEntity<?> recommendCaseSolution(@RequestBody CaseDTO caseDTO) {
         BaseCbrApplication recommender = new BaseCbrApplication();
@@ -74,10 +75,8 @@ public class CbrController  {
             retVal.slucajevi = recommender.getCycle(query);
             recommender.postCycle();
 
-            /***
-             * Ana ovde treba da uradis deo koji se tice dr device~
-             * Dodaj to u retVal.pravila ;--;
-             */
+            retVal.pravila = drDeviceService.startDrDevice(caseDTO);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

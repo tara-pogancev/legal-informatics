@@ -147,7 +147,6 @@
               <mat-option value="odgovorno lice za pravno lice"
                 >Odgovorno lice za pravno lice</mat-option
               >
-              <mat-option value="preduzetnik">Preduzetnik</mat-option>
             </mat-select>
           </mat-form-field>
         </div>
@@ -240,18 +239,23 @@
       </div>
     </div>
     <div class="column scroll">
-      <h1>Rasuđivanje po slučajevima</h1>
-      <div>
-        <p *ngIf="recommendations.slucajevi.length == 0">Nema preporuka.</p>
-        <div class="mb-5" *ngFor="let item of recommendations.slucajevi">
-          {{ item }}
-        </div>
+      <div *ngIf="isLoading">
+        <mat-spinner class="auto-margin pt-8 mt-5"></mat-spinner>
       </div>
-      <mat-divider class="my-5"></mat-divider>
-      <h1 class="mt-5">Rasuđivanje po pravilima</h1>
-      <div>
-        <p *ngIf="recommendations.pravila == ''">Nema preporuka.</p>
-        <p>{{ recommendations.pravila }}</p>
+      <div *ngIf="!isLoading">
+        <h1>Rasuđivanje po slučajevima</h1>
+        <div>
+          <p *ngIf="recommendations.slucajevi.length == 0">Nema preporuka.</p>
+          <div class="mb-5" *ngFor="let item of recommendations.slucajevi">
+            {{ item }}
+          </div>
+        </div>
+        <mat-divider class="my-5"></mat-divider>
+        <h1 class="mt-5">Rasuđivanje po pravilima</h1>
+        <div>
+          <p *ngIf="recommendations.pravila == ''">Nema preporuka.</p>
+          <p>{{ recommendations.pravila }}</p>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleML xmlns="http://www.ruleml.org/0.91/xsd"
+         xmlns:lc="http://ftn.uns.ac.rs/legal-case"
+         xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/"
+         xmlns:ruleml="http://ruleml.org/spec"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         proof="proof.ruleml"
+         rdf_export="export.rdf"
+         rdf_export_classes="placed_on_market_rezani_duvan_individual placed_on_market_rezani_duvan_legal_entity placed_on_market_rezani_duvan_legal_entity_responsible_individual to_pay_min_cl6_ind to_pay_max_cl6_ind to_confiscate_cl6_ind to_pay_min_cl6_le to_pay_max_cl6_le to_confiscate_cl6_le to_prohibit_min_cl6_le to_prohibit_max_cl6_le to_pay_min_cl6_le_ri to_pay_max_cl6_le_ri to_confiscate_cl6_le_ri to_prohibit_min_cl6_le_ri to_prohibit_max_cl6_le_ri unauthorized_wholesale_distribution unauthorized_retail_distribution unauthorized_tobacco_distribution_lv1 unauthorized_tobacco_distribution_lv2n unauthorized_tobacco_distribution_lv2p unauthorized_tobacco_distribution_lv3 to_imprison_min_nt_lv1 to_imprison_max_nt_lv1 to_confiscate_nt_lv1 to_imprison_min_nt_lv2n to_imprison_max_nt_lv2n to_confiscate_nt_lv2n to_imprison_min_nt_lv2p to_imprison_max_nt_lv2p to_confiscate_nt_lv2p to_imprison_min_nt_lv3 to_imprison_max_nt_lv3 to_confiscate_nt_lv3"
+         rdf_import="&#34;facts.rdf&#34;">
+   <Assert>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule61">rule61</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:is_entity"/>
+                     <Data xsi:type="xs:string">individual</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:placed_on_market_rezani_duvan"/>
+                     <Data xsi:type="xs:string">yes</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule62">rule62</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:is_entity"/>
+                     <Data xsi:type="xs:string">legal_entity</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:placed_on_market_rezani_duvan"/>
+                     <Data xsi:type="xs:string">yes</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule63">rule63</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:is_entity"/>
+                     <Data xsi:type="xs:string">legal_entity_responsible_individual</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:placed_on_market_rezani_duvan"/>
+                     <Data xsi:type="xs:string">yes</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule12">rule12</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:has_done_wholesale_distribution"/>
+                     <Data xsi:type="xs:string">yes</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:has_wholesale_distribution_permit"/>
+                     <Data xsi:type="xs:string">no</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_wholesale_distribution</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule14">rule14</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:has_done_retail_distribution"/>
+                     <Data xsi:type="xs:string">yes</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:has_retail_distribution_permit"/>
+                     <Data xsi:type="xs:string">no</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_retail_distribution</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rulent1">rulent1</Ind>
+         </oid>
+         <body>
+            <And>
+               <Or>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_retail_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_wholesale_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+               </Or>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:organized_reseller_network"/>
+                     <Data xsi:type="xs:string">no</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:profit"/>
+                     <Var>Profit</Var>
+                  </slot>
+               </Atom>
+               <Equal>
+                  <Expr>
+                     <Fun in="yes">&lt;</Fun>
+                     <Var>Profit</Var>
+                     <Ind>3000</Ind>
+                  </Expr>
+               </Equal>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rulent2">rulent2</Ind>
+         </oid>
+         <body>
+            <And>
+               <Or>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_retail_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_wholesale_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+               </Or>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:profit"/>
+                     <Var>Profit</Var>
+                  </slot>
+               </Atom>
+               <Equal>
+                  <Expr>
+                     <Fun in="yes">&lt;</Fun>
+                     <Var>Profit</Var>
+                     <Ind>3000</Ind>
+                  </Expr>
+               </Equal>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:organized_reseller_network"/>
+                     <Data xsi:type="xs:string">yes</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+         <superior>
+            <Ind uri="rulent1"/>
+         </superior>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rulent3">rulent3</Ind>
+         </oid>
+         <body>
+            <And>
+               <Or>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_retail_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_wholesale_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+               </Or>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:profit"/>
+                     <Var>Profit</Var>
+                  </slot>
+               </Atom>
+               <Equal>
+                  <Expr>
+                     <Fun in="yes">&gt;</Fun>
+                     <Var>Profit</Var>
+                     <Ind>3000</Ind>
+                  </Expr>
+               </Equal>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+         <superior>
+            <Ind uri="rulent1"/>
+         </superior>
+         <superior>
+            <Ind uri="rulent2"/>
+         </superior>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rulent4">rulent4</Ind>
+         </oid>
+         <body>
+            <And>
+               <Or>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_retail_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel>unauthorized_wholesale_distribution</Rel>
+                     </op>
+                     <slot>
+                        <Ind uri="defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                  </Atom>
+               </Or>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:profit"/>
+                     <Var>Profit</Var>
+                  </slot>
+               </Atom>
+               <Equal>
+                  <Expr>
+                     <Fun in="yes">&gt;</Fun>
+                     <Var>Profit</Var>
+                     <Ind>30000</Ind>
+                  </Expr>
+               </Equal>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+         <superior>
+            <Ind uri="rulent1"/>
+         </superior>
+         <superior>
+            <Ind uri="rulent2"/>
+         </superior>
+         <superior>
+            <Ind uri="rulent3"/>
+         </superior>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rulent5">rulent5</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel>unauthorized_tobacco_distribution_lv3</Rel>
+                  </op>
+                  <slot>
+                     <Ind uri="defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Neg>
+               <Atom>
+                  <op>
+                     <Rel>unauthorized_tobacco_distribution_lv2p</Rel>
+                  </op>
+                  <slot>
+                     <Ind uri="defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+               </Atom>
+            </Neg>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_cl6_ind_min">pen_cl6_ind_min</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_cl6_ind</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">50</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_cl6_ind_max">pen_cl6_ind_max</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_cl6_ind</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1000</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_cl6_ind">confiscation_cl6_ind</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_cl6_ind</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_cl6_le_min">pen_cl6_le_min</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_cl6_le</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">10000</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_cl6_le_max">pen_cl6_le_max</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_cl6_le</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">20000</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_cl6_le">confiscation_cl6_le</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_cl6_le</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="prohibition_min_cl6_le">prohibition_min_cl6_le</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_prohibit_min_cl6_le</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">0</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="prohibition_max_cl6_le">prohibition_max_cl6_le</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_prohibit_max_cl6_le</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">12</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_cl6_le_ri_min">pen_cl6_le_ri_min</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_cl6_le_ri</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1000</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_cl6_le_ri_max">pen_cl6_le_ri_max</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_cl6_le_ri</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">2000</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_cl6_le_ri">confiscation_cl6_le_ri</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_cl6_le_ri</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="prohibition_min_cl6_le_ri">prohibition_min_cl6_le_ri</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_prohibit_min_cl6_le_ri</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">0</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="prohibition_max_cl6_le_ri">prohibition_max_cl6_le_ri</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>placed_on_market_rezani_duvan_legal_entity_responsible_individual</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_prohibit_max_cl6_le_ri</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">12</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_min_nt_lv1">imprisonment_min_nt_lv1</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_min_nt_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">3</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_max_nt_lv1">imprisonment_max_nt_lv1</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_max_nt_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">36</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_nt_lv1">confiscation_nt_lv1</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_nt_lv1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_min_nt_lv2n">imprisonment_min_nt_lv2n</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_min_nt_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">6</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_max_nt_lv2n">imprisonment_max_nt_lv2n</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_max_nt_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">60</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_nt_lv2n">confiscation_nt_lv2n</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_nt_lv2n</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_min_nt_lv2p">imprisonment_min_nt_lv2p</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_min_nt_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">6</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_max_nt_lv2p">imprisonment_max_nt_lv2p</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_max_nt_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">60</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_nt_lv2p">confiscation_nt_lv2p</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_nt_lv2p</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_min_nt_lv3">imprisonment_min_nt_lv3</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_min_nt_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">12</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="imprisonment_max_nt_lv3">imprisonment_max_nt_lv3</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_imprison_max_nt_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">72</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="confiscation_nt_lv3">confiscation_nt_lv3</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>unauthorized_tobacco_distribution_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate_nt_lv3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+   </Assert>
+</RuleML>

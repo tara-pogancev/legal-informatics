@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+     <!ENTITY defeasible "http://lpis.csd.auth.gr/systems/dr-device/defeasible.rdfs#">
+     <!ENTITY export "http://startrek.csd.auth.gr/dr-device/export/export.rdf#"> 
+     <!ENTITY proof-export "http://startrek.csd.auth.gr/dr-device/proof/proof.ruleml#"> 
+]>
+
+<rdf:RDF
+     xmlns:rdf='&rdf;'
+     xmlns:rdfs='&rdfs;'
+     xmlns:defeasible='&defeasible;'
+     xmlns:export='&export;'
+>
+
+<rdfs:Class rdf:about='&export;placed_on_market_rezani_duvan_individual'>
+     <rdfs:label rdf:resource='placed_on_market_rezani_duvan_individual'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;placed_on_market_rezani_duvan_legal_entity'>
+     <rdfs:label rdf:resource='placed_on_market_rezani_duvan_legal_entity'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;placed_on_market_rezani_duvan_legal_entity_responsible_individual'>
+     <rdfs:label rdf:resource='placed_on_market_rezani_duvan_legal_entity_responsible_individual'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_min_cl6_ind'>
+     <rdfs:label rdf:resource='to_pay_min_cl6_ind'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_max_cl6_ind'>
+     <rdfs:label rdf:resource='to_pay_max_cl6_ind'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_cl6_ind'>
+     <rdfs:label rdf:resource='to_confiscate_cl6_ind'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_min_cl6_le'>
+     <rdfs:label rdf:resource='to_pay_min_cl6_le'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_max_cl6_le'>
+     <rdfs:label rdf:resource='to_pay_max_cl6_le'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_cl6_le'>
+     <rdfs:label rdf:resource='to_confiscate_cl6_le'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_prohibit_min_cl6_le'>
+     <rdfs:label rdf:resource='to_prohibit_min_cl6_le'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_prohibit_max_cl6_le'>
+     <rdfs:label rdf:resource='to_prohibit_max_cl6_le'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_min_cl6_le_ri'>
+     <rdfs:label rdf:resource='to_pay_min_cl6_le_ri'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_max_cl6_le_ri'>
+     <rdfs:label rdf:resource='to_pay_max_cl6_le_ri'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_cl6_le_ri'>
+     <rdfs:label rdf:resource='to_confiscate_cl6_le_ri'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_prohibit_min_cl6_le_ri'>
+     <rdfs:label rdf:resource='to_prohibit_min_cl6_le_ri'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_prohibit_max_cl6_le_ri'>
+     <rdfs:label rdf:resource='to_prohibit_max_cl6_le_ri'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;unauthorized_wholesale_distribution'>
+     <rdfs:label rdf:resource='unauthorized_wholesale_distribution'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;unauthorized_retail_distribution'>
+     <rdfs:label rdf:resource='unauthorized_retail_distribution'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;unauthorized_tobacco_distribution_lv1'>
+     <rdfs:label rdf:resource='unauthorized_tobacco_distribution_lv1'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;unauthorized_tobacco_distribution_lv2n'>
+     <rdfs:label rdf:resource='unauthorized_tobacco_distribution_lv2n'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;unauthorized_tobacco_distribution_lv2p'>
+     <rdfs:label rdf:resource='unauthorized_tobacco_distribution_lv2p'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;unauthorized_tobacco_distribution_lv3'>
+     <rdfs:label rdf:resource='unauthorized_tobacco_distribution_lv3'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_min_nt_lv1'>
+     <rdfs:label rdf:resource='to_imprison_min_nt_lv1'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_max_nt_lv1'>
+     <rdfs:label rdf:resource='to_imprison_max_nt_lv1'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_nt_lv1'>
+     <rdfs:label rdf:resource='to_confiscate_nt_lv1'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_min_nt_lv2n'>
+     <rdfs:label rdf:resource='to_imprison_min_nt_lv2n'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_max_nt_lv2n'>
+     <rdfs:label rdf:resource='to_imprison_max_nt_lv2n'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_nt_lv2n'>
+     <rdfs:label rdf:resource='to_confiscate_nt_lv2n'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_min_nt_lv2p'>
+     <rdfs:label rdf:resource='to_imprison_min_nt_lv2p'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_max_nt_lv2p'>
+     <rdfs:label rdf:resource='to_imprison_max_nt_lv2p'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_nt_lv2p'>
+     <rdfs:label rdf:resource='to_confiscate_nt_lv2p'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_min_nt_lv3'>
+     <rdfs:label rdf:resource='to_imprison_min_nt_lv3'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_imprison_max_nt_lv3'>
+     <rdfs:label rdf:resource='to_imprison_max_nt_lv3'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_confiscate_nt_lv3'>
+     <rdfs:label rdf:resource='to_confiscate_nt_lv3'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;placed_on_market_rezani_duvan_individual'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;placed_on_market_rezani_duvan_legal_entity'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;placed_on_market_rezani_duvan_legal_entity_responsible_individual'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_min_cl6_ind'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_max_cl6_ind'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_cl6_ind'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_min_cl6_le'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_max_cl6_le'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_cl6_le'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_prohibit_min_cl6_le'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_prohibit_max_cl6_le'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_min_cl6_le_ri'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_max_cl6_le_ri'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_cl6_le_ri'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_prohibit_min_cl6_le_ri'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_prohibit_max_cl6_le_ri'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;unauthorized_wholesale_distribution'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;unauthorized_retail_distribution'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;unauthorized_tobacco_distribution_lv1'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;unauthorized_tobacco_distribution_lv2n'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;unauthorized_tobacco_distribution_lv2p'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;unauthorized_tobacco_distribution_lv3'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_min_nt_lv1'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_max_nt_lv1'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_nt_lv1'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_min_nt_lv2n'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_max_nt_lv2n'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_nt_lv2n'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_min_nt_lv2p'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_max_nt_lv2p'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_nt_lv2p'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_min_nt_lv3'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_imprison_max_nt_lv3'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate_nt_lv3'/>
+</rdf:Property>
+
+<export:placed_on_market_rezani_duvan_individual rdf:about='&export;placed_on_market_rezani_duvan_individual1'>
+     <export:defendant>John</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
+</export:placed_on_market_rezani_duvan_individual>
+
+<export:to_pay_min_cl6_ind rdf:about='&export;to_pay_min_cl6_ind1'>
+     <export:value>50</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
+</export:to_pay_min_cl6_ind>
+
+<export:to_pay_max_cl6_ind rdf:about='&export;to_pay_max_cl6_ind1'>
+     <export:value>1000</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
+</export:to_pay_max_cl6_ind>
+
+<export:to_confiscate_cl6_ind rdf:about='&export;to_confiscate_cl6_ind1'>
+     <export:value>1</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+</export:to_confiscate_cl6_ind>
+
+<export:unauthorized_retail_distribution rdf:about='&export;unauthorized_retail_distribution1'>
+     <export:defendant>John</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+</export:unauthorized_retail_distribution>
+
+<export:unauthorized_tobacco_distribution_lv1 rdf:about='&export;unauthorized_tobacco_distribution_lv11'>
+     <export:defendant>John</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
+</export:unauthorized_tobacco_distribution_lv1>
+
+<export:to_imprison_min_nt_lv1 rdf:about='&export;to_imprison_min_nt_lv11'>
+     <export:value>3</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof7</defeasible:proof>
+</export:to_imprison_min_nt_lv1>
+
+<export:to_imprison_max_nt_lv1 rdf:about='&export;to_imprison_max_nt_lv11'>
+     <export:value>36</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof8</defeasible:proof>
+</export:to_imprison_max_nt_lv1>
+
+<export:to_confiscate_nt_lv1 rdf:about='&export;to_confiscate_nt_lv11'>
+     <export:value>1</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof9</defeasible:proof>
+</export:to_confiscate_nt_lv1>
+
+</rdf:RDF>

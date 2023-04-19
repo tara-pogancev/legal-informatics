@@ -13,12 +13,15 @@ export class NewCaseComponent {
   public krivicnoDelo: String = '';
   public primenjeniPropisi: String = '';
   public recommendations: Recommendations = new Recommendations();
+  public isLoading = false;
 
   constructor(private cbrService: CbrService) {}
 
   getRecommendations() {
+    this.isLoading = true;
     this.cbrService.getRecommendations(this.case).subscribe((response) => {
       this.recommendations = response;
+      this.isLoading = false;
     });
   }
 
