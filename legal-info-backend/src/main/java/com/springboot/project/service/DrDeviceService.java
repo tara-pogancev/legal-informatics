@@ -3,6 +3,7 @@ package com.springboot.project.service;
 import com.springboot.project.dto.CaseDTO;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -17,7 +18,8 @@ import java.util.Objects;
 @RequiredArgsConstructor
 public class DrDeviceService {
 
-    private static final String BASE_PATH = "E:\\FTN\\Pravna Informatika\\legal-informatics\\dr-device\\";
+    @Value("${drdevice.path}")
+    private String BASE_PATH;
 
     public String startDrDevice(CaseDTO caseDTO) throws IOException, InterruptedException {
         String cleanPath = BASE_PATH + "clean.bat";
@@ -125,8 +127,6 @@ public class DrDeviceService {
 
         String resultsPath = BASE_PATH + "export.rdf";
         String fileContent = new String(Files.readAllBytes(Paths.get(resultsPath)), StandardCharsets.UTF_8);
-
-        System.out.println(fileContent);
 
         String placed_on_market_rezani_duvan = StringUtils.substringBetween(fileContent, "<export:placed_on_market_rezani_duvan", "</export:placed_on_market_rezani_duvan");
         if (placed_on_market_rezani_duvan != null && placed_on_market_rezani_duvan.contains(provenPositive)) {

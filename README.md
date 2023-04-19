@@ -1,43 +1,19 @@
-# Pravna informatika
-Projekat za master iz predmeta Pravna informatika na FTN-u.
+# Pravna Informatika - Projekat
+## Uputstvo za pokretanje: Frontend
+Kako biste pokrenuli frontend rađen pomoću **Angular**-a, potrebno je da imate instaliranu verziju **Node-a v18**. Potom je potrebno izvršiti komande:
 
-## Zakon o duvanu (/duvan)
-- Član 2
-- Član 6
-- Član 12
-- Član 14
-- Član 15
+    npm install
+    ng serve
+Nakon izvršenih komandi, aplikacija će biti pokrenuta na adresi **localhost:4200**.
 
-## Krivični zakonik Crne gore (/krivicni)
-- Član 265
-- Član 284
+## Uputstvo za pokretanje: Backend
+Projekat je rađen u **Spring Boot**-u, pa je za njegovo pokretajne potrebna **Java 18**.
+Dodatno, potrebno je napraviti PostgreSQL bazu pod nazivom: **cbr-application**.
+U podešavanjima Enviroment Varijabli projekta, potrebno je definisati lozinku za bazu podataka (**DB_PASS**) i apsolutnu putanju do dr-device foldera (**DR_DEVICE**). 
 
-- Član 2: art_2k
-- Član 3
-- Član 4
-- Član 5
-- Član 13
-- Član 15: art_15k
-- Član 23
-- Član 32
-- Član 36
-- Član 39
-- Član 42
-- Član 45
-- Član 51
-- Član 52
-- Član 53
-- Član 54
-- Član 66
-- Član 67
-- Član 75
-- Član 185
-- Član 190
-- Član 248
+> Enviroment variables: PASS=--------;DR_DEVICE=C:\\\\---\\\\---\\\\---\\\\
 
-
-## Zakonik o krivičnom postupku
-- Član 226
-- Član 229
-- Član 303
-- Član 374
+## Lokacije fajlova
+Akoma Ntoso fajlovi: *legal-informatics\Documents\Akoma Ntoso*
+Presude PDF: *legal-informatics\legal-info-backend\src\main\resources\cases*
+Zakon PDF: *legal-informatics\legal-info-backend\src\main\resources\law*
