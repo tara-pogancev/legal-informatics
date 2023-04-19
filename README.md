@@ -15,5 +15,7 @@ U podešavanjima Enviroment Varijabli projekta, potrebno je definisati lozinku z
 
 ## Lokacije fajlova
 Akoma Ntoso fajlovi: *legal-informatics\Documents\Akoma Ntoso*
+
 Presude PDF: *legal-informatics\legal-info-backend\src\main\resources\cases*
+
 Zakon PDF: *legal-informatics\legal-info-backend\src\main\resources\law*
