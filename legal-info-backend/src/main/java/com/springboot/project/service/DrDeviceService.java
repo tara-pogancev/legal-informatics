@@ -95,6 +95,10 @@ public class DrDeviceService {
             organized_reseller_network = "no";
         }
 
+        if (Objects.equals(caseDTO.vrstaDuvana, "cigarete")) {
+            placed_on_market_rezani_duvan = "no";
+        }
+
 
         String fileContent =
                 "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
@@ -128,19 +132,28 @@ public class DrDeviceService {
         String resultsPath = BASE_PATH + "export.rdf";
         String fileContent = new String(Files.readAllBytes(Paths.get(resultsPath)), StandardCharsets.UTF_8);
 
+        Boolean didAnythingWrong = false;
+
         String placed_on_market_rezani_duvan = StringUtils.substringBetween(fileContent, "<export:placed_on_market_rezani_duvan", "</export:placed_on_market_rezani_duvan");
         if (placed_on_market_rezani_duvan != null && placed_on_market_rezani_duvan.contains(provenPositive)) {
-            retVal += "Okrivljeni je optužen za ilegalnu prodaju duvana. \n\n";
+            retVal += "Okrivljeni je optužen za nedozvoljenu trgovinu rezanog duvana. \n\n";
+            didAnythingWrong = true;
         }
 
         String unauthorized_retail_distribution = StringUtils.substringBetween(fileContent, "<export:unauthorized_retail_distribution", "</export:unauthorized_retail_distribution>");
         if (unauthorized_retail_distribution != null && unauthorized_retail_distribution.contains(provenPositive)) {
-            retVal += "Okrivljeni je optužen za ilegalnu trgovinu u prometu na malo. \n\n";
+            retVal += "Okrivljeni je optužen za nedozvoljenu trgovinu u prometu na malo. \n\n";
+            didAnythingWrong = true;
         }
 
         String unauthorized_wholesale_distribution = StringUtils.substringBetween(fileContent, "<export:unauthorized_wholesale_distribution", "</export:unauthorized_wholesale_distribution>");
         if (unauthorized_wholesale_distribution != null && unauthorized_wholesale_distribution.contains(provenPositive)) {
-            retVal += "Okrivljeni je optužen za ilegalnu trgovinu u prometu na veliko. \n\n";
+            retVal += "Okrivljeni je optužen za nedozvoljenu trgovinu u prometu na veliko. \n\n";
+            didAnythingWrong = true;
+        }
+
+        if (!didAnythingWrong) {
+            return "Nije kriv.";
         }
 
         String to_pay_min = StringUtils.substringBetween(fileContent, "<export:to_pay_min", "</export:to_pay_min");
@@ -160,16 +173,26 @@ public class DrDeviceService {
 
         String to_prohibit_min = StringUtils.substringBetween(fileContent, "<export:to_prohibit_min", "</export:to_prohibit_min");
         if (to_prohibit_min != null && to_prohibit_min.contains(provenPositive)) {
-            retVal += "Okrivljenom se izriče MINIMALNA zatvorska kazna od " + StringUtils.substringBetween(to_prohibit_min, "<export:value>", "</export:value>") + " meseci. \n\n";
+            retVal += "Okrivljenom se izriče MINIMALNA zabrana delatnosti od " + StringUtils.substringBetween(to_prohibit_min, "<export:value>", "</export:value>") + " meseci. \n\n";
         }
 
         String to_prohibit_max = StringUtils.substringBetween(fileContent, "<export:to_prohibit_max", "</export:to_prohibit_max");
         if (to_prohibit_max != null && to_prohibit_max.contains(provenPositive)) {
-            retVal += "Okrivljenom se izriče MAKSIMALNA zatvorska kazna od " + StringUtils.substringBetween(to_prohibit_max, "<export:value>", "</export:value>") + " meseci. \n\n";
+            retVal += "Okrivljenom se izriče MAKSIMALNA zabrana delatnosti od " + StringUtils.substringBetween(to_prohibit_max, "<export:value>", "</export:value>") + " meseci. \n\n";
+        }
+
+        String to_imprison_min = StringUtils.substringBetween(fileContent, "<export:to_imprison_min", "</export:to_imprison_min");
+        if (to_imprison_min != null && to_imprison_min.contains(provenPositive)) {
+            retVal += "Okrivljenom se izriče MINIMALNA zatvorska kazna od " + StringUtils.substringBetween(to_imprison_min, "<export:value>", "</export:value>") + " meseci. \n\n";
+        }
+
+        String to_imprison_max = StringUtils.substringBetween(fileContent, "<export:to_imprison_max", "</export:to_imprison_max");
+        if (to_imprison_max != null && to_imprison_max.contains(provenPositive)) {
+            retVal += "Okrivljenom se izriče MASKIMALNA zatvorska kazna od " + StringUtils.substringBetween(to_imprison_max, "<export:value>", "</export:value>") + " meseci. \n\n";
         }
 
         if (retVal.isEmpty()) {
-            retVal = "Nema zaključaka.";
+            retVal = "Nije kriv.";
         }
 
         return retVal;

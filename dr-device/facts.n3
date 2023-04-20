@@ -1,11 +1,11 @@
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case> .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#defendant> "John" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#name> "case 01" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#is_entity> "legal_entity_responsible_individual" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#placed_on_market_rezani_duvan> "yes" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#is_entity> "legal_entity" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#placed_on_market_rezani_duvan> "no" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#has_done_wholesale_distribution> "no" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#has_wholesale_distribution_permit> "no" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#has_done_retail_distribution> "yes" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#has_retail_distribution_permit> "yes" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#organized_reseller_network> "no" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#profit> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#organized_reseller_network> "yes" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#profit> "40000"^^<http://www.w3.org/2001/XMLSchema#integer> .
