@@ -133,7 +133,7 @@ public class FeatureExtractionService {
         return ret;
     }
 
-    //radi za sve, proveriti jos slucaj K 12 2021 - ostavljen je recenicni kontekst jer se ime nalazi u padezu
+    //radi za sve, za slucaj K 12 2021 - ostavljen je recenicni kontekst jer se ime nalazi u padezu
     public String extractCourtReporterName(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\s((ZAPISNIČAR(KA)?)|(Zapisničar(ka)?))(,|\\s)?\\s*((SUDIJA)|(S U D I J A)|(SUTKINJA)|(S U T K I N J A)),?\\s+[A-ZŽĐŠČĆa-zžđšćčć]+ [A-ZŽĐŠČĆa-zžđšćčć]+");
@@ -159,18 +159,24 @@ public class FeatureExtractionService {
         return ret;
     }
 
-    //radi za sve slucajeve sem 12 i 809 (vrv zbog preloma strane hvata zaglavlje)
+    //radi za sve slucajeve sem 809 (nepoznat razlog)
     public String extractConfiscationStatus(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\s[Ii] ?z ?r ?i ?č ?e(,|:)?\\s+(MJER[AU] BEZBI?JEDNOSTI)\\s+((ODUZIMAN[jJ]E PREDMETA)|((([A-ZŽĐŠČĆa-zžđšćčć0-9/\\.]+\\s){0,10})[Oo]duzima((nje)|(ti))?))");
         Matcher matcher = pattern.matcher(str);
         String ret = "NE";
-        String matchedText = "";
         if (matcher.find()) {
-            matchedText = matcher.group();
             ret = "DA";
         }
-        return ret.trim();
+        else {
+            Pattern pattern2 = Pattern.compile("\\sizrekao(\\si)?\\smjeru\\sbezbjednosti\\s?-?\\soduzimanj(e|a)\\spredmeta,?\\s");
+            //Pattern pattern2 = Pattern.compile("\\sizrekao\\si\\smjeru\\sbezbjednosti\\soduzimanja\\spredmeta"); - doslovno citiran 809 - i dalje ne radi?
+            Matcher matcher2 = pattern2.matcher(str);
+            if (matcher2.find()) {
+                ret = "DA";
+            }
+        }
+        return ret;
     }
 
 }
