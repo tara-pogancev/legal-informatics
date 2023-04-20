@@ -191,6 +191,7 @@ public class CbrController  {
         retVal.put("Citirani članovi zakona", featureExtractionService.extractCitedArticles(caseNumber));
         retVal.put("Sudska kazna", featureExtractionService.extractPunishment(caseNumber));
         retVal.put("Oduzimanje sredstava", featureExtractionService.extractConfiscationStatus(caseNumber));
+        retVal.put("Roba stavljena u promet", featureExtractionService.extractGoods(caseNumber));
 
         return ResponseEntity.ok(retVal);
     }
@@ -200,7 +201,7 @@ public class CbrController  {
      */
     @GetMapping("/extract-case-features/{caseNumber}")
     public ResponseEntity<?> extractCaseFeatures(@PathVariable String caseNumber) throws IOException {
-        String text = featureExtractionService.extractPunishment(caseNumber);
+        String text = featureExtractionService.extractGoods(caseNumber);
 
         return ResponseEntity.ok(text);
     }

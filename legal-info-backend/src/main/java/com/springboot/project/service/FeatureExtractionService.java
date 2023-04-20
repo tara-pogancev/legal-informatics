@@ -221,6 +221,24 @@ public class FeatureExtractionService {
         return ret.replace("\r\n", " ").replace("\n", " ").trim();
     }
 
+    //radi za sve sem 187 i 504
+    public String extractGoods(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s((MJER[UA] BEZBJEDNOSTI))\\s+[A-ZŽĐŠČĆA-ZŽĐŠČĆa-zžđšćčć,0-9()/:.'„“”–€\"\\s]*?\\.\r?\n");
+        Matcher matcher = pattern.matcher(str);
+        String ret = "unknown";
+        if (matcher.find()) {
+            ret = matcher.group();
+            if(ret.contains("ODUZIMANJE PREDMETA")){
+                String[] parts = ret.split("ODUZIMANJE PREDMETA");
+                ret = parts[1];
+            }
+            ret = ret.replaceAll("^\\D*", "");
+            String[] parts2 = ret.split(",\\s*kao\\s+predmet");
+            ret = parts2[0];
+        }
+        return ret.replace("\r\n", " ").replace("\n", " ").trim();
+    }
 
 
 }
