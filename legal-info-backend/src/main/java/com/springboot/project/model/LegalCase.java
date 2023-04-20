@@ -38,5 +38,8 @@ public class LegalCase extends DatabaseEntity{
     @Column(name = "punishment")
     private String punishment;
 
+    @Column(name = "goods")
+    private String goods;
+
 
 }
