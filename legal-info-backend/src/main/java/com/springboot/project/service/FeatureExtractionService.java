@@ -197,14 +197,26 @@ public class FeatureExtractionService {
         return ret.replace("\r\n", " ").replace("\n", " ").trim();
     }
 
-    //ne nadje uvek bas sve - testirati jos tacnost
+    //radii, ne nadje uvek bas sve
     public String extractCitedArticles(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
-        Pattern pattern = Pattern.compile("\\s[Čč]l([.,]|(an))?\\s*[0-9]{1,3}(\\s*st[.,]\\s*[0-9]{1,3})?(\\s+u\\s+vezi\\s((st[.,]\\s*)|(stava\\s+))[0-9]{1,3})?(((,\\s*)|(\\s+i\\s+))([Čč]l([.,]|(an))?)?\\s*[0-9]{1,3}(\\s*st[.,]\\*[0-9]{1,3})?)*\\s+((Krivičnog\\s+zakonika(\\s+Crne\\s+Gore)?)|(KZ\\s*CG)|(Zakonika\\s+o\\s+krivičnom\\s+postupku)|(ZKP-a)|(Zakona\\s+o\\s+duvanu))");
+        Pattern pattern = Pattern.compile("\\s[Čč]l([.,]|(an))?\\s*[0-9]{1,3}(\\s*st[.,]\\s*[0-9]{1,3})?(\\s+u\\s+vezi\\s((st[.,]\\s*)|(stava\\s+))[0-9]{1,3})?(((,\\s*)|(\\s+i\\s+))([Čč]l([.,]|(an))?)?\\s*[0-9]{1,3}(\\s*st[.,]\\s*[0-9]{1,3})?)*\\s+((Krivičnog\\s+zakonika(\\s+Crne\\s+Gore)?)|(KZ\\s*CG)|(Zakonika\\s+o\\s+krivičnom\\s+postupku)|(ZKP-a)|(Zakona\\s+o\\s+duvanu))");
         Matcher matcher = pattern.matcher(str);
         String ret = "";
         while (matcher.find()) {
             ret = ret + ", " + matcher.group();
+        }
+        return ret.replace("\r\n", " ").replace("\n", " ").trim();
+    }
+
+    //radi za sve
+    public String extractPunishment(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s((U ?S ?L ?O ?V ?N ?U ? O ?S ?U ?D ?U)|(O ?S ?U ?Đ ?U ?J ?E))\\s+[A-ZŽĐŠČĆA-ZŽĐŠČĆa-zžđšćčć,0-9()€:.\\s]*?\\.\r?\n");
+        Matcher matcher = pattern.matcher(str);
+        String ret = "unknown";
+        if (matcher.find()) {
+            ret = matcher.group();
         }
         return ret.replace("\r\n", " ").replace("\n", " ").trim();
     }

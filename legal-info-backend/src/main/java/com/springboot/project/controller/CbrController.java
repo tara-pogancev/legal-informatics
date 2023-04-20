@@ -183,11 +183,14 @@ public class CbrController  {
         Map<String, String> retVal = new HashMap<>();
 
         retVal.put("Broj slučaja", featureExtractionService.extractCaseNumber(caseNumber));
-        retVal.put("Optuženi", featureExtractionService.extractDefendantInitials(caseNumber));
         retVal.put("Sud", featureExtractionService.extractCourt(caseNumber));
         retVal.put("Sudija", featureExtractionService.extractJudgeName(caseNumber));
         retVal.put("Zapisničar", featureExtractionService.extractCourtReporterName(caseNumber));
-        retVal.put("Oduzimajne sredstava", featureExtractionService.extractConfiscationStatus(caseNumber));
+        retVal.put("Optuženi", featureExtractionService.extractDefendantInitials(caseNumber));
+        retVal.put("Razlog krivičnog postupka", featureExtractionService.extractReasonForProsecution(caseNumber));
+        retVal.put("Citirani članovi zakona", featureExtractionService.extractCitedArticles(caseNumber));
+        retVal.put("Sudska kazna", featureExtractionService.extractPunishment(caseNumber));
+        retVal.put("Oduzimanje sredstava", featureExtractionService.extractConfiscationStatus(caseNumber));
 
         return ResponseEntity.ok(retVal);
     }
@@ -197,7 +200,7 @@ public class CbrController  {
      */
     @GetMapping("/extract-case-features/{caseNumber}")
     public ResponseEntity<?> extractCaseFeatures(@PathVariable String caseNumber) throws IOException {
-        String text = featureExtractionService.extractCitedArticles(caseNumber);
+        String text = featureExtractionService.extractPunishment(caseNumber);
 
         return ResponseEntity.ok(text);
     }
