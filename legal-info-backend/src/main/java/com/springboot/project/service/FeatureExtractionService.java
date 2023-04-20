@@ -181,14 +181,14 @@ public class FeatureExtractionService {
 
     public String extractReasonForProsecution(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
-        Pattern pattern = Pattern.compile("\\s+zbog\\s+krivičnog\\s+djela\\s+(.*?)\\s+Krivičnog\\s+zakonika\\s+Crne\\s+Gore");
+        Pattern pattern = Pattern.compile("\\s+zbog\\s+krivičnog\\s+djela\\s+[A-ZŽĐŠČĆa-zžđšćčć0-9.\\s]*?\\s+Krivičnog\\s+zakonika\\s+Crne\\s+Gore");
         Matcher matcher = pattern.matcher(str);
         String ret = "unknown";
         if (matcher.find()) {
             ret = matcher.group();
         }
         else {
-            Pattern pattern2 = Pattern.compile("(\\szbog)?\\skrivičnog\\sdjela\\s(.*?)\\sKrivičnog\\szakonika\\sCrne\\sGore");
+            Pattern pattern2 = Pattern.compile("(\\szbog)?\\skrivičnog\\sdjela\\s[A-ZŽĐŠČĆa-zžđšćčć0-9.\\s]*?\\sKrivičnog\\szakonika\\sCrne\\sGore");
             Matcher matcher2 = pattern2.matcher(str);
             if (matcher2.find()) {
                 ret = matcher2.group();
