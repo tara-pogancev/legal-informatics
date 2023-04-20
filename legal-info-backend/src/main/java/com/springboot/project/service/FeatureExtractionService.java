@@ -159,7 +159,7 @@ public class FeatureExtractionService {
         return ret;
     }
 
-    //radi za sve slucajeve sem 809 (nepoznat razlog)
+    //radi za sve slucajeve
     public String extractConfiscationStatus(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\s[Ii] ?z ?r ?i ?č ?e(,|:)?\\s+(MJER[AU] BEZBI?JEDNOSTI)\\s+((ODUZIMAN[jJ]E PREDMETA)|((([A-ZŽĐŠČĆa-zžđšćčć0-9/\\.]+\\s){0,10})[Oo]duzima((nje)|(ti))?))");
@@ -169,8 +169,7 @@ public class FeatureExtractionService {
             ret = "DA";
         }
         else {
-            Pattern pattern2 = Pattern.compile("\\sizrekao(\\si)?\\smjeru\\sbezbjednosti\\s?-?\\soduzimanj(e|a)\\spredmeta,?\\s");
-            //Pattern pattern2 = Pattern.compile("\\sizrekao\\si\\smjeru\\sbezbjednosti\\soduzimanja\\spredmeta"); - doslovno citiran 809 - i dalje ne radi?
+            Pattern pattern2 = Pattern.compile("\\s+izrekao(\\s+i)?\\s+mjeru\\s+bezbjednosti\\s?-?\\s+oduzimanj(e|a)\\s+predmeta,?\\s");
             Matcher matcher2 = pattern2.matcher(str);
             if (matcher2.find()) {
                 ret = "DA";
@@ -179,6 +178,7 @@ public class FeatureExtractionService {
         return ret;
     }
 
+    //radi za sve
     public String extractReasonForProsecution(String caseNumber) throws IOException {
         String str = this.readPDF(caseNumber);
         Pattern pattern = Pattern.compile("\\s+zbog\\s+krivičnog\\s+djela\\s+[A-ZŽĐŠČĆa-zžđšćčć0-9.\\s]*?\\s+Krivičnog\\s+zakonika\\s+Crne\\s+Gore");
@@ -193,6 +193,18 @@ public class FeatureExtractionService {
             if (matcher2.find()) {
                 ret = matcher2.group();
             }
+        }
+        return ret.replace("\r\n", " ").replace("\n", " ").trim();
+    }
+
+    //ne nadje uvek bas sve - testirati jos tacnost
+    public String extractCitedArticles(String caseNumber) throws IOException {
+        String str = this.readPDF(caseNumber);
+        Pattern pattern = Pattern.compile("\\s[Čč]l([.,]|(an))?\\s*[0-9]{1,3}(\\s*st[.,]\\s*[0-9]{1,3})?(\\s+u\\s+vezi\\s((st[.,]\\s*)|(stava\\s+))[0-9]{1,3})?(((,\\s*)|(\\s+i\\s+))([Čč]l([.,]|(an))?)?\\s*[0-9]{1,3}(\\s*st[.,]\\*[0-9]{1,3})?)*\\s+((Krivičnog\\s+zakonika(\\s+Crne\\s+Gore)?)|(KZ\\s*CG)|(Zakonika\\s+o\\s+krivičnom\\s+postupku)|(ZKP-a)|(Zakona\\s+o\\s+duvanu))");
+        Matcher matcher = pattern.matcher(str);
+        String ret = "";
+        while (matcher.find()) {
+            ret = ret + ", " + matcher.group();
         }
         return ret.replace("\r\n", " ").replace("\n", " ").trim();
     }
