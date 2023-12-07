@@ -1,4 +1,7 @@
 # Pravna Informatika - Projekat
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+
 ## Uputstvo za pokretanje: Frontend
 Kako biste pokrenuli frontend rađen pomoću **Angular**-a, potrebno je da imate instaliranu verziju **Node-a v18**. Potom je potrebno izvršiti komande:
 
